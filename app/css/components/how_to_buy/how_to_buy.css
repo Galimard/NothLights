@@ -1,0 +1,103 @@
+.how-to-buy__text {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20.8px; }
+
+.how-to-buy {
+  padding-top: 60px; }
+
+.how-to-buy__wrap {
+  margin-top: 41px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.how-to-buy__item {
+  min-width: 213px;
+  width: 213px;
+  position: relative;
+  text-align: center;
+  margin-right: 129px;
+  margin-bottom: 13px; }
+
+.step4 {
+  margin-right: 0; }
+
+.how-to-buy__img {
+  width: 124px;
+  height: 124px;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto 14px; }
+
+.step1 .how-to-buy__img {
+  background: #553091 url("../../img/icon-steps-1.svg") center center no-repeat; }
+
+.step2 .how-to-buy__img {
+  background: #553091 url("../../img/icon-steps-2.svg") center center no-repeat; }
+
+.step3 .how-to-buy__img {
+  background: #553091 url("../../img/icon-steps-3.svg") center center no-repeat; }
+
+.step4 .how-to-buy__img {
+  background: #553091 url("../../img/icon-steps-4.svg") center center no-repeat; }
+
+.step5 .how-to-buy__img {
+  background: #553091 url("../../img/icon-steps-5.svg") center center no-repeat; }
+
+.step6 .how-to-buy__img {
+  background: #553091 url("../../img/icon-steps-6.svg") center center no-repeat; }
+
+.step7 .how-to-buy__img {
+  background: #553091 url("../../img/icon-steps-7.svg") center center no-repeat; }
+
+.how-to-buy__img::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.step1 .how-to-buy__img::after,
+.step2 .how-to-buy__img::after,
+.step3 .how-to-buy__img::after {
+  right: -130px;
+  background: url("../../img/arrow-r.svg") right center no-repeat; }
+
+.step4 .how-to-buy__img::after {
+  width: 77px;
+  height: 60px;
+  background: url("../../img/arrow-z.svg") center center no-repeat;
+  bottom: -150px;
+  top: unset;
+  -webkit-transform: unset;
+      -ms-transform: unset;
+          transform: unset;
+  left: -9%; }
+
+.step5 .how-to-buy__img::after,
+.step6 .how-to-buy__img::after {
+  left: -130px;
+  background: url("../../img/arrow-l.svg") left center no-repeat; }
+
+.how-to-buy__text {
+  padding: 0 13px;
+  display: inline-block; }
+
+.how-to-buy__link {
+  display: block;
+  width: 83px;
+  margin: 8px auto 0; }

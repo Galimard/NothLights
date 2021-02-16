@@ -1,0 +1,317 @@
+$violet: #553091;
+$violetAccent: #6637B1;
+$blue: #8cd3e4;
+$blueAccent: #61CFE8;
+$darkBlue: #282A61;
+$white: #ffffff;
+
+$grey: #EFEDF9;
+$lightBlue: #D9D9FF;
+
+
+%font_DB_60 {
+  font-family: 'Dobrozrachniy', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 72px;
+}
+
+%font_DB_40 {
+  font-family: 'Dobrozrachniy', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+%font_DB_32 {
+  font-family: 'Dobrozrachniy', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+%font_DB_24 {
+  font-family: 'Dobrozrachniy', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+%font_PT_B_22 {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28.6px;
+}
+
+%font_PT_B_18 {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+}
+
+%font_PT_B_18slim {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+%font_PT_Reg_16 {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20.8px;
+}
+
+%font_PT_Reg_16slim {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+%font_PT_B_16 {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20.8px;
+}
+
+%font_PT_B_16slim {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+%font_PT_B_14 {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18.2px;
+}
+
+%font_PT_Reg_14 {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18.2px;
+}
+
+%font_PT_B_12 {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15.6px;
+}
+.categories {
+  padding-top: 155px;
+  padding-bottom: 80px;
+}
+
+.categories__wrap-top,
+.categories__wrap-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.categories-item {
+  background: $violet;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+}
+
+.categories-item--top {
+  width: 408px;
+  margin-bottom: 45px;
+}
+
+.categories-item--bottom {
+  width: 303px;
+}
+
+.categories-item__wrap {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.categories-item--top .categories-item__wrap {
+  padding-top: 200px;
+  padding-bottom: 29px;
+}
+
+.categories-item--bottom .categories-item__wrap {
+  padding-top: 171px;
+  padding-bottom: 27px;
+}
+
+.categories-item__wrap::after {
+  content: "";
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+  height: 100%;
+  width: 125px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -245px;
+  transform: skewX(-34deg) translateX(0);
+  transition: none;
+}
+
+.categories-item:hover {
+  background: $violetAccent;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.categories-item__wrap:hover::after {
+  transform: skewX(-34deg) translateX(800px);
+  transition: all 0.7s ease-in-out;
+}
+
+.categories-item::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.categories-item--top::before {
+  top: -65px;
+  width: 256px;
+  height: 256px;
+}
+
+.categories-item--bottom::before {
+  top: -44px;
+  width: 200px;
+  height: 200px;
+}
+
+.categories-item--top.unt-man::before {
+  background: url("../../img/Мужские-унты.png") center center no-repeat;
+  background-size: contain;
+}
+
+.categories-item--top.unt-woman::before {
+  background: url("../../img/Женские-унты.png") center center no-repeat;
+  background-size: contain;
+}
+
+.categories-item--top.unt-child::before {
+  background: url("../../img/Детские-унты1.png") center center no-repeat;
+  background-size: contain;
+}
+
+.categories-item--bottom.clothes::before {
+  background: url("../../img/Монгольская-одежда.png") center center no-repeat;
+  background-size: contain;
+}
+
+.categories-item--bottom.shoes::before {
+  background: url("../../img/Монгольская-обвуь.png") center center no-repeat;
+  background-size: contain;
+}
+
+.categories-item--bottom.acces-shoes::before {
+  background: url("../../img/Аксессуары-для-обуви.png") center center no-repeat;
+  background-size: contain;
+}
+
+.categories-item--bottom.acces-leather::before {
+  background: url("../../img/Аксессуары-из-кожи.png") center center no-repeat;
+  background-size: contain;
+}
+
+.categories-item--top.unt-man:hover::before {
+  background: url("../../img/Мужские-унты(2).png") center center no-repeat;
+  background-size: contain;
+}
+
+.categories-item--top.unt-woman:hover::before {
+  background: url("../../img/Женские-унты(2).png") center center no-repeat;
+  background-size: contain;
+}
+
+.categories-item--top.unt-child:hover::before {
+  background: url("../../img/Детские-унты2.png") center center no-repeat;
+  background-size: contain;
+}
+
+.categories-item--bottom.clothes:hover::before {
+  background: url("../../img/Монгольская-одежда(2).png") center center no-repeat;
+  background-size: contain;
+}
+
+.categories-item--bottom.shoes:hover::before {
+  background: url("../../img/Монгольская-обвуь(2).png") center center no-repeat;
+  background-size: contain;
+}
+
+.categories-item--bottom.acces-shoes:hover::before {
+  background: url("../../img/Аксессуары-для-обуви(2).png") center center no-repeat;
+  background-size: contain;
+}
+
+.categories-item--bottom.acces-leather:hover::before {
+  background: url("../../img/Аксессуары-из-кожи(2).png") center center no-repeat;
+  background-size: contain;
+}
+
+.categories-item__name {
+  color: $white;
+  @extend %font_DB_32;
+}
+
+.categories-item__name--small {
+  @extend %font_DB_24;
+}
+
+.categories-item__count {
+  display: block;
+  color: $white;
+  @extend %font_PT_Reg_16;
+}
+
+.categories-item__count span {
+  position: relative;
+}
+
+.categories-item__count span::after {
+  content: "";
+  display: none;
+  width: 29px;
+  height: 9px;
+  background: url("../../img/arrow-long.svg") center center no-repeat;
+  position: absolute;
+  top: 8px;
+  right: -40px;
+}
+
+.categories-item:hover .categories-item__count span::after {
+  display: block;
+}
+
+.categories-item--top .categories-item__count {
+  margin-top: 31px;
+}
+
+.categories-item--bottom .categories-item__count {
+  margin-top: 24px;
+}
+
+.categories-item .color-blue {
+  margin-left: 10px;
+}

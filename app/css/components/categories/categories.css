@@ -1,0 +1,200 @@
+@charset "UTF-8";
+.categories-item__name {
+  font-family: 'Dobrozrachniy', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 32px; }
+
+.categories-item__name--small {
+  font-family: 'Dobrozrachniy', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px; }
+
+.categories-item__count {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20.8px; }
+
+.categories {
+  padding-top: 155px;
+  padding-bottom: 80px; }
+
+.categories__wrap-top,
+.categories__wrap-bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; }
+
+.categories-item {
+  background: #553091;
+  border-radius: 8px;
+  text-align: center;
+  position: relative; }
+
+.categories-item--top {
+  width: 408px;
+  margin-bottom: 45px; }
+
+.categories-item--bottom {
+  width: 303px; }
+
+.categories-item__wrap {
+  position: relative;
+  overflow: hidden;
+  display: block; }
+
+.categories-item--top .categories-item__wrap {
+  padding-top: 200px;
+  padding-bottom: 29px; }
+
+.categories-item--bottom .categories-item__wrap {
+  padding-top: 171px;
+  padding-bottom: 27px; }
+
+.categories-item__wrap::after {
+  content: "";
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1)));
+  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+  height: 100%;
+  width: 125px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -245px;
+  -webkit-transform: skewX(-34deg) translateX(0);
+      -ms-transform: skewX(-34deg) translateX(0);
+          transform: skewX(-34deg) translateX(0);
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none; }
+
+.categories-item:hover {
+  background: #6637B1;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease; }
+
+.categories-item__wrap:hover::after {
+  -webkit-transform: skewX(-34deg) translateX(800px);
+      -ms-transform: skewX(-34deg) translateX(800px);
+          transform: skewX(-34deg) translateX(800px);
+  -webkit-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out; }
+
+.categories-item::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
+.categories-item--top::before {
+  top: -65px;
+  width: 256px;
+  height: 256px; }
+
+.categories-item--bottom::before {
+  top: -44px;
+  width: 200px;
+  height: 200px; }
+
+.categories-item--top.unt-man::before {
+  background: url("../../img/Мужские-унты.png") center center no-repeat;
+  background-size: contain; }
+
+.categories-item--top.unt-woman::before {
+  background: url("../../img/Женские-унты.png") center center no-repeat;
+  background-size: contain; }
+
+.categories-item--top.unt-child::before {
+  background: url("../../img/Детские-унты1.png") center center no-repeat;
+  background-size: contain; }
+
+.categories-item--bottom.clothes::before {
+  background: url("../../img/Монгольская-одежда.png") center center no-repeat;
+  background-size: contain; }
+
+.categories-item--bottom.shoes::before {
+  background: url("../../img/Монгольская-обвуь.png") center center no-repeat;
+  background-size: contain; }
+
+.categories-item--bottom.acces-shoes::before {
+  background: url("../../img/Аксессуары-для-обуви.png") center center no-repeat;
+  background-size: contain; }
+
+.categories-item--bottom.acces-leather::before {
+  background: url("../../img/Аксессуары-из-кожи.png") center center no-repeat;
+  background-size: contain; }
+
+.categories-item--top.unt-man:hover::before {
+  background: url("../../img/Мужские-унты(2).png") center center no-repeat;
+  background-size: contain; }
+
+.categories-item--top.unt-woman:hover::before {
+  background: url("../../img/Женские-унты(2).png") center center no-repeat;
+  background-size: contain; }
+
+.categories-item--top.unt-child:hover::before {
+  background: url("../../img/Детские-унты2.png") center center no-repeat;
+  background-size: contain; }
+
+.categories-item--bottom.clothes:hover::before {
+  background: url("../../img/Монгольская-одежда(2).png") center center no-repeat;
+  background-size: contain; }
+
+.categories-item--bottom.shoes:hover::before {
+  background: url("../../img/Монгольская-обвуь(2).png") center center no-repeat;
+  background-size: contain; }
+
+.categories-item--bottom.acces-shoes:hover::before {
+  background: url("../../img/Аксессуары-для-обуви(2).png") center center no-repeat;
+  background-size: contain; }
+
+.categories-item--bottom.acces-leather:hover::before {
+  background: url("../../img/Аксессуары-из-кожи(2).png") center center no-repeat;
+  background-size: contain; }
+
+.categories-item__name {
+  color: #ffffff; }
+
+.categories-item__count {
+  display: block;
+  color: #ffffff; }
+
+.categories-item__count span {
+  position: relative; }
+
+.categories-item__count span::after {
+  content: "";
+  display: none;
+  width: 29px;
+  height: 9px;
+  background: url("../../img/arrow-long.svg") center center no-repeat;
+  position: absolute;
+  top: 8px;
+  right: -40px; }
+
+.categories-item:hover .categories-item__count span::after {
+  display: block; }
+
+.categories-item--top .categories-item__count {
+  margin-top: 31px; }
+
+.categories-item--bottom .categories-item__count {
+  margin-top: 24px; }
+
+.categories-item .color-blue {
+  margin-left: 10px; }

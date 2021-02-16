@@ -1,0 +1,57 @@
+.tizers-item__title {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20.8px; }
+
+.tizers {
+  padding-top: 80px; }
+
+.tizers__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-top: 90px; }
+
+.tizers-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 33.3%;
+  margin-bottom: 90px; }
+
+.tizers-item__img {
+  min-width: 126px;
+  height: 126px;
+  margin-right: 22px; }
+
+.tizers-item__img.hand {
+  background: url("../../img/icon-features-1.svg") center center no-repeat, url("../../img/circle.png") center center no-repeat; }
+
+.tizers-item__img.deer {
+  background: url("../../img/icon-features-2.svg") center center no-repeat, url("../../img/circle.png") center center no-repeat; }
+
+.tizers-item__img.sheep {
+  background: url("../../img/icon-features-3.svg") center center no-repeat, url("../../img/circle.png") center center no-repeat; }
+
+.tizers-item__img.garantee {
+  background: url("../../img/icon-features-3-1.svg") center center no-repeat, url("../../img/circle.png") center center no-repeat; }
+
+.tizers-item__img.pay {
+  background: url("../../img/icon-features-5.svg") center center no-repeat, url("../../img/circle.png") center center no-repeat; }
+
+.tizers-item__img.mediator {
+  background: url("../../img/icon-features-6.svg") center center no-repeat, url("../../img/circle.png") center center no-repeat; }
+
+.tizers-item__title {
+  display: block;
+  margin-bottom: 8px; }

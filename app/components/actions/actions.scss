@@ -1,0 +1,179 @@
+$violet: #553091;
+$violetAccent: #6637B1;
+$blue: #8cd3e4;
+$blueAccent: #61CFE8;
+$darkBlue: #282A61;
+$white: #ffffff;
+
+$grey: #EFEDF9;
+$lightBlue: #D9D9FF;
+
+
+%font_DB_60 {
+  font-family: 'Dobrozrachniy', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 72px;
+}
+
+%font_DB_40 {
+  font-family: 'Dobrozrachniy', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+%font_DB_32 {
+  font-family: 'Dobrozrachniy', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+%font_DB_24 {
+  font-family: 'Dobrozrachniy', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+%font_PT_B_22 {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28.6px;
+}
+
+%font_PT_B_18 {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+}
+
+%font_PT_B_18slim {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+%font_PT_Reg_16 {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20.8px;
+}
+
+%font_PT_Reg_16slim {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+%font_PT_B_16 {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20.8px;
+}
+
+%font_PT_B_16slim {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+%font_PT_B_14 {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18.2px;
+}
+
+%font_PT_Reg_14 {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18.2px;
+}
+
+%font_PT_B_12 {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15.6px;
+}
+
+.actions {
+  padding-top: 88px;
+}
+
+.actions-slider {
+  margin-top: 52px;
+}
+
+.actions-slider-item {
+  position: relative;
+}
+
+.actions-slider__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 39px 77px;
+}
+
+.actions-slider__title {
+  @extend %font_DB_60;
+  color: $white;
+  margin-bottom: 20px;
+}
+
+.actions-slider__descr {
+  @extend %font_PT_B_22;
+  color: $white;
+  margin-bottom: 46px;
+}
+
+.actions-slider__btn {
+  width: 191px;
+  height: 80px;
+  line-height: 80px !important;
+  @extend %font_PT_B_22;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider__arrow {
+  position: absolute;
+  top: 50%;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  box-shadow:
+          0 0 0 2px $grey,
+          0 0 0 10px $white;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.slider__arrow-prev {
+  background: $violet url("../../img/arrow-left.svg") center center no-repeat;
+  left: -32px;
+}
+
+.slider__arrow-next {
+  background: $violet url("../../img/arrow-right.svg") center center no-repeat;
+  right: -32px;
+}

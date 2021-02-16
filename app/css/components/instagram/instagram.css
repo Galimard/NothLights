@@ -1,0 +1,68 @@
+.instagram__title {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28.6px; }
+
+.instagram__link {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20.8px; }
+
+.instagram {
+  padding-bottom: 75px; }
+
+.instagram__top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px; }
+
+.instagram__title span {
+  margin-left: 10px; }
+
+.instagram__link {
+  display: block;
+  width: 122px;
+  height: 40px;
+  background: #553091;
+  border-radius: 40px;
+  position: relative;
+  padding-left: 34px;
+  line-height: 40px !important;
+  color: #ffffff; }
+
+.instagram__link::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../../img/logo_insta.svg") center center no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 17px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.instagram__bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.instagram__item {
+  width: 298px;
+  height: 298px;
+  background: url("../../img/photo2.jpg") center center no-repeat;
+  border-radius: 4px; }

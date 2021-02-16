@@ -1,0 +1,218 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    title Северное сияние
+    link(rel='stylesheet' href='css/style.css')
+    link(rel='stylesheet' href='css/jquery.fancybox.min.css')
+    link(rel='stylesheet' href='css/slick.css')
+    link(rel='stylesheet' href='css/slick-theme.css')
+    link(rel='stylesheet' href='css/animate.min.css')
+    //link(rel='stylesheet' href='sass/style.scss')
+
+header.header
+    .header-top.flex
+        .container.flex-end
+            .location
+                span.location__city Иркутск
+            .service-menu
+                ul.flex
+                    li
+                        a.service-menu__link(href="#")
+                            span.service-menu__name Гарантия
+                    li
+                        a.service-menu__link.active(href="#")
+                            span.service-menu__name Доставка и оплата
+                    li
+                        a.service-menu__link(href="#")
+                            span.service-menu__name Отзывы
+                    li
+                        a.service-menu__link(href="#")
+                            span.service-menu__name Опт
+                    li
+                        a.service-menu__link(href="#")
+                            span.service-menu__name Вакансии
+            .work-time
+                span.work-time__text 09:00 — 21:00. Без выходных
+            .phone
+                a.phone__link(href="tel:+73952962962") 8 (3952) 96 29 62
+            .callback
+                a.callback__link.btn(href="#") Заказать звонок
+    |
+    |
+    .header-bottom.flex
+        .container.flex
+            .logo
+                a.logo__link(href="/")
+                    img(src="../../img/logo-wide.png")
+            .menu
+                ul.flex
+                    li
+                        a.menu__link.catalog-link(href="#")
+                            span.catalog-icon
+                                span.catalog-icon__line
+                                span.catalog-icon__line-short
+                            |
+                            span.menu__name Каталог
+                    li
+                        a.menu__link(href="#")
+                            span.menu__name Конструктор унтов
+                    li
+                        a.menu__link(href="#")
+                            span.menu__name Как снять мерку
+                    li
+                        a.menu__link(href="#")
+                            span.menu__name О компании
+                    li
+                        a.menu__link(href="#")
+                            span.menu__name Контакты
+            .icons
+                .icons-fav
+                    .icons-fav__img
+                    .icons__count.icons-fav__count 14
+                .icons-cart
+                    .icons-cart__link.flex
+                        .icons-cart__img
+                        .icons__count.icons-cart__count 3
+                        .icons-cart__price 52 500 ₽
+                    .cart-list
+                        .cart-item
+                            .cart-item__img
+                                img(src="../../img/cart-item1.jpg")
+                            .cart-item-block
+                                .cart-item-block__left
+                                    p.cart-item__name Мужские унты МРЭ-2
+                                    .cart-item__size
+                                        span Размер
+                                        span.cart-item__size-count 42
+                                    .cart-item__count
+                                        span Количество
+                                        .count-block
+                                            a.count-block__minus(href="#")
+                                            span.count-block__count 1
+                                            a.count-block__minus(href="#")
+                                .cart-item-block__right
+                                    span.cart-item__delete
+                                    span.cart-item__price 8 000 ₽
+    |
+    |
+    .catalog.violet-menu
+        .container
+            ul.flex
+                li
+                    a.catalog__link.violet-menu__link(href="#")
+                        span.catalog__link-img.unt-man
+                        span Унты мужские
+                li
+                    a.catalog__link.violet-menu__link(href="#")
+                        span.catalog__link-img.unt-woman
+                        span Унты женские
+                li
+                    a.catalog__link.violet-menu__link(href="#")
+                        span.catalog__link-img.unt-child
+                        span Унты детские
+                li
+                    a.catalog__link.violet-menu__link(href="#")
+                        span.catalog__link-img.clothes
+                        span Монгольская одежда
+                li
+                    a.catalog__link.violet-menu__link(href="#")
+                        span.catalog__link-img.shoes
+                        span Монгольская обувь
+                li
+                    a.catalog__link.violet-menu__link(href="#")
+                        span.catalog__link-img.acces-shoes
+                        span Аксессуары для обуви
+                li
+                    a.catalog__link.violet-menu__link(href="#")
+                        span.catalog__link-img.acces-leather
+                        span Аксессуары из кожи
+|
+|
+.header-fixed
+    .header-fixed__wrap.flex
+        .container.flex-end
+            .logo-fixed
+                a.logo__link(href="/")
+                    img(src="../../img/logo-icon.png")
+            .location
+                span.location__city Иркутск
+            .menu
+                ul.flex
+                    li
+                        a.menu__link.catalog-link(href="#")
+                            span.catalog-icon
+                                span.catalog-icon__line
+                                span.catalog-icon__line-short
+                            |
+                            span.menu__name Каталог
+                    li
+                        a.menu__link.active(href="#")
+                            span.menu__name Конструктор унтов
+                    li
+                        a.menu__link(href="#")
+                            span.menu__name Как снять мерку
+                    li
+                        a.menu__link(href="#")
+                            span.menu__name О компании
+                    li
+                        a.menu__link(href="#")
+                            span.menu__name Контакты
+                    li
+                        a.menu__link.menu__link-more(href="#")
+                            span.menu__name Ещё
+            .icons
+                .icons-fav
+                    .icons-fav__img
+                    .icons__count.icons-fav__count 14
+                .icons-cart
+                    .icons-cart__link.flex
+                        .icons-cart__img
+                        .icons__count.icons-cart__count 3
+                        .icons-cart__price 52 500 ₽
+                    .cart-list
+                        .cart-item
+                            .cart-item__img
+                                img(src="../../img/cart-item1.jpg")
+                            .cart-item-block
+                                .cart-item-block__left
+                                    p.cart-item__name Мужские унты МРЭ-2
+                                    .cart-item__size
+                                        span Размер
+                                        span.cart-item__size-count 42
+                                    .cart-item__count
+                                        span Количество
+                                        .count-block
+                                            a.count-block__minus(href="#")
+                                            span.count-block__count 1
+                                            a.count-block__minus(href="#")
+                                .cart-item-block__right
+                                    span.cart-item__delete
+                                    span.cart-item__price 8 000 ₽
+    .header-fixed-bottom.flex.violet-menu
+        .container.flex
+            .service-menu
+                ul.flex
+                    li
+                        a.service-menu__link.violet-menu__link(href="#")
+                            span.service-menu__name Гарантия
+                    li
+                        a.service-menu__link.violet-menu__link(href="#")
+                            span.service-menu__name Доставка и оплата
+                    li
+                        a.service-menu__link.violet-menu__link(href="#")
+                            span.service-menu__name Отзывы
+                    li
+                        a.service-menu__link.violet-menu__link(href="#")
+                            span.service-menu__name Опт
+                    li
+                        a.service-menu__link.violet-menu__link(href="#")
+                            span.service-menu__name Вакансии
+            .work-time
+                span.work-time__text 09:00 — 21:00. Без выходных
+            .phone
+                a.phone__link(href="tel:+73952743407") 8 (3952) 74 34 07
+                a.phone__link(href="tel:+73952962962") 8 (3952) 96 29 62
+            .callback
+                a.callback__link.btn(href="#") Заказать звонок

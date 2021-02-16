@@ -1,0 +1,166 @@
+%font_DB_60 {
+  font-family: 'Dobrozrachniy', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 72px;
+}
+
+%font_DB_40 {
+  font-family: 'Dobrozrachniy', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+%font_DB_32 {
+  font-family: 'Dobrozrachniy', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+%font_DB_24 {
+  font-family: 'Dobrozrachniy', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+%font_PT_B_22 {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28.6px;
+}
+
+%font_PT_B_18 {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+}
+
+%font_PT_B_18slim {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+%font_PT_Reg_16 {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20.8px;
+}
+
+%font_PT_Reg_16slim {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+%font_PT_B_16 {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20.8px;
+}
+
+%font_PT_B_16slim {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+%font_PT_B_14 {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18.2px;
+}
+
+%font_PT_Reg_14 {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18.2px;
+}
+
+%font_PT_B_12 {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15.6px;
+}
+
+$violet: #553091;
+$violetAccent: #6637B1;
+$blue: #8cd3e4;
+$blueAccent: #61CFE8;
+$darkBlue: #282A61;
+$white: #ffffff;
+
+$grey: #EFEDF9;
+$lightBlue: #D9D9FF;
+
+.instagram {
+  padding-bottom: 75px;
+}
+
+.instagram__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.instagram__title {
+  @extend %font_PT_B_22;
+}
+
+.instagram__title span {
+  margin-left: 10px;
+}
+
+.instagram__link {
+  display: block;
+  width: 122px;
+  height: 40px;
+  background: $violet;
+  border-radius: 40px;
+  position: relative;
+  padding-left: 34px;
+  line-height: 40px !important;
+  color: $white;
+  @extend %font_PT_B_16;
+}
+
+.instagram__link::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../../img/logo_insta.svg") center center no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 17px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.instagram__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.instagram__item {
+  width: 298px;
+  height: 298px;
+  background: url("../../img/photo2.jpg") center center no-repeat;
+  border-radius: 4px;
+}

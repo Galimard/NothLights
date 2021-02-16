@@ -1,0 +1,521 @@
+
+<!-- ----------------------------header---------------------------><!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Северное сияние</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<!--link(rel='stylesheet' href='sass/style.scss')-->
+</head>
+<header class="header">
+	<div class="header-top flex">
+		<div class="container flex-end">
+			<div class="location"><span class="location__city">Иркутск</span></div>
+			<div class="service-menu">
+				<ul class="flex">
+					<li><a class="service-menu__link" href="#"><span class="service-menu__name">Гарантия</span></a></li>
+					<li><a class="service-menu__link active" href="#"><span class="service-menu__name">Доставка и оплата</span></a></li>
+					<li><a class="service-menu__link" href="#"><span class="service-menu__name">Отзывы</span></a></li>
+					<li><a class="service-menu__link" href="#"><span class="service-menu__name">Опт</span></a></li>
+					<li><a class="service-menu__link" href="#"><span class="service-menu__name">Вакансии</span></a></li>
+				</ul>
+			</div>
+			<div class="work-time"><span class="work-time__text">09:00 — 21:00. Без выходных</span></div>
+			<div class="phone"><a class="phone__link" href="tel:+73952962962">8 (3952) 96 29 62</a></div>
+			<div class="callback"><a class="callback__link btn" href="#">Заказать звонок</a></div>
+		</div>
+	</div>
+	
+	<div class="header-bottom flex">
+		<div class="container flex">
+			<div class="logo"><a class="logo__link" href="/"><img src="../../img/logo-wide.png"></a></div>
+			<div class="menu">
+				<ul class="flex">
+					<li><a class="menu__link catalog-link" href="#"><span class="catalog-icon"><span class="catalog-icon__line"></span><span class="catalog-icon__line-short"></span></span><span class="menu__name">Каталог</span></a></li>
+					<li><a class="menu__link" href="#"><span class="menu__name">Конструктор унтов</span></a></li>
+					<li><a class="menu__link" href="#"><span class="menu__name">Как снять мерку</span></a></li>
+					<li><a class="menu__link" href="#"><span class="menu__name">О компании</span></a></li>
+					<li><a class="menu__link" href="#"><span class="menu__name">Контакты</span></a></li>
+				</ul>
+			</div>
+			<div class="icons">
+				<div class="icons-fav">
+					<div class="icons-fav__img"></div>
+					<div class="icons__count icons-fav__count">14</div>
+				</div>
+				<div class="icons-cart">
+					<div class="icons-cart__link flex">
+						<div class="icons-cart__img"></div>
+						<div class="icons__count icons-cart__count">3</div>
+						<div class="icons-cart__price">52 500 ₽</div>
+					</div>
+					<div class="cart-list">
+						<div class="cart-item">
+							<div class="cart-item__img"><img src="../../img/cart-item1.jpg"></div>
+							<div class="cart-item-block">
+								<div class="cart-item-block__left">
+									<p class="cart-item__name">Мужские унты МРЭ-2</p>
+									<div class="cart-item__size"><span>Размер</span><span class="cart-item__size-count">42</span></div>
+									<div class="cart-item__count"><span>Количество</span>
+										<div class="count-block"><a class="count-block__minus" href="#"></a><span class="count-block__count">1</span><a class="count-block__minus" href="#"></a></div>
+									</div>
+								</div>
+								<div class="cart-item-block__right"><span class="cart-item__delete"></span><span class="cart-item__price">8 000 ₽</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="catalog violet-menu">
+		<div class="container">
+			<ul class="flex">
+				<li><a class="catalog__link violet-menu__link" href="#"><span class="catalog__link-img unt-man"></span><span>Унты мужские</span></a></li>
+				<li><a class="catalog__link violet-menu__link" href="#"><span class="catalog__link-img unt-woman"></span><span>Унты женские</span></a></li>
+				<li><a class="catalog__link violet-menu__link" href="#"><span class="catalog__link-img unt-child"></span><span>Унты детские</span></a></li>
+				<li><a class="catalog__link violet-menu__link" href="#"><span class="catalog__link-img clothes"></span><span>Монгольская одежда</span></a></li>
+				<li><a class="catalog__link violet-menu__link" href="#"><span class="catalog__link-img shoes"></span><span>Монгольская обувь</span></a></li>
+				<li><a class="catalog__link violet-menu__link" href="#"><span class="catalog__link-img acces-shoes"></span><span>Аксессуары для обуви</span></a></li>
+				<li><a class="catalog__link violet-menu__link" href="#"><span class="catalog__link-img acces-leather"></span><span>Аксессуары из кожи</span></a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+
+<div class="header-fixed">
+	<div class="header-fixed__wrap flex">
+		<div class="container flex-end">
+			<div class="logo-fixed"><a class="logo__link" href="/"><img src="../../img/logo-icon.png"></a></div>
+			<div class="location"><span class="location__city">Иркутск</span></div>
+			<div class="menu">
+				<ul class="flex">
+					<li><a class="menu__link catalog-link" href="#"><span class="catalog-icon"><span class="catalog-icon__line"></span><span class="catalog-icon__line-short"></span></span><span class="menu__name">Каталог</span></a></li>
+					<li><a class="menu__link active" href="#"><span class="menu__name">Конструктор унтов</span></a></li>
+					<li><a class="menu__link" href="#"><span class="menu__name">Как снять мерку</span></a></li>
+					<li><a class="menu__link" href="#"><span class="menu__name">О компании</span></a></li>
+					<li><a class="menu__link" href="#"><span class="menu__name">Контакты</span></a></li>
+					<li><a class="menu__link menu__link-more" href="#"><span class="menu__name">Ещё</span></a></li>
+				</ul>
+			</div>
+			<div class="icons">
+				<div class="icons-fav">
+					<div class="icons-fav__img"></div>
+					<div class="icons__count icons-fav__count">14</div>
+				</div>
+				<div class="icons-cart">
+					<div class="icons-cart__link flex">
+						<div class="icons-cart__img"></div>
+						<div class="icons__count icons-cart__count">3</div>
+						<div class="icons-cart__price">52 500 ₽</div>
+					</div>
+					<div class="cart-list">
+						<div class="cart-item">
+							<div class="cart-item__img"><img src="../../img/cart-item1.jpg"></div>
+							<div class="cart-item-block">
+								<div class="cart-item-block__left">
+									<p class="cart-item__name">Мужские унты МРЭ-2</p>
+									<div class="cart-item__size"><span>Размер</span><span class="cart-item__size-count">42</span></div>
+									<div class="cart-item__count"><span>Количество</span>
+										<div class="count-block"><a class="count-block__minus" href="#"></a><span class="count-block__count">1</span><a class="count-block__minus" href="#"></a></div>
+									</div>
+								</div>
+								<div class="cart-item-block__right"><span class="cart-item__delete"></span><span class="cart-item__price">8 000 ₽</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-fixed-bottom flex violet-menu">
+		<div class="container flex">
+			<div class="service-menu">
+				<ul class="flex">
+					<li><a class="service-menu__link violet-menu__link" href="#"><span class="service-menu__name">Гарантия</span></a></li>
+					<li><a class="service-menu__link violet-menu__link" href="#"><span class="service-menu__name">Доставка и оплата</span></a></li>
+					<li><a class="service-menu__link violet-menu__link" href="#"><span class="service-menu__name">Отзывы</span></a></li>
+					<li><a class="service-menu__link violet-menu__link" href="#"><span class="service-menu__name">Опт</span></a></li>
+					<li><a class="service-menu__link violet-menu__link" href="#"><span class="service-menu__name">Вакансии</span></a></li>
+				</ul>
+			</div>
+			<div class="work-time"><span class="work-time__text">09:00 — 21:00. Без выходных</span></div>
+			<div class="phone"><a class="phone__link" href="tel:+73952743407">8 (3952) 74 34 07</a><a class="phone__link" href="tel:+73952962962">8 (3952) 96 29 62</a></div>
+			<div class="callback"><a class="callback__link btn" href="#">Заказать звонок</a></div>
+		</div>
+	</div>
+</div>
+<!-- ----------------------------end header-------------------------->
+<!-- ----------------------------description--------------------------->
+<section class="description">
+	<div class="description-container">
+		<div class="snowflake snowflake--left"><img class="snowflake__img" src="../../img/snowflake.png"></div>
+		<div class="container description__wrap">
+			<div class="description__left">
+				<div class="big-logo"></div>
+				<p class="logo-name"><span class="color-violet">Северное</span><br><span class="color-blue logo-name--small">сияние</span></p>
+				<p class="description__text--big">Производим унты из&nbsp;камуса оленя и&nbsp;монгольскую обувь</p>
+				<p class="description__text">Российский бренд качественной и&nbsp;теплой зимней обуви из&nbsp;100% натуральных материалов как внутри,&nbsp;так и&nbsp;снаружи.<br><br>Работаем 16&nbsp;лет, с&nbsp;2004 года.</p>
+				<p class="description__text--big color-violet">Пошили уже: 24&nbsp;568&nbsp;унтов</p><a class="btn description__btn" href="javascript:void(0)">Подробнее о&nbsp;нас</a>
+			</div>
+			<div class="description__pattern"></div>
+			<div class="descritpion__right">
+				<div class="video-block">
+					<div class="video-block-item"><a class="video-block-item__link" href="https://www.youtube.com/embed/yIicu4arU5s" data-fancybox="gallery"><img src="../../img/video1.jpg"><span class="video-block-text"><span><span class="video-block__name">Знакомство</span><span class="video-block__descr">с Северным сиянием</span></span><span class="video-block__descr">Видео — 45 сек</span></span></a></div>
+					<div class="video-block-item"><a class="video-block-item__link" href="https://www.youtube.com/embed/yIicu4arU5s" data-fancybox="gallery"><img src="../../img/video2.jpg"><span class="video-block-text"><span><span class="video-block__name">Знакомство</span><span class="video-block__descr">с Северным сиянием</span></span><span class="video-block__descr">Видео — 45 сек</span></span></a></div>
+					<div class="video-block-item"><a class="video-block-item__link" href="https://www.youtube.com/embed/yIicu4arU5s" data-fancybox="gallery"><img src="../../img/video3.jpg"><span class="video-block-text"><span><span class="video-block__name">Знакомство</span><span class="video-block__descr">с Северным сиянием</span></span><span class="video-block__descr">Видео — 45 сек</span></span></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="snowflake snowflake--right"><img class="snowflake__img" src="../../img/snowflake.png"></div>
+	</div>
+</section>
+<!-- ----------------------------end description-------------------------->
+<!-- ----------------------------actions--------------------------->
+<section class="actions">
+	<div class="container">
+		<h2 class="title"><span class="color-violet">текущие</span><span class="color-blue">акции</span></h2>
+		<div class="actions-slider slider">
+			<div class="slider-arrows">
+				<div class="slider__arrow slider__arrow-prev"></div>
+				<div class="slider__arrow slider__arrow-next"></div>
+			</div>
+			<div class="actions-slider__wrap">
+				<div class="actions-slider-item"><img class="actions-slider-item__img" src="../../img/actions.jpg">
+					<div class="actions-slider__text">
+						<p class="actions-slider__title">СКИДКА 10% И 15%</p>
+						<p class="actions-slider__descr">Скидки 10% на все унты до 15.09.2020<br>Скидки 15% на монгольские сапоги до 30.09.2020</p><a class="btn actions-slider__btn" href="javascript:void(0)">Подробнее</a>
+					</div>
+				</div>
+				<div class="actions-slider-item"><img class="actions-slider-item__img" src="../../img/actions.jpg">
+					<div class="actions-slider__text">
+						<p class="actions-slider__title">СКИДКА 10% И 15%</p>
+						<p class="actions-slider__descr">Скидки 10% на все унты до 15.09.2020<br>Скидки 15% на монгольские сапоги до 30.09.2020</p><a class="btn actions-slider__btn" href="javascript:void(0)">Подробнее</a>
+					</div>
+				</div>
+				<div class="actions-slider-item"><img class="actions-slider-item__img" src="../../img/actions.jpg">
+					<div class="actions-slider__text">
+						<p class="actions-slider__title">СКИДКА 10% И 15%</p>
+						<p class="actions-slider__descr">Скидки 10% на все унты до 15.09.2020<br>Скидки 15% на монгольские сапоги до 30.09.2020</p><a class="btn actions-slider__btn" href="javascript:void(0)">Подробнее</a>
+					</div>
+				</div>
+				<div class="actions-slider-item"><img class="actions-slider-item__img" src="../../img/actions.jpg">
+					<div class="actions-slider__text">
+						<p class="actions-slider__title">СКИДКА 10% И 15%</p>
+						<p class="actions-slider__descr">Скидки 10% на все унты до 15.09.2020<br>Скидки 15% на монгольские сапоги до 30.09.2020</p><a class="btn actions-slider__btn" href="javascript:void(0)">Подробнее</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- ----------------------------end actions--------------------------->
+<!-- ----------------------------categories--------------------------->
+<section class="categories">
+	<div class="container">
+		<div class="categories__wrap">
+			<div class="categories__wrap-top"><a class="categories-item categories-item--top unt-man" href="javascript:void(0)"><span class="categories-item__wrap"><span class="categories-item__name"><span class="color-blue categories-item__name--small">Унты</span><br><span>МУЖСКИЕ</span></span><span class="categories-item__count"><span>12 товаров</span></span></span></a><a class="categories-item categories-item--top unt-woman" href="javascript:void(0)"><span class="categories-item__wrap"><span class="categories-item__name"><span class="color-blue categories-item__name--small">Унты</span><br><span>женские</span></span><span class="categories-item__count"><span>12 товаров</span></span></span></a><a class="categories-item categories-item--top unt-child" href="javascript:void(0)"><span class="categories-item__wrap"><span class="categories-item__name"><span class="color-blue categories-item__name--small">Унты</span><br><span>детские</span></span><span class="categories-item__count"><span>12 товаров</span></span></span></a></div>
+			<div class="categories__wrap-bottom"><a class="categories-item categories-item--bottom clothes" href="javascript:void(0)"><span class="categories-item__wrap"><span class="categories-item__name"><span>монгольская<span class="color-blue">одежда</span></span></span><span class="categories-item__count"><span>12 товаров</span></span></span></a><a class="categories-item categories-item--bottom shoes" href="javascript:void(0)"><span class="categories-item__wrap"><span class="categories-item__name"><span>монгольская<span class="color-blue">обувь</span></span></span><span class="categories-item__count"><span>12 товаров</span></span></span></a><a class="categories-item categories-item--bottom acces-shoes" href="javascript:void(0)"><span class="categories-item__wrap"><span class="categories-item__name"><span>аксессуары<span class="color-blue">Для обуви</span></span></span><span class="categories-item__count"><span>12 товаров</span></span></span></a><a class="categories-item categories-item--bottom acces-leather" href="javascript:void(0)"><span class="categories-item__wrap"><span class="categories-item__name"><span>аксессуары<span class="color-blue">ИЗ кожи</span></span></span><span class="categories-item__count"><span>12 товаров</span></span></span></a></div>
+		</div>
+	</div>
+</section>
+<!-- ----------------------------end categories--------------------------->
+<!-- ----------------------------pattern middle--------------------------->
+<div class="pattern__wrap">
+	<div class="pattern pattern1 animate__animated animate__fadeInLeft wow"></div>
+	<div class="pattern pattern2 animate__animated animate__fadeInDown wow"></div>
+	<div class="pattern pattern3 animate__animated animate__fadeInUp wow"></div>
+	<div class="pattern pattern4 animate__animated animate__fadeInLeft wow"></div>
+	<div class="pattern pattern5 animate__animated animate__fadeInRight wow"></div>
+	<div class="pattern pattern6 animate__animated animate__fadeInDown wow"></div>
+	<div class="pattern pattern1 animate__animated animate__fadeInUp wow"></div>
+	<div class="pattern pattern2 animate__animated animate__fadeInLeft wow"></div>
+	<div class="pattern pattern3 animate__animated animate__fadeInRight wow"></div>
+	<div class="pattern pattern4 animate__animated animate__fadeInDown wow"></div>
+	<div class="pattern pattern5 animate__animated animate__fadeInRight wow"></div>
+	<div class="pattern pattern6 animate__animated animate__fadeInLeft wow"></div>
+</div>
+<!-- ----------------------------end pattern middle--------------------------->
+<!-- ----------------------------tizers--------------------------->
+<section class="tizers">
+	<div class="container">
+		<h2 class="title"><span class="color-violet">Нас покупают,</span><span class="color-blue">потому что</span></h2>
+		<div class="tizers__wrap">
+			<div class="tizers-item">
+				<div class="tizers-item__img hand"></div>
+				<div class="tizers-item__text"><span class="tizers-item__title">Ручная работа</span><span class="tizers-item__descr">вся обувь изготавливается исключительно в ручном режиме</span></div>
+			</div>
+			<div class="tizers-item">
+				<div class="tizers-item__img deer"></div>
+				<div class="tizers-item__text"><span class="tizers-item__title">100% камус оленя снаружи</span><span class="tizers-item__descr">унты служат вам долгие годы</span></div>
+			</div>
+			<div class="tizers-item">
+				<div class="tizers-item__img sheep"></div>
+				<div class="tizers-item__text"><span class="tizers-item__title">100% овчина внутри</span><span class="tizers-item__descr">не истирается, теплая, легкие</span></div>
+			</div>
+			<div class="tizers-item">
+				<div class="tizers-item__img garantee"></div>
+				<div class="tizers-item__text"><span class="tizers-item__title">Гарантия 1 год</span><span class="tizers-item__descr">на все наши изделия</span></div>
+			</div>
+			<div class="tizers-item">
+				<div class="tizers-item__img pay"></div>
+				<div class="tizers-item__text"><span class="tizers-item__title">Доступная рассрочка</span><span class="tizers-item__descr">без переплат и скрытых условий</span></div>
+			</div>
+			<div class="tizers-item">
+				<div class="tizers-item__img mediator"></div>
+				<div class="tizers-item__text"><span class="tizers-item__title">Работаем без посредников</span><span class="tizers-item__descr">без лишней накрутки</span></div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- ----------------------------end tizers--------------------------->
+<!-- ----------------------------pattern small--------------------------->
+<div class="pattern__wrap">
+	<div class="pattern pattern1 animate__animated animate__fadeInLeft wow"></div>
+	<div class="pattern pattern2 animate__animated animate__fadeInDown wow"></div>
+	<div class="pattern pattern3 animate__animated animate__fadeInUp wow"></div>
+	<div class="pattern pattern4 animate__animated animate__fadeInLeft wow"></div>
+	<div class="pattern pattern5 animate__animated animate__fadeInRight wow"></div>
+	<div class="pattern pattern6 animate__animated animate__fadeInDown wow"></div>
+</div>
+<!-- ----------------------------end pattern small--------------------------->
+<!-- ----------------------------reviews--------------------------->
+<section class="reviews">
+	<div class="container reviews__wrap">
+		<div class="reviews-main">
+			<h2 class="title"><span class="color-violet">РЕАЛЬНЫЕ</span><br><span class="color-blue">ОТЗЫВЫ</span></h2>
+			<div class="reviews-main-slider slider">
+				<div class="slider-arrows">
+					<div class="slider__arrow slider__arrow-prev"></div>
+					<div class="slider__arrow slider__arrow-next"></div>
+				</div>
+				<div class="reviews-main-slider__wrap">
+					<div class="reviews-main-slider__item">
+						<div class="reviews-main-slider__img"><img src="../../img/review.jpg"></div>
+					</div>
+					<div class="reviews-main-slider__item">
+						<div class="reviews-main-slider__img"><img src="../../img/review.jpg"></div>
+					</div>
+					<div class="reviews-main-slider__item">
+						<div class="reviews-main-slider__img"><img src="../../img/review.jpg"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="photo-main">
+			<h2 class="title"><span class="color-violet">БОЛЕЕ 1000 ФОТО</span><br><span class="color-blue">ПРОДУКЦИИ</span></h2>
+			<div class="photo-main__wrap">
+				<div class="photo-main__row">
+					<div class="photo-main__item item1"><a class="photo-main__img" href="../../img/photo1.jpg"><img src="../../img/photo1.jpg"></a>
+						<div class="photo-main__bg active"></div>
+					</div>
+					<div class="photo-main__item item2"><a class="photo-main__img" href="../../img/photo2.jpg"><img src="../../img/photo2.jpg"></a>
+						<div class="photo-main__bg"></div>
+					</div>
+					<div class="photo-main__item item3"><a class="photo-main__img" href="../../img/photo3.jpg"><img src="../../img/photo3.jpg"></a>
+						<div class="photo-main__bg"></div>
+					</div>
+				</div>
+				<div class="photo-main__row">
+					<div class="photo-main__item item4"><a class="photo-main__img" href="../../img/photo4.jpg"><img src="../../img/photo4.jpg"></a>
+						<div class="photo-main__bg"></div>
+					</div>
+					<div class="photo-main__item">Смотреть</div>
+					<div class="photo-main__item item5"><a class="photo-main__img" href="../../img/photo5.jpg"><img src="../../img/photo5.jpg"></a>
+						<div class="photo-main__bg"></div>
+					</div>
+				</div>
+				<div class="photo-main__row">
+					<div class="photo-main__item item6"><a class="photo-main__img" href="../../img/photo6.jpg"><img src="../../img/photo6.jpg"></a>
+						<div class="photo-main__bg"></div>
+					</div>
+					<div class="photo-main__item item7"><a class="photo-main__img" href="../../img/photo7.jpg"><img src="../../img/photo7.jpg"></a>
+						<div class="photo-main__bg active"></div>
+					</div>
+					<div class="photo-main__item item8"><a class="photo-main__img" href="../../img/photo8.jpg"><img src="../../img/photo8.jpg"></a>
+						<div class="photo-main__bg"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- ----------------------------end reviews--------------------------->
+<!-- ----------------------------instagram--------------------------->
+<section class="instagram">
+	<div class="container">
+		<div class="instagram__top">
+			<div class="instagram__title">Мы в Instagram:<span class="color-violet">s_siyanie</span></div><a class="instagram__link btn" href="javascript:void(0)" target="_blank">Открыть</a>
+		</div>
+		<div class="instagram__bottom">
+			<div class="instagram__item"></div>
+			<div class="instagram__item"></div>
+			<div class="instagram__item"></div>
+			<div class="instagram__item"></div>
+		</div>
+	</div>
+</section>
+<!-- ----------------------------end instagram--------------------------->
+<!-- ----------------------------pattern small--------------------------->
+<div class="pattern__wrap">
+	<div class="pattern pattern1 animate__animated animate__fadeInLeft wow"></div>
+	<div class="pattern pattern2 animate__animated animate__fadeInDown wow"></div>
+	<div class="pattern pattern3 animate__animated animate__fadeInUp wow"></div>
+	<div class="pattern pattern4 animate__animated animate__fadeInLeft wow"></div>
+	<div class="pattern pattern5 animate__animated animate__fadeInRight wow"></div>
+	<div class="pattern pattern6 animate__animated animate__fadeInDown wow"></div>
+</div>
+<!-- ----------------------------end pattern small--------------------------->
+<!-- ----------------------------how to buy--------------------------->
+<section class="how-to-buy">
+	<div class="container">
+		<h2 class="title"><span class="color-violet">КАК КУПИТЬ</span><span class="color-blue">УНТЫ</span></h2>
+		<div class="how-to-buy__wrap">
+			<div class="how-to-buy__item step1">
+				<div class="how-to-buy__img"></div><span class="how-to-buy__text">Выбираем модель унтов</span>
+			</div>
+			<div class="how-to-buy__item step2">
+				<div class="how-to-buy__img"></div><span class="how-to-buy__text">Измеряете ногу<a class="link how-to-buy__link" href="javascript:void(0)">Инструкция</a></span>
+			</div>
+			<div class="how-to-buy__item step3">
+				<div class="how-to-buy__img"></div><span class="how-to-buy__text">Отправляете заказ через каталог или&nbsp;корзину</span>
+			</div>
+			<div class="how-to-buy__item step4">
+				<div class="how-to-buy__img"></div><span class="how-to-buy__text">Консультант<br>связывается с&nbsp;Вами</span>
+			</div>
+			<div class="how-to-buy__item step7">
+				<div class="how-to-buy__img"></div><span class="how-to-buy__text">Вы получаете свой заказ</span>
+			</div>
+			<div class="how-to-buy__item step6">
+				<div class="how-to-buy__img"></div><span class="how-to-buy__text">Изготавливаем и&nbsp;отправляем ваш заказ</span>
+			</div>
+			<div class="how-to-buy__item step5">
+				<div class="how-to-buy__img"></div><span class="how-to-buy__text">Оплачиваете заказ</span>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- ----------------------------end how to buy--------------------------->
+<!-- ----------------------------pattern small--------------------------->
+<div class="pattern__wrap pattern-wide">
+	<div class="pattern pattern1 animate__animated animate__fadeInLeft wow"></div>
+	<div class="pattern pattern2 animate__animated animate__fadeInDown wow"></div>
+	<div class="pattern pattern3 animate__animated animate__fadeInUp wow"></div>
+	<div class="pattern pattern4 animate__animated animate__fadeInLeft wow"></div>
+	<div class="pattern pattern5 animate__animated animate__fadeInRight wow"></div>
+	<div class="pattern pattern6 animate__animated animate__fadeInDown wow"></div>
+	<div class="pattern pattern1 animate__animated animate__fadeInUp wow"></div>
+	<div class="pattern pattern2 animate__animated animate__fadeInLeft wow"></div>
+	<div class="pattern pattern3 animate__animated animate__fadeInRight wow"></div>
+	<div class="pattern pattern4 animate__animated animate__fadeInDown wow"></div>
+	<div class="pattern pattern5 animate__animated animate__fadeInRight wow"></div>
+	<div class="pattern pattern6 animate__animated animate__fadeInLeft wow"></div>
+	<div class="pattern pattern1 animate__animated animate__fadeInUp wow"></div>
+	<div class="pattern pattern2 animate__animated animate__fadeInLeft wow"></div>
+	<div class="pattern pattern3 animate__animated animate__fadeInRight wow"></div>
+	<div class="pattern pattern4 animate__animated animate__fadeInDown wow"></div>
+	<div class="pattern pattern5 animate__animated animate__fadeInRight wow"></div>
+	<div class="pattern pattern6 animate__animated animate__fadeInLeft wow"></div>
+	<div class="pattern pattern1 animate__animated animate__fadeInUp wow"></div>
+	<div class="pattern pattern2 animate__animated animate__fadeInLeft wow"></div>
+	<div class="pattern pattern3 animate__animated animate__fadeInRight wow"></div>
+	<div class="pattern pattern4 animate__animated animate__fadeInDown wow"></div>
+	<div class="pattern pattern5 animate__animated animate__fadeInRight wow"></div>
+	<div class="pattern pattern6 animate__animated animate__fadeInLeft wow"></div>
+</div>
+<!-- ----------------------------end pattern small--------------------------->
+<!-- ----------------------------footer--------------------------->
+<footer class="footer">
+	<div class="footer-top">
+		<div class="container footer-top__wrap">
+			<div class="footer-top-col footer-top-col__left">
+				<div class="logo"><a class="logo__link" href="/"><img src="../../img/logo-short.png"></a></div>
+				<div class="footer-top-phones">
+					<p class="footer-top-phones__title">Наши телефоны</p>
+					<div class="footer-phone"><a class="footer-phone__link" href="tel:+73952743407">8 (3952) 74 34 07</a><a class="footer-phone__link" href="tel:+73952962962">8 (3952) 96 29 62</a></div>
+					<div class="callback"><a class="callback__link btn footer__callback-btn" href="#">Заказать звонок</a></div>
+					<div class="footer-top-links__wrap">
+						<div class="links-block">
+							<p class="links-block__title">Мы в социальных сетях</p>
+							<div class="links-block__wrap"><a class="links-block__item links-block__item--vk" href="javascript:void(0)" target="_blank"><span class="visually-hidden">vkontakte</span></a><a class="links-block__item links-block__item--in" href="javascript:void(0)" target="_blank"><span class="visually-hidden">instagram</span></a><a class="links-block__item links-block__item--fb" href="javascript:void(0)" target="_blank"><span class="visually-hidden">facebook</span></a><a class="links-block__item links-block__item--ok" href="javascript:void(0)" target="_blank"><span class="visually-hidden">odnoklassniki</span></a></div>
+						</div>
+						<div class="email-block">
+							<p class="email-block__title">Электронная почта</p><a class="email-block__link" href="mailto:info@unti-sibiri.ru">info@unti-sibiri.ru</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-top-col__right">
+				<div class="footer-top-col__wrap">
+					<div class="footer-top-col">
+						<p class="footer-top-col__title">Каталог</p>
+						<ul class="footer-top__list">
+							<li class="footer-top__item"><a href="javascript:void(0)">Унты мужские</a></li>
+							<li class="footer-top__item"><a href="javascript:void(0)">Унты мужские</a></li>
+							<li class="footer-top__item"><a href="javascript:void(0)">Унты детские</a></li>
+							<li class="footer-top__item"><a href="javascript:void(0)">Монгольская одежда</a></li>
+							<li class="footer-top__item"><a href="javascript:void(0)">Монгольская обувь</a></li>
+							<li class="footer-top__item"><a href="javascript:void(0)">Аксессуары для обуви</a></li>
+							<li class="footer-top__item"><a href="javascript:void(0)">Аксессуары из кожи</a></li>
+						</ul>
+					</div>
+					<div class="footer-top-col">
+						<p class="footer-top-col__title">Полезная информация
+							<ul class="footer-top__list">
+								<li class="footer-top__item footer-top__item--img"><a href="javascript:void(0)">Как снять<br>мерку</a></li>
+								<li class="footer-top__item footer-top__item--img"><a href="javascript:void(0)">Как ухаживать<br>за унтами</a></li>
+								<li class="footer-top__item footer-top__item--img"><a href="javascript:void(0)">Как хранить<br>унты</a></li>
+							</ul>
+						</p>
+					</div>
+					<div class="footer-top-col">
+						<p class="footer-top-col__title">Северное сияние
+							<ul class="footer-top__list">
+								<li class="footer-top__item"><a href="javascript:void(0)">О компании</a></li>
+								<li class="footer-top__item"><a href="javascript:void(0)">Вакансии</a></li>
+								<li class="footer-top__item"><a href="javascript:void(0)">Магазины</a></li>
+								<li class="footer-top__item"><a href="javascript:void(0)">Контакты</a></li>
+								<li class="footer-top__item"><a href="javascript:void(0)">Гарантия</a></li>
+								<li class="footer-top__item"><a href="javascript:void(0)">Доставка и оплата</a></li>
+								<li class="footer-top__item"><a href="javascript:void(0)">Отзывы</a></li>
+								<li class="footer-top__item"><a href="javascript:void(0)">Опт</a></li>
+							</ul>
+						</p>
+					</div>
+				</div>
+				<div class="footer-top__subscribe subscribe">
+					<p class="subscribe__title">Оповестить о скидках и акциях</p>
+					<form action="#" method="post">
+						<div class="subscribe__input-wrap">
+							<input class="subscribe__input" placeholder="Введите адрес почты" name="subscribe_email">
+							<button class="btn subscribe__btn" type="submit">Подписаться</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="container footer-bottom__wrap">
+			<div class="footer-bottom__left">
+				<p class="footer-bottom__text">Официальный сайт магазина унтов «Северное сияние у ваших ног»</p>
+				<p class="footer-bottom__copy">© 2004-2020 Все права защищены.<a class="policy-link" href="javascript:void(0)">Политика обработки персональных данных</a></p>
+			</div>
+			<div class="footer-bottom__right"><a class="megamir" href="https://mmit.ru/" target="_blank"><span class="megamir__logo"></span><span>Разработка<br>и поддержка сайта</span></a></div>
+		</div>
+	</div>
+</footer>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/simpleParallax.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/script.js" type="module"></script>
+<!-- ----------------------------end footer-------------------------->
+<div class="overlay"></div>
