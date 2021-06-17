@@ -1,111 +1,5 @@
-$violet: #553091;
-$violetAccent: #6637B1;
-$blue: #8cd3e4;
-$blueAccent: #61CFE8;
-$darkBlue: #282A61;
-$white: #ffffff;
+@import "../../variables";
 
-$grey: #EFEDF9;
-$lightBlue: #D9D9FF;
-
-
-%font_DB_60 {
-  font-family: 'Dobrozrachniy', 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 60px;
-  line-height: 72px;
-}
-
-%font_DB_40 {
-  font-family: 'Dobrozrachniy', 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 48px;
-}
-
-%font_DB_32 {
-  font-family: 'Dobrozrachniy', 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 32px;
-}
-
-%font_DB_24 {
-  font-family: 'Dobrozrachniy', 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-}
-
-%font_PT_B_22 {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 28.6px;
-}
-
-%font_PT_B_18 {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 23.4px;
-}
-
-%font_PT_B_18slim {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 18px;
-}
-
-%font_PT_Reg_16 {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20.8px;
-}
-
-%font_PT_Reg_16slim {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
-}
-
-%font_PT_B_16 {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20.8px;
-}
-
-%font_PT_B_16slim {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 16px;
-}
-
-%font_PT_B_14 {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 18.2px;
-}
-
-%font_PT_Reg_14 {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18.2px;
-}
-
-%font_PT_B_12 {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15.6px;
-}
 .categories {
   padding-top: 155px;
   padding-bottom: 80px;
@@ -272,17 +166,17 @@ $lightBlue: #D9D9FF;
 
 .categories-item__name {
   color: $white;
-  @extend %font_DB_32;
+  @include font_DB_32;
 }
 
 .categories-item__name--small {
-  @extend %font_DB_24;
+  @include font_DB_24;
 }
 
 .categories-item__count {
   display: block;
   color: $white;
-  @extend %font_PT_Reg_16;
+  @include font_PT_Reg_16;
 }
 
 .categories-item__count span {
@@ -314,4 +208,83 @@ $lightBlue: #D9D9FF;
 
 .categories-item .color-blue {
   margin-left: 10px;
+}
+
+@media all and (max-width: 1340px) {
+  .categories-item--top:not(:last-child) {
+    margin-right: 20px;
+  }
+  .categories-item--bottom:not(:last-child) {
+    margin-right: 2%;
+  }
+}
+
+@media all and (max-width: 1240px) {
+  .categories-item--bottom .categories-item__wrap {
+    padding: 171px 20px 27px;
+  }
+  .categories-item--bottom {
+    min-width: 20%;
+  }
+  .categories-item--bottom .color-blue {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .categories-item--top .categories-item__wrap,
+  .categories-item--bottom .categories-item__wrap {
+    padding: 20px;
+  }
+  .categories-item::before {
+    display: none;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .categories {
+    padding-top: 55px;
+    padding-bottom: 45px;
+  }
+  .categories__wrap-top, .categories__wrap-bottom {
+    flex-wrap: wrap;
+  }
+  .categories-item--bottom,
+  .categories-item--top {
+    width: 48%;
+    margin-bottom: 15px;
+  }
+  .categories-item--top .categories-item__wrap {
+    padding: 8px 20px 17px;
+  }
+  .categories-item--bottom .categories-item__wrap {
+    padding: 19px;
+  }
+  .categories-item--top:not(:last-child) {
+    margin-right: 2%;
+  }
+  .categories-item--top.unt-man {
+    width: 100%;
+    margin-right: 0;
+  }
+  .categories-item--bottom.shoes {
+    margin-right: 0;
+  }
+  .categories-item--top .categories-item__count {
+    margin-top: 18px;
+  }
+  .categories-item--bottom .categories-item__count {
+    margin-top: 9px;
+  }
+  .categories-item .color-blue {
+    margin-left: 0;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .categories-item__name {
+    font-size: 24px;
+    line-height: 28px;
+  }
 }

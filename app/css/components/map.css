@@ -1,0 +1,59 @@
+.shops-item__number, .shops-item__address {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20.8px; }
+
+.map {
+  padding-top: 71px;
+  padding-bottom: 100px; }
+
+.map__wrap {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  border-radius: 8px; }
+
+.shops {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.shops-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 402px;
+  padding: 27px;
+  border: 2px solid #EFEDF9;
+  border-radius: 8px; }
+
+.shops-item__img {
+  width: 116px;
+  height: 116px;
+  background: url("../img/photo1.jpg") center center no-repeat;
+  background-size: contain;
+  border-radius: 8px;
+  margin-right: 37px;
+  position: relative; }
+
+.shops-item__number {
+  display: block;
+  width: 42px;
+  height: 42px;
+  background: #553091;
+  border-radius: 50%;
+  color: #ffffff;
+  text-align: center;
+  line-height: 42px;
+  position: absolute;
+  top: 50%;
+  right: -21px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }

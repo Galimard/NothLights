@@ -10,68 +10,112 @@ head
     link(rel='stylesheet' href='css/slick-theme.css')
     link(rel='stylesheet' href='css/animate.min.css')
     //link(rel='stylesheet' href='sass/style.scss')
-
+    //script(src='https://api-maps.yandex.ru/2.1/?apikey=f395a913-789d-4e6b-8b3c-1e8845b04973&lang=ru_RU' type='text/javascript')
 header.header
-    .header-top.flex
+    .header-top
         .container.flex-end
             .location
                 span.location__city Иркутск
             .service-menu
                 ul.flex
                     li
-                        a.service-menu__link(href="#")
+                        a.service-menu__link(href="javascript:void(0)")
                             span.service-menu__name Гарантия
                     li
-                        a.service-menu__link.active(href="#")
+                        a.service-menu__link.active(href="javascript:void(0)")
                             span.service-menu__name Доставка и оплата
                     li
-                        a.service-menu__link(href="#")
+                        a.service-menu__link(href="javascript:void(0)")
                             span.service-menu__name Отзывы
                     li
-                        a.service-menu__link(href="#")
+                        a.service-menu__link(href="javascript:void(0)")
                             span.service-menu__name Опт
                     li
-                        a.service-menu__link(href="#")
+                        a.service-menu__link(href="javascript:void(0)")
                             span.service-menu__name Вакансии
             .work-time
                 span.work-time__text 09:00 — 21:00. Без выходных
             .phone
                 a.phone__link(href="tel:+73952962962") 8 (3952) 96 29 62
             .callback
-                a.callback__link.btn(href="#") Заказать звонок
+                a.callback__link.btn(href="javascript:void(0)") Заказать звонок
     |
     |
-    .header-bottom.flex
-        .container.flex
+    .header-bottom
+        .container.flex.header-container
+            a.mobile-icon-menu.js-icon-menu(href="javascript:void(0)")
             .logo
                 a.logo__link(href="/")
-                    img(src="../../img/logo-wide.png")
+                    svg.logo__svg(width='45' height='44' viewBox='0 0 45 44' fill='none' xmlns='http://www.w3.org/2000/svg')
+                        path(d='M44.0899 21.9997C44.0899 34.1312 34.2217 43.9994 22.0902 43.9994C9.86817 44.0899 0 34.2217 0 21.9997C0 9.86817 9.86817 0 21.9997 0C34.2217 0 44.0899 9.86817 44.0899 21.9997Z' fill='#553091')
+                        path(d='M30.6909 31.8678C26.3453 31.8678 22.1807 29.7855 19.6458 26.2547L18.6499 24.8967C18.1067 24.1724 17.0203 24.1724 16.4771 24.8967L10.864 32.5921C10.6829 32.8637 10.6829 33.2258 10.9545 33.4069C13.8516 36.2134 17.654 37.9336 21.9996 37.9336C26.6168 37.9336 30.6909 35.9418 33.5879 32.8637C33.9501 32.5015 33.6785 31.8678 33.1353 31.8678H30.6909Z' fill='white')
+                        path.ss-11(d='M21.9092 6.06567L13.5801 18.1067L7.69541 26.4358C7.42381 26.7979 6.8806 26.7074 6.69954 26.2547C6.51847 25.7115 6.42794 25.1683 6.3374 24.5346L18.9216 6.33728C19.9175 6.15621 20.9133 6.06567 21.9092 6.06567Z' fill='#8CD3E4')
+                        path.ss-02(d='M33.3165 10.7734L25.1685 22.5428C26.0738 23.086 27.3413 22.9955 28.1561 22.1807L34.765 12.5841C34.4029 11.9504 33.8597 11.3166 33.3165 10.7734Z' fill='#8CD3E4')
+                        path.ss-01(opacity='0.3' d='M37.5717 25.4398C37.9338 24.0818 38.0244 22.5427 37.9338 20.9131L35.3083 24.7155L36.3948 26.2546C36.6664 26.6167 37.2096 26.5262 37.3906 26.0735C37.4812 25.8924 37.4812 25.7114 37.5717 25.5303V25.4398Z' fill='#8CD3E4')
+                        path.ss-08(opacity='0.3' d='M27.1603 6.88032C26.436 6.60872 25.6212 6.42765 24.8064 6.24658L19.1028 14.4852L20.5513 16.3864L27.1603 6.88032Z' fill='#8CD3E4')
+                        path.ss-04(opacity='0.7' d='M37.3 17.3824C37.0284 16.5676 36.6662 15.6622 36.3041 14.8474L32.4111 20.4605L33.7691 22.4522L37.3 17.3824Z' fill='#8CD3E4')
+                        path.ss-06(d='M6.15649 20.3698L14.9383 7.78564C10.14 10.1395 6.79023 14.8473 6.15649 20.3698Z' fill='#8CD3E4')
+                        path.ss-05(opacity='0.7' d='M31.4155 9.14398C30.7818 8.69131 30.1481 8.32918 29.5143 7.96704L22.0906 18.65L23.5391 20.5512L31.4155 9.14398Z' fill='#8CD3E4')
+                    img.logo__img(src="../../img/logo-text.svg")
+                    img.logo__img-mobile(src="../../img/logo-short-mobile.svg")
             .menu
                 ul.flex
-                    li
-                        a.menu__link.catalog-link(href="#")
+                    li.catalog-link-hover
+                        a.menu__link.catalog-link(href="../catalog.html")
                             span.catalog-icon
                                 span.catalog-icon__line
                                 span.catalog-icon__line-short
                             |
                             span.menu__name Каталог
+
+                        ul.flex.catalog.violet-menu
+                            li
+                                a.catalog__link.violet-menu__link(href="#")
+                                    span.catalog__link-img.unt-man
+                                    span Унты мужские
+                            li
+                                a.catalog__link.violet-menu__link(href="#")
+                                    span.catalog__link-img.unt-woman
+                                    span Унты женские
+                            li
+                                a.catalog__link.violet-menu__link(href="#")
+                                    span.catalog__link-img.unt-child
+                                    span Унты детские
+                            li
+                                a.catalog__link.violet-menu__link(href="#")
+                                    span.catalog__link-img.clothes
+                                    span Монгольская одежда
+                            li
+                                a.catalog__link.violet-menu__link(href="#")
+                                    span.catalog__link-img.shoes
+                                    span Монгольская обувь
+                            li
+                                a.catalog__link.violet-menu__link(href="#")
+                                    span.catalog__link-img.acces-shoes
+                                    span Аксессуары для обуви
+                            li
+                                a.catalog__link.violet-menu__link(href="#")
+                                    span.catalog__link-img.acces-leather
+                                    span Аксессуары из кожи
                     li
-                        a.menu__link(href="#")
+                        a.menu__link(href="../constructor.html")
                             span.menu__name Конструктор унтов
                     li
-                        a.menu__link(href="#")
+                        a.menu__link(href="javascript:void(0)")
                             span.menu__name Как снять мерку
                     li
-                        a.menu__link(href="#")
+                        a.menu__link(href="javascript:void(0)")
                             span.menu__name О компании
                     li
-                        a.menu__link(href="#")
+                        a.menu__link(href="javascript:void(0)")
                             span.menu__name Контакты
+
             .icons
-                .icons-fav
+                a.icons-phone.js-mobile-popup-btn(href="#info")
+                a.icons-fav(href="javascript:void(0)")
                     .icons-fav__img
                     .icons__count.icons-fav__count 14
-                .icons-cart
+                a.icons-cart(href="javascript:void(0)")
                     .icons-cart__link.flex
                         .icons-cart__img
                         .icons__count.icons-cart__count 3
@@ -95,73 +139,167 @@ header.header
                                 .cart-item-block__right
                                     span.cart-item__delete
                                     span.cart-item__price 8 000 ₽
-    |
-    |
-    .catalog.violet-menu
-        .container
-            ul.flex
+.mobile-left-menu.js-mobile-left-menu.js-mobile-popup
+    .mobile-left-menu__wrap
+        .location.location--mobile.js-mobile-location
+            span.location__city.js-mobile-location-city Иркутск
+            .location-list.location-list--mobile.js-mobile-location-list
+                .location-list-item.active Иркутск
+                .location-list-item Ангарск
+                .location-list-item Братск
+                .location-list-item Усолье-Сибирское
+        .mobile-catalog
+            a.mobile-catalog__link.js-mobile-catalog-link(href="#mobile-catalog") Каталог
+        .mobile-menu-list
+            ul
                 li
-                    a.catalog__link.violet-menu__link(href="#")
-                        span.catalog__link-img.unt-man
-                        span Унты мужские
+                    a.mobile-menu__link(href="../constructor.html")
+                        span Конструктор унтов
                 li
-                    a.catalog__link.violet-menu__link(href="#")
-                        span.catalog__link-img.unt-woman
-                        span Унты женские
+                    a.mobile-menu__link(href="javascript:void(0)")
+                        span Как снять мерку
                 li
-                    a.catalog__link.violet-menu__link(href="#")
-                        span.catalog__link-img.unt-child
-                        span Унты детские
+                    a.mobile-menu__link(href="javascript:void(0)")
+                        span О компании
                 li
-                    a.catalog__link.violet-menu__link(href="#")
-                        span.catalog__link-img.clothes
-                        span Монгольская одежда
+                    a.mobile-menu__link(href="javascript:void(0)")
+                        span Контакты
+        .mobile-service-menu
+            ul
                 li
-                    a.catalog__link.violet-menu__link(href="#")
-                        span.catalog__link-img.shoes
-                        span Монгольская обувь
+                    a.mobile-service-menu__link(href="javascript:void(0)")
+                        span Гарантия
                 li
-                    a.catalog__link.violet-menu__link(href="#")
-                        span.catalog__link-img.acces-shoes
-                        span Аксессуары для обуви
+                    a.mobile-service-menu__link.active(href="javascript:void(0)")
+                        span Доставка и оплата
                 li
-                    a.catalog__link.violet-menu__link(href="#")
-                        span.catalog__link-img.acces-leather
-                        span Аксессуары из кожи
-|
-|
-.header-fixed
+                    a.mobile-service-menu__link(href="javascript:void(0)")
+                        span Отзывы
+                li
+                    a.mobile-service-menu__link(href="javascript:void(0)")
+                        span Опт
+                li
+                    a.mobile-service-menu__link(href="javascript:void(0)")
+                        span Вакансии
+        .mobile-menu-contacts
+            p.mobile-menu-contacts__title Контактная информация
+            .mobile-phone
+                p.mobile-left-menu__title Наши телефоны
+                .mobile-phone__wrap
+                    a.mobile-phone__link(href="tel:+73952962962") 8 (3952) 96 29 62
+                    a.mobile-phone__link(href="tel:+73952743407") 8 (3952) 74 34 07
+            .callback
+                a.callback__link.btn(href="javascript:void(0)") Заказать звонок
+            .mobile-email
+                p.mobile-left-menu__title Электронная почта
+                a.mobile-phone__link.mobile-email__link(href="mailto:info@unti-sibiri.ru") info@unti-sibiri.ru
+            .links-block.links-block--mobile
+                p.mobile-left-menu__title Мы в социальных сетях
+                .links-block__wrap
+                    a.links-block__item.links-block__item--vk(href="javascript:void(0)" target="_blank")
+                        span.visually-hidden vkontakte
+                    a.links-block__item.links-block__item--in(href="javascript:void(0)" target="_blank")
+                        span.visually-hidden instagram
+                    a.links-block__item.links-block__item--fb(href="javascript:void(0)" target="_blank")
+                        span.visually-hidden facebook
+                    a.links-block__item.links-block__item--ok(href="javascript:void(0)" target="_blank")
+                        span.visually-hidden odnoklassniki
+.header-fixed.js-header-fixed
     .header-fixed__wrap.flex
         .container.flex-end
             .logo-fixed
                 a.logo__link(href="/")
-                    img(src="../../img/logo-icon.png")
+                    svg(width='45' height='44' viewBox='0 0 45 44' fill='none' xmlns='http://www.w3.org/2000/svg')
+                        path(d='M44.0899 21.9997C44.0899 34.1312 34.2217 43.9994 22.0902 43.9994C9.86817 44.0899 0 34.2217 0 21.9997C0 9.86817 9.86817 0 21.9997 0C34.2217 0 44.0899 9.86817 44.0899 21.9997Z' fill='#553091')
+                        path(d='M30.6909 31.8678C26.3453 31.8678 22.1807 29.7855 19.6458 26.2547L18.6499 24.8967C18.1067 24.1724 17.0203 24.1724 16.4771 24.8967L10.864 32.5921C10.6829 32.8637 10.6829 33.2258 10.9545 33.4069C13.8516 36.2134 17.654 37.9336 21.9996 37.9336C26.6168 37.9336 30.6909 35.9418 33.5879 32.8637C33.9501 32.5015 33.6785 31.8678 33.1353 31.8678H30.6909Z' fill='white')
+                        path.ss-11(d='M21.9092 6.06567L13.5801 18.1067L7.69541 26.4358C7.42381 26.7979 6.8806 26.7074 6.69954 26.2547C6.51847 25.7115 6.42794 25.1683 6.3374 24.5346L18.9216 6.33728C19.9175 6.15621 20.9133 6.06567 21.9092 6.06567Z' fill='#8CD3E4')
+                        path.ss-02(d='M33.3165 10.7734L25.1685 22.5428C26.0738 23.086 27.3413 22.9955 28.1561 22.1807L34.765 12.5841C34.4029 11.9504 33.8597 11.3166 33.3165 10.7734Z' fill='#8CD3E4')
+                        path.ss-01(opacity='0.3' d='M37.5717 25.4398C37.9338 24.0818 38.0244 22.5427 37.9338 20.9131L35.3083 24.7155L36.3948 26.2546C36.6664 26.6167 37.2096 26.5262 37.3906 26.0735C37.4812 25.8924 37.4812 25.7114 37.5717 25.5303V25.4398Z' fill='#8CD3E4')
+                        path.ss-08(opacity='0.3' d='M27.1603 6.88032C26.436 6.60872 25.6212 6.42765 24.8064 6.24658L19.1028 14.4852L20.5513 16.3864L27.1603 6.88032Z' fill='#8CD3E4')
+                        path.ss-04(opacity='0.7' d='M37.3 17.3824C37.0284 16.5676 36.6662 15.6622 36.3041 14.8474L32.4111 20.4605L33.7691 22.4522L37.3 17.3824Z' fill='#8CD3E4')
+                        path.ss-06(d='M6.15649 20.3698L14.9383 7.78564C10.14 10.1395 6.79023 14.8473 6.15649 20.3698Z' fill='#8CD3E4')
+                        path.ss-05(opacity='0.7' d='M31.4155 9.14398C30.7818 8.69131 30.1481 8.32918 29.5143 7.96704L22.0906 18.65L23.5391 20.5512L31.4155 9.14398Z' fill='#8CD3E4')
             .location
                 span.location__city Иркутск
-            .menu
-                ul.flex
-                    li
+            .menu-fixed
+                .flex
+                    .menu-fixed-item.catalog-link-hover
                         a.menu__link.catalog-link(href="#")
                             span.catalog-icon
                                 span.catalog-icon__line
                                 span.catalog-icon__line-short
                             |
                             span.menu__name Каталог
-                    li
+                        ul.flex.catalog.violet-menu
+                            li
+                                a.catalog__link.violet-menu__link(href="#")
+                                    span.catalog__link-img.unt-man
+                                    span Унты мужские
+                            li
+                                a.catalog__link.violet-menu__link(href="#")
+                                    span.catalog__link-img.unt-woman
+                                    span Унты женские
+                            li
+                                a.catalog__link.violet-menu__link(href="#")
+                                    span.catalog__link-img.unt-child
+                                    span Унты детские
+                            li
+                                a.catalog__link.violet-menu__link(href="#")
+                                    span.catalog__link-img.clothes
+                                    span Монгольская одежда
+                            li
+                                a.catalog__link.violet-menu__link(href="#")
+                                    span.catalog__link-img.shoes
+                                    span Монгольская обувь
+                            li
+                                a.catalog__link.violet-menu__link(href="#")
+                                    span.catalog__link-img.acces-shoes
+                                    span Аксессуары для обуви
+                            li
+                                a.catalog__link.violet-menu__link(href="#")
+                                    span.catalog__link-img.acces-leather
+                                    span Аксессуары из кожи
+                    .menu-fixed-item
                         a.menu__link.active(href="#")
                             span.menu__name Конструктор унтов
-                    li
+                    .menu-fixed-item
                         a.menu__link(href="#")
                             span.menu__name Как снять мерку
-                    li
+                    .menu-fixed-item
                         a.menu__link(href="#")
                             span.menu__name О компании
-                    li
+                    .menu-fixed-item
                         a.menu__link(href="#")
                             span.menu__name Контакты
-                    li
+                    .menu-fixed-item.link-more-hover
                         a.menu__link.menu__link-more(href="#")
                             span.menu__name Ещё
+                        .header-fixed-bottom.flex.violet-menu
+                            .container.flex
+                                .service-menu
+                                    ul.flex
+                                        li
+                                            a.service-menu__link.violet-menu__link(href="#")
+                                                span.service-menu__name Гарантия
+                                        li
+                                            a.service-menu__link.violet-menu__link(href="#")
+                                                span.service-menu__name Доставка и оплата
+                                        li
+                                            a.service-menu__link.violet-menu__link(href="#")
+                                                span.service-menu__name Отзывы
+                                        li
+                                            a.service-menu__link.violet-menu__link(href="#")
+                                                span.service-menu__name Опт
+                                        li
+                                            a.service-menu__link.violet-menu__link(href="#")
+                                                span.service-menu__name Вакансии
+                                .work-time
+                                    span.work-time__text 09:00 — 21:00. Без выходных
+                                .phone
+                                    a.phone__link(href="tel:+73952743407") 8 (3952) 74 34 07
+                                    a.phone__link(href="tel:+73952962962") 8 (3952) 96 29 62
+                                .callback
+                                    a.callback__link.btn(href="#") Заказать звонок
             .icons
                 .icons-fav
                     .icons-fav__img
@@ -190,29 +328,147 @@ header.header
                                 .cart-item-block__right
                                     span.cart-item__delete
                                     span.cart-item__price 8 000 ₽
-    .header-fixed-bottom.flex.violet-menu
-        .container.flex
-            .service-menu
-                ul.flex
-                    li
-                        a.service-menu__link.violet-menu__link(href="#")
-                            span.service-menu__name Гарантия
-                    li
-                        a.service-menu__link.violet-menu__link(href="#")
-                            span.service-menu__name Доставка и оплата
-                    li
-                        a.service-menu__link.violet-menu__link(href="#")
-                            span.service-menu__name Отзывы
-                    li
-                        a.service-menu__link.violet-menu__link(href="#")
-                            span.service-menu__name Опт
-                    li
-                        a.service-menu__link.violet-menu__link(href="#")
-                            span.service-menu__name Вакансии
-            .work-time
-                span.work-time__text 09:00 — 21:00. Без выходных
-            .phone
-                a.phone__link(href="tel:+73952743407") 8 (3952) 74 34 07
-                a.phone__link(href="tel:+73952962962") 8 (3952) 96 29 62
-            .callback
-                a.callback__link.btn(href="#") Заказать звонок
+
+#info.mobile-popup.info-popup.js-mobile-popup
+    .mobile-popup__wrap
+        .mobile-popup__header.js-popup-header
+            .mobile-popup__title Информация
+            .mobile-popup__close.js-popup-close
+        .mobile-popup__main.info-popup__main.js-popup-main
+            .info-popup__wrap.js-popup-wrap
+                .info-popup__text-block
+                    .info-popup__title Режим работы
+                    .info-popup__text Ежедневно. 09:00 — 21:00
+                    .info-popup__title Наши телефоны
+                    .mobile-phone__wrap.info-popup__phone-wrap
+                        a.mobile-phone__link(href="tel:+73952962962") 8 (3952) 96 29 62
+                        a.mobile-phone__link(href="tel:+73952743407") 8 (3952) 74 34 07
+                .info-popup__buttons
+                    .info-popup__address
+                        a.info-popup__link.btn(href="javascript:void(0)") Адреса магазинов
+                    .info-popup__contact
+                        a.info-popup__link.btn(href="javascript:void(0)") Контакты
+                    .info-popup__callback
+                        a.info-popup__link.btn(href="javascript:void(0)") Заказать звонок
+
+#mobile-catalog.mobile-popup.mobile-catalog-menu.js-mobile-popup
+    .mobile-popup__wrap
+        .mobile-popup__header.js-popup-header
+            .mobile-popup__title.mobile-catalog-menu__title.js-mobile-menu-title
+                span Каталог товаров
+                span.mobile-catalog-menu__back.js-mobile-menu-back
+            .mobile-popup__close.js-popup-close
+        #id1.mobile-popup__main.mobile-catalog-menu__main.js-popup-main
+            ul.mobile-catalog-menu__list
+                li.mobile-parent-menu
+                    a.mobile-catalog-menu__link.js-mobile-menu-link(href="javascript:void(0)")
+                        span.catalog__link-img.unt-man
+                        span.mobile-catalog-menu__name.js-mobile-menu-name Унты мужские
+                    ul.mobile-submenu.js-mobile-submenu.js-popup-wrap
+                        li
+                            a.mobile-submenu__link(href="javascript:void(0)")
+                                span.mobile-submenu__count 4
+                                span.mobile-submenu__name Пункт подменю 1
+                            ul.mobile-subsubmenu
+                                li
+                                    a.mobile-subsubmenu__link(href="javascript:void(0)")
+                                        span.mobile-subsubmenu__count 8
+                                        span.mobile-subsubmenu__name Пункт подподменю 1
+                                li
+                                    a.mobile-subsubmenu__link(href="javascript:void(0)")
+                                        span.mobile-subsubmenu__count 2
+                                        span.mobile-subsubmenu__name Пункт подподменю 2
+                                li
+                                    a.mobile-subsubmenu__link(href="javascript:void(0)")
+                                        span.mobile-subsubmenu__count 14
+                                        span.mobile-subsubmenu__name Пункт подподменю 3
+                                li
+                                    a.mobile-subsubmenu__link(href="javascript:void(0)")
+                                        span.mobile-subsubmenu__count 10
+                                        span.mobile-subsubmenu__name Пункт подподменю 4
+                        li
+                            a.mobile-submenu__link(href="javascript:void(0)")
+                                span.mobile-submenu__count 14
+                                span.mobile-submenu__name Пункт подменю 2
+                            ul.mobile-subsubmenu
+                                li
+                                    a.mobile-subsubmenu__link(href="javascript:void(0)")
+                                        span.mobile-subsubmenu__count 3
+                                        span.mobile-subsubmenu__name Пункт подподменю 1
+                                li
+                                    a.mobile-subsubmenu__link(href="javascript:void(0)")
+                                        span.mobile-subsubmenu__count 5
+                                        span.mobile-subsubmenu__name Пункт подподменю 2
+                        li
+                            a.mobile-submenu__link(href="javascript:void(0)")
+                                span.mobile-submenu__count 1
+                                span.mobile-submenu__name Пункт подменю 3
+                            ul.mobile-subsubmenu
+                                li
+                                    a.mobile-subsubmenu__link(href="javascript:void(0)")
+                                        span.mobile-subsubmenu__count 6
+                                        span.mobile-subsubmenu__name Пункт подподменю 1
+                                li
+                                    a.mobile-subsubmenu__link(href="javascript:void(0)")
+                                        span.mobile-subsubmenu__count 11
+                                        span.mobile-subsubmenu__name Пункт подподменю 2
+                        li
+                            a.mobile-submenu__link(href="javascript:void(0)")
+                                span.mobile-submenu__count 5
+                                span.mobile-submenu__name Пункт подменю 4
+                        li
+                            a.mobile-submenu__link(href="javascript:void(0)")
+                                span.mobile-submenu__count 14
+                                span.mobile-submenu__name Пункт подменю 5
+                        li
+                            a.mobile-submenu__link(href="javascript:void(0)")
+                                span.mobile-submenu__count 7
+                                span.mobile-submenu__name Пункт подменю 6
+                        li
+                            a.mobile-submenu__link(href="javascript:void(0)")
+                                span.mobile-submenu__count 9
+                                span.mobile-submenu__name Пункт подменю 7
+                        li
+                            a.mobile-submenu__link(href="javascript:void(0)")
+                                span.mobile-submenu__count 12
+                                span.mobile-submenu__name Пункт подменю 8
+                        li
+                            a.mobile-submenu__link(href="javascript:void(0)")
+                                span.mobile-submenu__count 2
+                                span.mobile-submenu__name Пункт подменю 9
+                li
+                    a.mobile-catalog-menu__link.js-mobile-menu-link(href="javascript:void(0)")
+                        span.catalog__link-img.unt-woman
+                        span.mobile-catalog-menu__name.js-mobile-menu-name Унты женские
+                li
+                    a.mobile-catalog-menu__link.js-mobile-menu-link(href="javascript:void(0)")
+                        span.catalog__link-img.unt-child
+                        span.mobile-catalog-menu__name.js-mobile-menu-name Унты детские
+                li
+                    a.mobile-catalog-menu__link.js-mobile-menu-link(href="javascript:void(0)")
+                        span.catalog__link-img.clothes
+                        span.mobile-catalog-menu__name.js-mobile-menu-name Монгольская одежда
+                li
+                    a.mobile-catalog-menu__link.js-mobile-menu-link(href="javascript:void(0)")
+                        span.catalog__link-img.shoes
+                        span.mobile-catalog-menu__name.js-mobile-menu-name Монгольская обувь
+                li
+                    a.mobile-catalog-menu__link.js-mobile-menu-link(href="javascript:void(0)")
+                        span.catalog__link-img.acces-shoes
+                        span.mobile-catalog-menu__name.js-mobile-menu-name Аксессуары для обуви
+                li
+                    a.mobile-catalog-menu__link.js-mobile-menu-link(href="javascript:void(0)")
+                        span.catalog__link-img.acces-leather
+                        span.mobile-catalog-menu__name.js-mobile-menu-name Аксессуары из кожи
+
+.catalog-top-item.js-top-item
+    .catalog-top-item__left
+        .catalog-top-item__img
+            img(src="../../img/catalog-top-img.png")
+        .catalog-top-item__name Шапка ТАР-3
+    .catalog-top-item__price 7 500 ₽
+
+.catalog-btn.js-catalog-btn
+    a(href="#mobile-catalog").catalog-btn__link.js-mobile-catalog-link
+        span.catalog-btn__text Каталог
+        span.catalog-btn__icon

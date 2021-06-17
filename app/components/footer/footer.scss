@@ -1,116 +1,9 @@
-$violet: #553091;
-$violetAccent: #6637B1;
-$blue: #8cd3e4;
-$blueAccent: #61CFE8;
-$darkBlue: #282A61;
-$white: #ffffff;
-
-$grey: #EFEDF9;
-$lightBlue: #D9D9FF;
-
-
-%font_DB_60 {
-  font-family: 'Dobrozrachniy', 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 60px;
-  line-height: 72px;
-}
-
-%font_DB_40 {
-  font-family: 'Dobrozrachniy', 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 48px;
-}
-
-%font_DB_32 {
-  font-family: 'Dobrozrachniy', 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 32px;
-}
-
-%font_DB_24 {
-  font-family: 'Dobrozrachniy', 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-}
-
-%font_PT_B_22 {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 28.6px;
-}
-
-%font_PT_B_18 {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 23.4px;
-}
-
-%font_PT_B_18slim {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 18px;
-}
-
-%font_PT_Reg_16 {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20.8px;
-}
-
-%font_PT_Reg_16slim {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
-}
-
-%font_PT_B_16 {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20.8px;
-}
-
-%font_PT_B_16slim {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 16px;
-}
-
-%font_PT_B_14 {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 18.2px;
-}
-
-%font_PT_Reg_14 {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18.2px;
-}
-
-%font_PT_B_12 {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15.6px;
-}
+@import "../../variables";
 
 .footer {
   padding-top: 127px;
   padding-bottom: 83px;
-  @extend %font_PT_B_16;
+  @include font_PT_B_16;
 }
 
 .footer-top__wrap,
@@ -177,50 +70,6 @@ $lightBlue: #D9D9FF;
   height: 40px;
   line-height: 40px !important;
   margin-bottom: 28px;
-}
-
-.links-block__title {
-  margin-bottom: 12px;
-}
-
-.links-block__wrap {
-  display: flex;
-}
-
-.links-block__item {
-  display: block;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-
-.links-block__item:not(:last-child) {
-  margin-right: 5px;
-}
-
-.links-block__item--vk {
-  background: $violet url("../../img/icon-social-vk.svg") center center no-repeat;
-}
-
-.links-block__item--in {
-  background: $violet url("../../img/icon-social-insta.svg") center center no-repeat;
-}
-
-.links-block__item--fb{
-  background: $violet url("../../img/icon-social-facebook.svg") center center no-repeat;
-}
-
-.links-block__item--ok {
-  background: $violet url("../../img/icon-social-ok.svg") center center no-repeat;
-}
-
-.links-block__item:hover {
-  background-color: $violetAccent;
-  -webkit-transition: background-color 0.3s ease;
-  -moz-transition: background-color 0.3s ease;
-  -ms-transition: background-color 0.3s ease;
-  -o-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
 }
 
 .email-block {
@@ -311,14 +160,14 @@ $lightBlue: #D9D9FF;
   border-radius: 100px;
   padding-left: 20px;
   padding-right: 153px;
-  @extend %font_PT_Reg_16;
+  @include font_PT_Reg_16;
 }
 
 .subscribe__btn {
   width: 133px;
   height: 40px;
   line-height: 39px !important;
-  @extend %font_PT_B_16;
+  @include font_PT_B_16;
   position: absolute;
   top: 0;
   right: 0;
@@ -353,7 +202,7 @@ $lightBlue: #D9D9FF;
 }
 
 .megamir {
-  @extend %font_PT_B_12;
+  @include font_PT_B_12;
   color: $violet;
   display: flex;
 }
@@ -363,4 +212,97 @@ $lightBlue: #D9D9FF;
   height: 32px;
   background: url("../../img/logo-megamir.svg") center center no-repeat;
   margin-right: 11px;
+}
+
+@media all and (max-width: 1024px) {
+  .footer {
+    padding-top: 80px;
+  }
+  .footer-top__wrap,
+  .footer-bottom__wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-top-col__left, .footer-top-col:not(:last-child) {
+    margin-right: 0;
+  }
+  .footer-top-col__wrap {
+    display: none;
+  }
+  .footer-top__subscribe {
+    justify-content: center;
+  }
+  .footer .footer-bottom__copy {
+    margin-top: 20px;
+    margin-bottom: 33px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .footer {
+    padding-top: 165px;
+    padding-bottom: 38px;
+  }
+  .footer-top {
+    padding-bottom: 40px;
+  }
+  .footer .logo,
+  .footer .footer-phone__link:last-child::before {
+    display: none;
+  }
+  .footer-top-phones {
+    margin-top: 0;
+    text-align: center;
+  }
+  .footer-phone {
+    margin-bottom: 20px;
+    display: block;
+  }
+  .footer-phone__link {
+    display: block;
+  }
+  .footer__callback-btn {
+    margin: 0 auto;
+  }
+  .footer-top-links__wrap {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 34px;
+  }
+  .email-block {
+    margin-left: 0;
+    margin-bottom: 34px;
+    order: 0;
+  }
+  .links-block {
+    order: 1;
+  }
+  .email-block__title {
+    margin-bottom: 6px;
+  }
+  .email-block__link {
+    font-size: 20px;
+  }
+  .footer .footer-phone__link:last-child {
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .footer-top__subscribe {
+    flex-direction: column;
+  }
+  .subscribe__title {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+  .footer-bottom__left {
+    text-align: center;
+  }
+  .policy-link {
+    display: block;
+    width: fit-content;
+    margin: 9px auto 0;
+  }
+  .footer-bottom__text {
+    padding: 0 50px;
+  }
 }

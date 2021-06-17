@@ -1,111 +1,5 @@
-$violet: #553091;
-$violetAccent: #6637B1;
-$blue: #8cd3e4;
-$blueAccent: #61CFE8;
-$darkBlue: #282A61;
-$white: #ffffff;
+@import "../../variables";
 
-$grey: #EFEDF9;
-$lightBlue: #D9D9FF;
-
-
-%font_DB_60 {
-  font-family: 'Dobrozrachniy', 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 60px;
-  line-height: 72px;
-}
-
-%font_DB_40 {
-  font-family: 'Dobrozrachniy', 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 48px;
-}
-
-%font_DB_32 {
-  font-family: 'Dobrozrachniy', 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 32px;
-}
-
-%font_DB_24 {
-  font-family: 'Dobrozrachniy', 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-}
-
-%font_PT_B_22 {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 28.6px;
-}
-
-%font_PT_B_18 {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 23.4px;
-}
-
-%font_PT_B_18slim {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 18px;
-}
-
-%font_PT_Reg_16 {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20.8px;
-}
-
-%font_PT_Reg_16slim {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
-}
-
-%font_PT_B_16 {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20.8px;
-}
-
-%font_PT_B_16slim {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 16px;
-}
-
-%font_PT_B_14 {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 18.2px;
-}
-
-%font_PT_Reg_14 {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18.2px;
-}
-
-%font_PT_B_12 {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15.6px;
-}
 .tizers {
   padding-top: 80px;
 }
@@ -155,6 +49,49 @@ $lightBlue: #D9D9FF;
 
 .tizers-item__title {
   display: block;
-  @extend %font_PT_B_16;
+  @include font_PT_B_16;
   margin-bottom: 8px;
+}
+
+@media all and (max-width: 1240px) {
+  .tizers-item:not(:nth-child(3n)) {
+    margin-right: 20px;
+  }
+  .tizers-item {
+    width: 31.3%;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .tizers-item {
+    width: 50%;
+    padding: 0 10px;
+  }
+  .tizers-item:not(:nth-child(3n)) {
+    margin-right: 0;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .tizers {
+    padding-top: 63px;
+  }
+  .tizers .title .color-violet {
+    margin-right: 0;
+  }
+  .tizers .title .color-blue {
+    display: block;
+  }
+  .tizers__wrap {
+    margin-top: 50px;
+  }
+  .tizers-item {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .tizers-item__img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }

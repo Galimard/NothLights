@@ -1,118 +1,17 @@
-$violet: #553091;
-$violetAccent: #6637B1;
-$blue: #8cd3e4;
-$blueAccent: #61CFE8;
-$darkBlue: #282A61;
-$white: #ffffff;
+@import "../../variables";
 
-$grey: #EFEDF9;
-$lightBlue: #D9D9FF;
-%font_DB_60 {
-  font-family: 'Dobrozrachniy', 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 60px;
-  line-height: 72px;
-}
-
-%font_DB_40 {
-  font-family: 'Dobrozrachniy', 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 48px;
-}
-
-%font_DB_32 {
-  font-family: 'Dobrozrachniy', 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 32px;
-}
-
-%font_DB_24 {
-  font-family: 'Dobrozrachniy', 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-}
-
-%font_PT_B_22 {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 28.6px;
-}
-
-%font_PT_B_18 {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 23.4px;
-}
-
-%font_PT_B_18slim {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 18px;
-}
-
-%font_PT_Reg_16 {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20.8px;
-}
-
-%font_PT_Reg_16slim {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
-}
-
-%font_PT_B_16 {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20.8px;
-}
-
-%font_PT_B_16slim {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 16px;
-}
-
-%font_PT_B_14 {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 18.2px;
-}
-
-%font_PT_Reg_14 {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18.2px;
-}
-
-%font_PT_B_12 {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15.6px;
+.description {
+  margin-top: -120px;
 }
 
 .description-container {
   position: relative;
   max-width: 1920px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .snowflake {
-  display: none;
   width: 520px;
   height: 620px;
   position: absolute;
@@ -129,10 +28,16 @@ $lightBlue: #D9D9FF;
 }
 
 .snowflake--right {
-  right: 0;
+  right: -350px;
+}
+
+.snowflake__img {
+  width: 420px;
+  height: 422px;
 }
 
 .simpleParallax.simple-parallax-initialized {
+  overflow: unset !important;
   height: 618px;
   display: flex;
   align-items: center;
@@ -146,7 +51,6 @@ $lightBlue: #D9D9FF;
 .big-logo {
   width: 230px;
   height: 230px;
-  background: url("../../img/big-logo.svg") center center no-repeat;
   margin: 0 auto;
 }
 
@@ -164,20 +68,20 @@ $lightBlue: #D9D9FF;
 }
 
 .description__left {
-  //width: 586px;
-  width: 626px;
+  width: 50%;
+  //width: 626px;
   flex: 1;
   text-align: center;
   padding: 0 175px;
 }
 
 .description__text--big {
-  @extend %font_PT_B_22;
+  @include font_PT_B_22;
   margin-bottom: 38px;
 }
 
 .description__text {
-  @extend %font_PT_Reg_16;
+  @include font_PT_Reg_16;
   margin-bottom: 46px;
 }
 
@@ -186,7 +90,7 @@ $lightBlue: #D9D9FF;
   width: 215px;
   height: 61px;
   line-height: 60px !important;
-  @extend %font_PT_B_22;
+  @include font_PT_B_22;
 }
 
 .description__pattern {
@@ -204,8 +108,8 @@ $lightBlue: #D9D9FF;
 }
 
 .descritpion__right {
-  //width: 586px;
-  min-width: 626px;
+  min-width: 50%;
+  //min-width: 626px;
   flex: 1;
 }
 
@@ -223,8 +127,9 @@ $lightBlue: #D9D9FF;
   display: block;
   width: 510px;
   height: 288px;
-  background: linear-gradient(0deg, rgba(85, 48, 145, 0.5), rgba(85, 48, 145, 0.5));
+  //background: linear-gradient(0deg, rgba(85, 48, 145, 0.5), rgba(85, 48, 145, 0.5));
   border-radius: 8px;
+  overflow: hidden;
 }
 
 .video-block-item__link::before {
@@ -255,13 +160,152 @@ $lightBlue: #D9D9FF;
 }
 
 .video-block__name {
-  @extend %font_PT_B_22;
+  @include font_PT_B_22;
   color: $white;
   margin-bottom: 9px;
   display: block;
 }
 
 .video-block__descr {
-  @extend %font_PT_Reg_16slim;
+  @include font_PT_Reg_16slim;
   color: $white;
+}
+
+@media all and (max-width: 1550px) {
+  .description {
+    margin-top: 0;
+  }
+  .snowflake--right {
+    right: -420px;
+  }
+}
+
+@media all and (max-width: 1340px) {
+  .description__left {
+    padding: 0 105px;
+  }
+}
+
+@media all and (max-width: 1240px) {
+  .description__left {
+    padding: 0 80px;
+  }
+  .description__pattern {
+    display: none;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .description-container {
+    padding-top: 72px;
+  }
+  .snowflake {
+    width: 320px;
+    height: 370px;
+  }
+  .snowflake--left {
+    left: -105px;
+  }
+  .snowflake--right {
+    right: -230px;
+  }
+  .simpleParallax.simple-parallax-initialized {
+    height: 362px;
+  }
+  .snowflake__img {
+    width: 300px;
+    height: 302px;
+  }
+  .snowflake {
+    top: 0;
+    -webkit-transform: unset;
+    -moz-transform: unset;
+    -ms-transform: unset;
+    -o-transform: unset;
+    transform: unset;
+  }
+  .description__wrap {
+    flex-direction: column;
+  }
+  .description__left,
+  .description__right {
+    width: 100%;
+  }
+  .descritpion__right {
+    margin-top: 57px;
+  }
+  .video-block {
+    margin: 0 auto;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .description-container {
+    padding-top: 55px;
+  }
+  .snowflake {
+    top: -16px;
+    width: 320px;
+    height: 320px;
+  }
+  .snowflake--left {
+    left: -66px;
+  }
+  .snowflake--right {
+    right: -245px;
+  }
+  .simpleParallax.simple-parallax-initialized {
+    height: 275px;
+  }
+  .snowflake__img {
+    width: 200px;
+    height: 202px;
+  }
+  .description {
+    padding-top: 48px;
+  }
+  .description__left {
+    padding: 0 25px;
+  }
+  .big-logo svg,
+  .big-logo {
+    width: 140px;
+    height: 140px;
+  }
+  .logo-name {
+    margin-top: 26px;
+    margin-bottom: 40px;
+    font-size: 60px;
+    line-height: 55px;
+  }
+  .logo-name--small {
+    font-size: 50px;
+  }
+  .description__text--big {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .description__text {
+    margin-bottom: 18px;
+  }
+  .description__text--big.color-violet {
+    margin-bottom: 28px;
+  }
+  .video-block-item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .video-block-item__link,
+  .video-block-item__link img,
+  .video-block {
+    width: 100%;
+  }
+  .video-block-item__link {
+    height: auto;
+  }
+  .video-block-item__link img {
+    height: 100%;
+  }
+  .video-block-text {
+    padding: 18px 25px;
+  }
 }

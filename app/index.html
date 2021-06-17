@@ -11,44 +11,63 @@
 	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" href="css/animate.min.css">
 	<!--link(rel='stylesheet' href='sass/style.scss')-->
+	<!--script(src='https://api-maps.yandex.ru/2.1/?apikey=f395a913-789d-4e6b-8b3c-1e8845b04973&lang=ru_RU' type='text/javascript')-->
 </head>
 <header class="header">
-	<div class="header-top flex">
+	<div class="header-top">
 		<div class="container flex-end">
 			<div class="location"><span class="location__city">Иркутск</span></div>
 			<div class="service-menu">
 				<ul class="flex">
-					<li><a class="service-menu__link" href="#"><span class="service-menu__name">Гарантия</span></a></li>
-					<li><a class="service-menu__link active" href="#"><span class="service-menu__name">Доставка и оплата</span></a></li>
-					<li><a class="service-menu__link" href="#"><span class="service-menu__name">Отзывы</span></a></li>
-					<li><a class="service-menu__link" href="#"><span class="service-menu__name">Опт</span></a></li>
-					<li><a class="service-menu__link" href="#"><span class="service-menu__name">Вакансии</span></a></li>
+					<li><a class="service-menu__link" href="javascript:void(0)"><span class="service-menu__name">Гарантия</span></a></li>
+					<li><a class="service-menu__link active" href="javascript:void(0)"><span class="service-menu__name">Доставка и оплата</span></a></li>
+					<li><a class="service-menu__link" href="javascript:void(0)"><span class="service-menu__name">Отзывы</span></a></li>
+					<li><a class="service-menu__link" href="javascript:void(0)"><span class="service-menu__name">Опт</span></a></li>
+					<li><a class="service-menu__link" href="javascript:void(0)"><span class="service-menu__name">Вакансии</span></a></li>
 				</ul>
 			</div>
 			<div class="work-time"><span class="work-time__text">09:00 — 21:00. Без выходных</span></div>
 			<div class="phone"><a class="phone__link" href="tel:+73952962962">8 (3952) 96 29 62</a></div>
-			<div class="callback"><a class="callback__link btn" href="#">Заказать звонок</a></div>
+			<div class="callback"><a class="callback__link btn" href="javascript:void(0)">Заказать звонок</a></div>
 		</div>
 	</div>
 	
-	<div class="header-bottom flex">
-		<div class="container flex">
-			<div class="logo"><a class="logo__link" href="/"><img src="../../img/logo-wide.png"></a></div>
+	<div class="header-bottom">
+		<div class="container flex header-container"><a class="mobile-icon-menu js-icon-menu" href="javascript:void(0)"></a>
+			<div class="logo"><a class="logo__link" href="/">
+					<svg class="logo__svg" width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M44.0899 21.9997C44.0899 34.1312 34.2217 43.9994 22.0902 43.9994C9.86817 44.0899 0 34.2217 0 21.9997C0 9.86817 9.86817 0 21.9997 0C34.2217 0 44.0899 9.86817 44.0899 21.9997Z" fill="#553091"></path>
+						<path d="M30.6909 31.8678C26.3453 31.8678 22.1807 29.7855 19.6458 26.2547L18.6499 24.8967C18.1067 24.1724 17.0203 24.1724 16.4771 24.8967L10.864 32.5921C10.6829 32.8637 10.6829 33.2258 10.9545 33.4069C13.8516 36.2134 17.654 37.9336 21.9996 37.9336C26.6168 37.9336 30.6909 35.9418 33.5879 32.8637C33.9501 32.5015 33.6785 31.8678 33.1353 31.8678H30.6909Z" fill="white"></path>
+						<path class="ss-11" d="M21.9092 6.06567L13.5801 18.1067L7.69541 26.4358C7.42381 26.7979 6.8806 26.7074 6.69954 26.2547C6.51847 25.7115 6.42794 25.1683 6.3374 24.5346L18.9216 6.33728C19.9175 6.15621 20.9133 6.06567 21.9092 6.06567Z" fill="#8CD3E4"></path>
+						<path class="ss-02" d="M33.3165 10.7734L25.1685 22.5428C26.0738 23.086 27.3413 22.9955 28.1561 22.1807L34.765 12.5841C34.4029 11.9504 33.8597 11.3166 33.3165 10.7734Z" fill="#8CD3E4"></path>
+						<path class="ss-01" opacity="0.3" d="M37.5717 25.4398C37.9338 24.0818 38.0244 22.5427 37.9338 20.9131L35.3083 24.7155L36.3948 26.2546C36.6664 26.6167 37.2096 26.5262 37.3906 26.0735C37.4812 25.8924 37.4812 25.7114 37.5717 25.5303V25.4398Z" fill="#8CD3E4"></path>
+						<path class="ss-08" opacity="0.3" d="M27.1603 6.88032C26.436 6.60872 25.6212 6.42765 24.8064 6.24658L19.1028 14.4852L20.5513 16.3864L27.1603 6.88032Z" fill="#8CD3E4"></path>
+						<path class="ss-04" opacity="0.7" d="M37.3 17.3824C37.0284 16.5676 36.6662 15.6622 36.3041 14.8474L32.4111 20.4605L33.7691 22.4522L37.3 17.3824Z" fill="#8CD3E4"></path>
+						<path class="ss-06" d="M6.15649 20.3698L14.9383 7.78564C10.14 10.1395 6.79023 14.8473 6.15649 20.3698Z" fill="#8CD3E4"></path>
+						<path class="ss-05" opacity="0.7" d="M31.4155 9.14398C30.7818 8.69131 30.1481 8.32918 29.5143 7.96704L22.0906 18.65L23.5391 20.5512L31.4155 9.14398Z" fill="#8CD3E4"></path>
+					</svg><img class="logo__img" src="../../img/logo-text.svg"><img class="logo__img-mobile" src="../../img/logo-short-mobile.svg"></a></div>
 			<div class="menu">
 				<ul class="flex">
-					<li><a class="menu__link catalog-link" href="#"><span class="catalog-icon"><span class="catalog-icon__line"></span><span class="catalog-icon__line-short"></span></span><span class="menu__name">Каталог</span></a></li>
-					<li><a class="menu__link" href="#"><span class="menu__name">Конструктор унтов</span></a></li>
-					<li><a class="menu__link" href="#"><span class="menu__name">Как снять мерку</span></a></li>
-					<li><a class="menu__link" href="#"><span class="menu__name">О компании</span></a></li>
-					<li><a class="menu__link" href="#"><span class="menu__name">Контакты</span></a></li>
+					<li class="catalog-link-hover"><a class="menu__link catalog-link" href="../catalog.html"><span class="catalog-icon"><span class="catalog-icon__line"></span><span class="catalog-icon__line-short"></span></span><span class="menu__name">Каталог</span></a>
+						<ul class="flex catalog violet-menu">
+							<li><a class="catalog__link violet-menu__link" href="#"><span class="catalog__link-img unt-man"></span><span>Унты мужские</span></a></li>
+							<li><a class="catalog__link violet-menu__link" href="#"><span class="catalog__link-img unt-woman"></span><span>Унты женские</span></a></li>
+							<li><a class="catalog__link violet-menu__link" href="#"><span class="catalog__link-img unt-child"></span><span>Унты детские</span></a></li>
+							<li><a class="catalog__link violet-menu__link" href="#"><span class="catalog__link-img clothes"></span><span>Монгольская одежда</span></a></li>
+							<li><a class="catalog__link violet-menu__link" href="#"><span class="catalog__link-img shoes"></span><span>Монгольская обувь</span></a></li>
+							<li><a class="catalog__link violet-menu__link" href="#"><span class="catalog__link-img acces-shoes"></span><span>Аксессуары для обуви</span></a></li>
+							<li><a class="catalog__link violet-menu__link" href="#"><span class="catalog__link-img acces-leather"></span><span>Аксессуары из кожи</span></a></li>
+						</ul>
+					</li>
+					<li><a class="menu__link" href="../constructor.html"><span class="menu__name">Конструктор унтов</span></a></li>
+					<li><a class="menu__link" href="javascript:void(0)"><span class="menu__name">Как снять мерку</span></a></li>
+					<li><a class="menu__link" href="javascript:void(0)"><span class="menu__name">О компании</span></a></li>
+					<li><a class="menu__link" href="javascript:void(0)"><span class="menu__name">Контакты</span></a></li>
 				</ul>
 			</div>
-			<div class="icons">
-				<div class="icons-fav">
+			<div class="icons"><a class="icons-phone js-mobile-popup-btn" href="#info"></a><a class="icons-fav" href="javascript:void(0)">
 					<div class="icons-fav__img"></div>
-					<div class="icons__count icons-fav__count">14</div>
-				</div>
-				<div class="icons-cart">
+					<div class="icons__count icons-fav__count">14</div></a><a class="icons-cart" href="javascript:void(0)">
 					<div class="icons-cart__link flex">
 						<div class="icons-cart__img"></div>
 						<div class="icons__count icons-cart__count">3</div>
@@ -68,41 +87,107 @@
 								<div class="cart-item-block__right"><span class="cart-item__delete"></span><span class="cart-item__price">8 000 ₽</span></div>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="catalog violet-menu">
-		<div class="container">
-			<ul class="flex">
-				<li><a class="catalog__link violet-menu__link" href="#"><span class="catalog__link-img unt-man"></span><span>Унты мужские</span></a></li>
-				<li><a class="catalog__link violet-menu__link" href="#"><span class="catalog__link-img unt-woman"></span><span>Унты женские</span></a></li>
-				<li><a class="catalog__link violet-menu__link" href="#"><span class="catalog__link-img unt-child"></span><span>Унты детские</span></a></li>
-				<li><a class="catalog__link violet-menu__link" href="#"><span class="catalog__link-img clothes"></span><span>Монгольская одежда</span></a></li>
-				<li><a class="catalog__link violet-menu__link" href="#"><span class="catalog__link-img shoes"></span><span>Монгольская обувь</span></a></li>
-				<li><a class="catalog__link violet-menu__link" href="#"><span class="catalog__link-img acces-shoes"></span><span>Аксессуары для обуви</span></a></li>
-				<li><a class="catalog__link violet-menu__link" href="#"><span class="catalog__link-img acces-leather"></span><span>Аксессуары из кожи</span></a></li>
-			</ul>
+					</div></a></div>
 		</div>
 	</div>
 </header>
-
-<div class="header-fixed">
+<div class="mobile-left-menu js-mobile-left-menu js-mobile-popup">
+	<div class="mobile-left-menu__wrap">
+		<div class="location location--mobile js-mobile-location"><span class="location__city js-mobile-location-city">Иркутск</span>
+			<div class="location-list location-list--mobile js-mobile-location-list">
+				<div class="location-list-item active">Иркутск</div>
+				<div class="location-list-item">Ангарск</div>
+				<div class="location-list-item">Братск</div>
+				<div class="location-list-item">Усолье-Сибирское</div>
+			</div>
+		</div>
+		<div class="mobile-catalog"><a class="mobile-catalog__link js-mobile-catalog-link" href="#mobile-catalog">Каталог</a></div>
+		<div class="mobile-menu-list">
+			<ul>
+				<li><a class="mobile-menu__link" href="../constructor.html"><span>Конструктор унтов</span></a></li>
+				<li><a class="mobile-menu__link" href="javascript:void(0)"><span>Как снять мерку</span></a></li>
+				<li><a class="mobile-menu__link" href="javascript:void(0)"><span>О компании</span></a></li>
+				<li><a class="mobile-menu__link" href="javascript:void(0)"><span>Контакты</span></a></li>
+			</ul>
+		</div>
+		<div class="mobile-service-menu">
+			<ul>
+				<li><a class="mobile-service-menu__link" href="javascript:void(0)"><span>Гарантия</span></a></li>
+				<li><a class="mobile-service-menu__link active" href="javascript:void(0)"><span>Доставка и оплата</span></a></li>
+				<li><a class="mobile-service-menu__link" href="javascript:void(0)"><span>Отзывы</span></a></li>
+				<li><a class="mobile-service-menu__link" href="javascript:void(0)"><span>Опт</span></a></li>
+				<li><a class="mobile-service-menu__link" href="javascript:void(0)"><span>Вакансии</span></a></li>
+			</ul>
+		</div>
+		<div class="mobile-menu-contacts">
+			<p class="mobile-menu-contacts__title">Контактная информация</p>
+			<div class="mobile-phone">
+				<p class="mobile-left-menu__title">Наши телефоны</p>
+				<div class="mobile-phone__wrap"><a class="mobile-phone__link" href="tel:+73952962962">8 (3952) 96 29 62</a><a class="mobile-phone__link" href="tel:+73952743407">8 (3952) 74 34 07</a></div>
+			</div>
+			<div class="callback"><a class="callback__link btn" href="javascript:void(0)">Заказать звонок</a></div>
+			<div class="mobile-email">
+				<p class="mobile-left-menu__title">Электронная почта</p><a class="mobile-phone__link mobile-email__link" href="mailto:info@unti-sibiri.ru">info@unti-sibiri.ru</a>
+			</div>
+			<div class="links-block links-block--mobile">
+				<p class="mobile-left-menu__title">Мы в социальных сетях</p>
+				<div class="links-block__wrap"><a class="links-block__item links-block__item--vk" href="javascript:void(0)" target="_blank"><span class="visually-hidden">vkontakte</span></a><a class="links-block__item links-block__item--in" href="javascript:void(0)" target="_blank"><span class="visually-hidden">instagram</span></a><a class="links-block__item links-block__item--fb" href="javascript:void(0)" target="_blank"><span class="visually-hidden">facebook</span></a><a class="links-block__item links-block__item--ok" href="javascript:void(0)" target="_blank"><span class="visually-hidden">odnoklassniki</span></a></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="header-fixed js-header-fixed">
 	<div class="header-fixed__wrap flex">
 		<div class="container flex-end">
-			<div class="logo-fixed"><a class="logo__link" href="/"><img src="../../img/logo-icon.png"></a></div>
+			<div class="logo-fixed"><a class="logo__link" href="/">
+					<svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M44.0899 21.9997C44.0899 34.1312 34.2217 43.9994 22.0902 43.9994C9.86817 44.0899 0 34.2217 0 21.9997C0 9.86817 9.86817 0 21.9997 0C34.2217 0 44.0899 9.86817 44.0899 21.9997Z" fill="#553091"></path>
+						<path d="M30.6909 31.8678C26.3453 31.8678 22.1807 29.7855 19.6458 26.2547L18.6499 24.8967C18.1067 24.1724 17.0203 24.1724 16.4771 24.8967L10.864 32.5921C10.6829 32.8637 10.6829 33.2258 10.9545 33.4069C13.8516 36.2134 17.654 37.9336 21.9996 37.9336C26.6168 37.9336 30.6909 35.9418 33.5879 32.8637C33.9501 32.5015 33.6785 31.8678 33.1353 31.8678H30.6909Z" fill="white"></path>
+						<path class="ss-11" d="M21.9092 6.06567L13.5801 18.1067L7.69541 26.4358C7.42381 26.7979 6.8806 26.7074 6.69954 26.2547C6.51847 25.7115 6.42794 25.1683 6.3374 24.5346L18.9216 6.33728C19.9175 6.15621 20.9133 6.06567 21.9092 6.06567Z" fill="#8CD3E4"></path>
+						<path class="ss-02" d="M33.3165 10.7734L25.1685 22.5428C26.0738 23.086 27.3413 22.9955 28.1561 22.1807L34.765 12.5841C34.4029 11.9504 33.8597 11.3166 33.3165 10.7734Z" fill="#8CD3E4"></path>
+						<path class="ss-01" opacity="0.3" d="M37.5717 25.4398C37.9338 24.0818 38.0244 22.5427 37.9338 20.9131L35.3083 24.7155L36.3948 26.2546C36.6664 26.6167 37.2096 26.5262 37.3906 26.0735C37.4812 25.8924 37.4812 25.7114 37.5717 25.5303V25.4398Z" fill="#8CD3E4"></path>
+						<path class="ss-08" opacity="0.3" d="M27.1603 6.88032C26.436 6.60872 25.6212 6.42765 24.8064 6.24658L19.1028 14.4852L20.5513 16.3864L27.1603 6.88032Z" fill="#8CD3E4"></path>
+						<path class="ss-04" opacity="0.7" d="M37.3 17.3824C37.0284 16.5676 36.6662 15.6622 36.3041 14.8474L32.4111 20.4605L33.7691 22.4522L37.3 17.3824Z" fill="#8CD3E4"></path>
+						<path class="ss-06" d="M6.15649 20.3698L14.9383 7.78564C10.14 10.1395 6.79023 14.8473 6.15649 20.3698Z" fill="#8CD3E4"></path>
+						<path class="ss-05" opacity="0.7" d="M31.4155 9.14398C30.7818 8.69131 30.1481 8.32918 29.5143 7.96704L22.0906 18.65L23.5391 20.5512L31.4155 9.14398Z" fill="#8CD3E4"></path>
+					</svg></a></div>
 			<div class="location"><span class="location__city">Иркутск</span></div>
-			<div class="menu">
-				<ul class="flex">
-					<li><a class="menu__link catalog-link" href="#"><span class="catalog-icon"><span class="catalog-icon__line"></span><span class="catalog-icon__line-short"></span></span><span class="menu__name">Каталог</span></a></li>
-					<li><a class="menu__link active" href="#"><span class="menu__name">Конструктор унтов</span></a></li>
-					<li><a class="menu__link" href="#"><span class="menu__name">Как снять мерку</span></a></li>
-					<li><a class="menu__link" href="#"><span class="menu__name">О компании</span></a></li>
-					<li><a class="menu__link" href="#"><span class="menu__name">Контакты</span></a></li>
-					<li><a class="menu__link menu__link-more" href="#"><span class="menu__name">Ещё</span></a></li>
-				</ul>
+			<div class="menu-fixed">
+				<div class="flex">
+					<div class="menu-fixed-item catalog-link-hover"><a class="menu__link catalog-link" href="#"><span class="catalog-icon"><span class="catalog-icon__line"></span><span class="catalog-icon__line-short"></span></span><span class="menu__name">Каталог</span></a>
+						<ul class="flex catalog violet-menu">
+							<li><a class="catalog__link violet-menu__link" href="#"><span class="catalog__link-img unt-man"></span><span>Унты мужские</span></a></li>
+							<li><a class="catalog__link violet-menu__link" href="#"><span class="catalog__link-img unt-woman"></span><span>Унты женские</span></a></li>
+							<li><a class="catalog__link violet-menu__link" href="#"><span class="catalog__link-img unt-child"></span><span>Унты детские</span></a></li>
+							<li><a class="catalog__link violet-menu__link" href="#"><span class="catalog__link-img clothes"></span><span>Монгольская одежда</span></a></li>
+							<li><a class="catalog__link violet-menu__link" href="#"><span class="catalog__link-img shoes"></span><span>Монгольская обувь</span></a></li>
+							<li><a class="catalog__link violet-menu__link" href="#"><span class="catalog__link-img acces-shoes"></span><span>Аксессуары для обуви</span></a></li>
+							<li><a class="catalog__link violet-menu__link" href="#"><span class="catalog__link-img acces-leather"></span><span>Аксессуары из кожи</span></a></li>
+						</ul>
+					</div>
+					<div class="menu-fixed-item"><a class="menu__link active" href="#"><span class="menu__name">Конструктор унтов</span></a></div>
+					<div class="menu-fixed-item"><a class="menu__link" href="#"><span class="menu__name">Как снять мерку</span></a></div>
+					<div class="menu-fixed-item"><a class="menu__link" href="#"><span class="menu__name">О компании</span></a></div>
+					<div class="menu-fixed-item"><a class="menu__link" href="#"><span class="menu__name">Контакты</span></a></div>
+					<div class="menu-fixed-item link-more-hover"><a class="menu__link menu__link-more" href="#"><span class="menu__name">Ещё</span></a>
+						<div class="header-fixed-bottom flex violet-menu">
+							<div class="container flex">
+								<div class="service-menu">
+									<ul class="flex">
+										<li><a class="service-menu__link violet-menu__link" href="#"><span class="service-menu__name">Гарантия</span></a></li>
+										<li><a class="service-menu__link violet-menu__link" href="#"><span class="service-menu__name">Доставка и оплата</span></a></li>
+										<li><a class="service-menu__link violet-menu__link" href="#"><span class="service-menu__name">Отзывы</span></a></li>
+										<li><a class="service-menu__link violet-menu__link" href="#"><span class="service-menu__name">Опт</span></a></li>
+										<li><a class="service-menu__link violet-menu__link" href="#"><span class="service-menu__name">Вакансии</span></a></li>
+									</ul>
+								</div>
+								<div class="work-time"><span class="work-time__text">09:00 — 21:00. Без выходных</span></div>
+								<div class="phone"><a class="phone__link" href="tel:+73952743407">8 (3952) 74 34 07</a><a class="phone__link" href="tel:+73952962962">8 (3952) 96 29 62</a></div>
+								<div class="callback"><a class="callback__link btn" href="#">Заказать звонок</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="icons">
 				<div class="icons-fav">
@@ -134,308 +219,508 @@
 			</div>
 		</div>
 	</div>
-	<div class="header-fixed-bottom flex violet-menu">
-		<div class="container flex">
-			<div class="service-menu">
-				<ul class="flex">
-					<li><a class="service-menu__link violet-menu__link" href="#"><span class="service-menu__name">Гарантия</span></a></li>
-					<li><a class="service-menu__link violet-menu__link" href="#"><span class="service-menu__name">Доставка и оплата</span></a></li>
-					<li><a class="service-menu__link violet-menu__link" href="#"><span class="service-menu__name">Отзывы</span></a></li>
-					<li><a class="service-menu__link violet-menu__link" href="#"><span class="service-menu__name">Опт</span></a></li>
-					<li><a class="service-menu__link violet-menu__link" href="#"><span class="service-menu__name">Вакансии</span></a></li>
-				</ul>
+</div>
+<div class="mobile-popup info-popup js-mobile-popup" id="info">
+	<div class="mobile-popup__wrap">
+		<div class="mobile-popup__header js-popup-header">
+			<div class="mobile-popup__title">Информация</div>
+			<div class="mobile-popup__close js-popup-close"></div>
+		</div>
+		<div class="mobile-popup__main info-popup__main js-popup-main">
+			<div class="info-popup__wrap js-popup-wrap">
+				<div class="info-popup__text-block">
+					<div class="info-popup__title">Режим работы</div>
+					<div class="info-popup__text">Ежедневно. 09:00 — 21:00</div>
+					<div class="info-popup__title">Наши телефоны</div>
+					<div class="mobile-phone__wrap info-popup__phone-wrap"><a class="mobile-phone__link" href="tel:+73952962962">8 (3952) 96 29 62</a><a class="mobile-phone__link" href="tel:+73952743407">8 (3952) 74 34 07</a></div>
+				</div>
+				<div class="info-popup__buttons">
+					<div class="info-popup__address"><a class="info-popup__link btn" href="javascript:void(0)">Адреса магазинов</a></div>
+					<div class="info-popup__contact"><a class="info-popup__link btn" href="javascript:void(0)">Контакты</a></div>
+					<div class="info-popup__callback"><a class="info-popup__link btn" href="javascript:void(0)">Заказать звонок</a></div>
+				</div>
 			</div>
-			<div class="work-time"><span class="work-time__text">09:00 — 21:00. Без выходных</span></div>
-			<div class="phone"><a class="phone__link" href="tel:+73952743407">8 (3952) 74 34 07</a><a class="phone__link" href="tel:+73952962962">8 (3952) 96 29 62</a></div>
-			<div class="callback"><a class="callback__link btn" href="#">Заказать звонок</a></div>
 		</div>
 	</div>
 </div>
+<div class="mobile-popup mobile-catalog-menu js-mobile-popup" id="mobile-catalog">
+	<div class="mobile-popup__wrap">
+		<div class="mobile-popup__header js-popup-header">
+			<div class="mobile-popup__title mobile-catalog-menu__title js-mobile-menu-title"><span>Каталог товаров</span><span class="mobile-catalog-menu__back js-mobile-menu-back"></span></div>
+			<div class="mobile-popup__close js-popup-close"></div>
+		</div>
+		<div class="mobile-popup__main mobile-catalog-menu__main js-popup-main" id="id1">
+			<ul class="mobile-catalog-menu__list">
+				<li class="mobile-parent-menu"><a class="mobile-catalog-menu__link js-mobile-menu-link" href="javascript:void(0)"><span class="catalog__link-img unt-man"></span><span class="mobile-catalog-menu__name js-mobile-menu-name">Унты мужские</span></a>
+					<ul class="mobile-submenu js-mobile-submenu js-popup-wrap">
+						<li><a class="mobile-submenu__link" href="javascript:void(0)"><span class="mobile-submenu__count">4</span><span class="mobile-submenu__name">Пункт подменю 1</span></a>
+							<ul class="mobile-subsubmenu">
+								<li><a class="mobile-subsubmenu__link" href="javascript:void(0)"><span class="mobile-subsubmenu__count">8</span><span class="mobile-subsubmenu__name">Пункт подподменю 1</span></a></li>
+								<li><a class="mobile-subsubmenu__link" href="javascript:void(0)"><span class="mobile-subsubmenu__count">2</span><span class="mobile-subsubmenu__name">Пункт подподменю 2</span></a></li>
+								<li><a class="mobile-subsubmenu__link" href="javascript:void(0)"><span class="mobile-subsubmenu__count">14</span><span class="mobile-subsubmenu__name">Пункт подподменю 3</span></a></li>
+								<li><a class="mobile-subsubmenu__link" href="javascript:void(0)"><span class="mobile-subsubmenu__count">10</span><span class="mobile-subsubmenu__name">Пункт подподменю 4</span></a></li>
+							</ul>
+						</li>
+						<li><a class="mobile-submenu__link" href="javascript:void(0)"><span class="mobile-submenu__count">14</span><span class="mobile-submenu__name">Пункт подменю 2</span></a>
+							<ul class="mobile-subsubmenu">
+								<li><a class="mobile-subsubmenu__link" href="javascript:void(0)"><span class="mobile-subsubmenu__count">3</span><span class="mobile-subsubmenu__name">Пункт подподменю 1</span></a></li>
+								<li><a class="mobile-subsubmenu__link" href="javascript:void(0)"><span class="mobile-subsubmenu__count">5</span><span class="mobile-subsubmenu__name">Пункт подподменю 2</span></a></li>
+							</ul>
+						</li>
+						<li><a class="mobile-submenu__link" href="javascript:void(0)"><span class="mobile-submenu__count">1</span><span class="mobile-submenu__name">Пункт подменю 3</span></a>
+							<ul class="mobile-subsubmenu">
+								<li><a class="mobile-subsubmenu__link" href="javascript:void(0)"><span class="mobile-subsubmenu__count">6</span><span class="mobile-subsubmenu__name">Пункт подподменю 1</span></a></li>
+								<li><a class="mobile-subsubmenu__link" href="javascript:void(0)"><span class="mobile-subsubmenu__count">11</span><span class="mobile-subsubmenu__name">Пункт подподменю 2</span></a></li>
+							</ul>
+						</li>
+						<li><a class="mobile-submenu__link" href="javascript:void(0)"><span class="mobile-submenu__count">5</span><span class="mobile-submenu__name">Пункт подменю 4</span></a></li>
+						<li><a class="mobile-submenu__link" href="javascript:void(0)"><span class="mobile-submenu__count">14</span><span class="mobile-submenu__name">Пункт подменю 5</span></a></li>
+						<li><a class="mobile-submenu__link" href="javascript:void(0)"><span class="mobile-submenu__count">7</span><span class="mobile-submenu__name">Пункт подменю 6</span></a></li>
+						<li><a class="mobile-submenu__link" href="javascript:void(0)"><span class="mobile-submenu__count">9</span><span class="mobile-submenu__name">Пункт подменю 7</span></a></li>
+						<li><a class="mobile-submenu__link" href="javascript:void(0)"><span class="mobile-submenu__count">12</span><span class="mobile-submenu__name">Пункт подменю 8</span></a></li>
+						<li><a class="mobile-submenu__link" href="javascript:void(0)"><span class="mobile-submenu__count">2</span><span class="mobile-submenu__name">Пункт подменю 9</span></a></li>
+					</ul>
+				</li>
+				<li><a class="mobile-catalog-menu__link js-mobile-menu-link" href="javascript:void(0)"><span class="catalog__link-img unt-woman"></span><span class="mobile-catalog-menu__name js-mobile-menu-name">Унты женские</span></a></li>
+				<li><a class="mobile-catalog-menu__link js-mobile-menu-link" href="javascript:void(0)"><span class="catalog__link-img unt-child"></span><span class="mobile-catalog-menu__name js-mobile-menu-name">Унты детские</span></a></li>
+				<li><a class="mobile-catalog-menu__link js-mobile-menu-link" href="javascript:void(0)"><span class="catalog__link-img clothes"></span><span class="mobile-catalog-menu__name js-mobile-menu-name">Монгольская одежда</span></a></li>
+				<li><a class="mobile-catalog-menu__link js-mobile-menu-link" href="javascript:void(0)"><span class="catalog__link-img shoes"></span><span class="mobile-catalog-menu__name js-mobile-menu-name">Монгольская обувь</span></a></li>
+				<li><a class="mobile-catalog-menu__link js-mobile-menu-link" href="javascript:void(0)"><span class="catalog__link-img acces-shoes"></span><span class="mobile-catalog-menu__name js-mobile-menu-name">Аксессуары для обуви</span></a></li>
+				<li><a class="mobile-catalog-menu__link js-mobile-menu-link" href="javascript:void(0)"><span class="catalog__link-img acces-leather"></span><span class="mobile-catalog-menu__name js-mobile-menu-name">Аксессуары из кожи</span></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="catalog-top-item js-top-item">
+	<div class="catalog-top-item__left">
+		<div class="catalog-top-item__img"><img src="../../img/catalog-top-img.png"></div>
+		<div class="catalog-top-item__name">Шапка ТАР-3</div>
+	</div>
+	<div class="catalog-top-item__price">7 500 ₽</div>
+</div>
+<div class="catalog-btn js-catalog-btn"><a class="catalog-btn__link js-mobile-catalog-link" href="#mobile-catalog"><span class="catalog-btn__text">Каталог</span><span class="catalog-btn__icon"></span></a></div>
 <!-- ----------------------------end header-------------------------->
-<!-- ----------------------------description--------------------------->
-<section class="description">
-	<div class="description-container">
-		<div class="snowflake snowflake--left"><img class="snowflake__img" src="../../img/snowflake.png"></div>
-		<div class="container description__wrap">
-			<div class="description__left">
-				<div class="big-logo"></div>
-				<p class="logo-name"><span class="color-violet">Северное</span><br><span class="color-blue logo-name--small">сияние</span></p>
-				<p class="description__text--big">Производим унты из&nbsp;камуса оленя и&nbsp;монгольскую обувь</p>
-				<p class="description__text">Российский бренд качественной и&nbsp;теплой зимней обуви из&nbsp;100% натуральных материалов как внутри,&nbsp;так и&nbsp;снаружи.<br><br>Работаем 16&nbsp;лет, с&nbsp;2004 года.</p>
-				<p class="description__text--big color-violet">Пошили уже: 24&nbsp;568&nbsp;унтов</p><a class="btn description__btn" href="javascript:void(0)">Подробнее о&nbsp;нас</a>
-			</div>
-			<div class="description__pattern"></div>
-			<div class="descritpion__right">
-				<div class="video-block">
-					<div class="video-block-item"><a class="video-block-item__link" href="https://www.youtube.com/embed/yIicu4arU5s" data-fancybox="gallery"><img src="../../img/video1.jpg"><span class="video-block-text"><span><span class="video-block__name">Знакомство</span><span class="video-block__descr">с Северным сиянием</span></span><span class="video-block__descr">Видео — 45 сек</span></span></a></div>
-					<div class="video-block-item"><a class="video-block-item__link" href="https://www.youtube.com/embed/yIicu4arU5s" data-fancybox="gallery"><img src="../../img/video2.jpg"><span class="video-block-text"><span><span class="video-block__name">Знакомство</span><span class="video-block__descr">с Северным сиянием</span></span><span class="video-block__descr">Видео — 45 сек</span></span></a></div>
-					<div class="video-block-item"><a class="video-block-item__link" href="https://www.youtube.com/embed/yIicu4arU5s" data-fancybox="gallery"><img src="../../img/video3.jpg"><span class="video-block-text"><span><span class="video-block__name">Знакомство</span><span class="video-block__descr">с Северным сиянием</span></span><span class="video-block__descr">Видео — 45 сек</span></span></a></div>
-				</div>
-			</div>
-		</div>
-		<div class="snowflake snowflake--right"><img class="snowflake__img" src="../../img/snowflake.png"></div>
-	</div>
-</section>
-<!-- ----------------------------end description-------------------------->
-<!-- ----------------------------actions--------------------------->
-<section class="actions">
-	<div class="container">
-		<h2 class="title"><span class="color-violet">текущие</span><span class="color-blue">акции</span></h2>
-		<div class="actions-slider slider">
-			<div class="slider-arrows">
-				<div class="slider__arrow slider__arrow-prev"></div>
-				<div class="slider__arrow slider__arrow-next"></div>
-			</div>
-			<div class="actions-slider__wrap">
-				<div class="actions-slider-item"><img class="actions-slider-item__img" src="../../img/actions.jpg">
-					<div class="actions-slider__text">
-						<p class="actions-slider__title">СКИДКА 10% И 15%</p>
-						<p class="actions-slider__descr">Скидки 10% на все унты до 15.09.2020<br>Скидки 15% на монгольские сапоги до 30.09.2020</p><a class="btn actions-slider__btn" href="javascript:void(0)">Подробнее</a>
-					</div>
-				</div>
-				<div class="actions-slider-item"><img class="actions-slider-item__img" src="../../img/actions.jpg">
-					<div class="actions-slider__text">
-						<p class="actions-slider__title">СКИДКА 10% И 15%</p>
-						<p class="actions-slider__descr">Скидки 10% на все унты до 15.09.2020<br>Скидки 15% на монгольские сапоги до 30.09.2020</p><a class="btn actions-slider__btn" href="javascript:void(0)">Подробнее</a>
-					</div>
-				</div>
-				<div class="actions-slider-item"><img class="actions-slider-item__img" src="../../img/actions.jpg">
-					<div class="actions-slider__text">
-						<p class="actions-slider__title">СКИДКА 10% И 15%</p>
-						<p class="actions-slider__descr">Скидки 10% на все унты до 15.09.2020<br>Скидки 15% на монгольские сапоги до 30.09.2020</p><a class="btn actions-slider__btn" href="javascript:void(0)">Подробнее</a>
-					</div>
-				</div>
-				<div class="actions-slider-item"><img class="actions-slider-item__img" src="../../img/actions.jpg">
-					<div class="actions-slider__text">
-						<p class="actions-slider__title">СКИДКА 10% И 15%</p>
-						<p class="actions-slider__descr">Скидки 10% на все унты до 15.09.2020<br>Скидки 15% на монгольские сапоги до 30.09.2020</p><a class="btn actions-slider__btn" href="javascript:void(0)">Подробнее</a>
-					</div>
-				</div>
-			</div>
+<main class="main">
+	<!-- ----------------------------illustration--------------------------->
+	<div class="illustration">
+		<div class="illustration__wrap">
+			<div class="illustration__left-unt"></div>
+			<div class="illustration__right-unt"></div>
+			<div class="illustration__snowflake"></div>
+			<div class="illustration__shop"></div>
+			<div class="illustration__unt"></div>
+			<div class="illustration__kamus"></div>
+			<div class="illustration__snow1"></div>
+			<div class="illustration__snow2"></div>
+			<div class="illustration__snow3"></div>
+			<div class="illustration__snow4"></div>
 		</div>
 	</div>
-</section>
-<!-- ----------------------------end actions--------------------------->
-<!-- ----------------------------categories--------------------------->
-<section class="categories">
-	<div class="container">
-		<div class="categories__wrap">
-			<div class="categories__wrap-top"><a class="categories-item categories-item--top unt-man" href="javascript:void(0)"><span class="categories-item__wrap"><span class="categories-item__name"><span class="color-blue categories-item__name--small">Унты</span><br><span>МУЖСКИЕ</span></span><span class="categories-item__count"><span>12 товаров</span></span></span></a><a class="categories-item categories-item--top unt-woman" href="javascript:void(0)"><span class="categories-item__wrap"><span class="categories-item__name"><span class="color-blue categories-item__name--small">Унты</span><br><span>женские</span></span><span class="categories-item__count"><span>12 товаров</span></span></span></a><a class="categories-item categories-item--top unt-child" href="javascript:void(0)"><span class="categories-item__wrap"><span class="categories-item__name"><span class="color-blue categories-item__name--small">Унты</span><br><span>детские</span></span><span class="categories-item__count"><span>12 товаров</span></span></span></a></div>
-			<div class="categories__wrap-bottom"><a class="categories-item categories-item--bottom clothes" href="javascript:void(0)"><span class="categories-item__wrap"><span class="categories-item__name"><span>монгольская<span class="color-blue">одежда</span></span></span><span class="categories-item__count"><span>12 товаров</span></span></span></a><a class="categories-item categories-item--bottom shoes" href="javascript:void(0)"><span class="categories-item__wrap"><span class="categories-item__name"><span>монгольская<span class="color-blue">обувь</span></span></span><span class="categories-item__count"><span>12 товаров</span></span></span></a><a class="categories-item categories-item--bottom acces-shoes" href="javascript:void(0)"><span class="categories-item__wrap"><span class="categories-item__name"><span>аксессуары<span class="color-blue">Для обуви</span></span></span><span class="categories-item__count"><span>12 товаров</span></span></span></a><a class="categories-item categories-item--bottom acces-leather" href="javascript:void(0)"><span class="categories-item__wrap"><span class="categories-item__name"><span>аксессуары<span class="color-blue">ИЗ кожи</span></span></span><span class="categories-item__count"><span>12 товаров</span></span></span></a></div>
-		</div>
-	</div>
-</section>
-<!-- ----------------------------end categories--------------------------->
-<!-- ----------------------------pattern middle--------------------------->
-<div class="pattern__wrap">
-	<div class="pattern pattern1 animate__animated animate__fadeInLeft wow"></div>
-	<div class="pattern pattern2 animate__animated animate__fadeInDown wow"></div>
-	<div class="pattern pattern3 animate__animated animate__fadeInUp wow"></div>
-	<div class="pattern pattern4 animate__animated animate__fadeInLeft wow"></div>
-	<div class="pattern pattern5 animate__animated animate__fadeInRight wow"></div>
-	<div class="pattern pattern6 animate__animated animate__fadeInDown wow"></div>
-	<div class="pattern pattern1 animate__animated animate__fadeInUp wow"></div>
-	<div class="pattern pattern2 animate__animated animate__fadeInLeft wow"></div>
-	<div class="pattern pattern3 animate__animated animate__fadeInRight wow"></div>
-	<div class="pattern pattern4 animate__animated animate__fadeInDown wow"></div>
-	<div class="pattern pattern5 animate__animated animate__fadeInRight wow"></div>
-	<div class="pattern pattern6 animate__animated animate__fadeInLeft wow"></div>
-</div>
-<!-- ----------------------------end pattern middle--------------------------->
-<!-- ----------------------------tizers--------------------------->
-<section class="tizers">
-	<div class="container">
-		<h2 class="title"><span class="color-violet">Нас покупают,</span><span class="color-blue">потому что</span></h2>
-		<div class="tizers__wrap">
-			<div class="tizers-item">
-				<div class="tizers-item__img hand"></div>
-				<div class="tizers-item__text"><span class="tizers-item__title">Ручная работа</span><span class="tizers-item__descr">вся обувь изготавливается исключительно в ручном режиме</span></div>
-			</div>
-			<div class="tizers-item">
-				<div class="tizers-item__img deer"></div>
-				<div class="tizers-item__text"><span class="tizers-item__title">100% камус оленя снаружи</span><span class="tizers-item__descr">унты служат вам долгие годы</span></div>
-			</div>
-			<div class="tizers-item">
-				<div class="tizers-item__img sheep"></div>
-				<div class="tizers-item__text"><span class="tizers-item__title">100% овчина внутри</span><span class="tizers-item__descr">не истирается, теплая, легкие</span></div>
-			</div>
-			<div class="tizers-item">
-				<div class="tizers-item__img garantee"></div>
-				<div class="tizers-item__text"><span class="tizers-item__title">Гарантия 1 год</span><span class="tizers-item__descr">на все наши изделия</span></div>
-			</div>
-			<div class="tizers-item">
-				<div class="tizers-item__img pay"></div>
-				<div class="tizers-item__text"><span class="tizers-item__title">Доступная рассрочка</span><span class="tizers-item__descr">без переплат и скрытых условий</span></div>
-			</div>
-			<div class="tizers-item">
-				<div class="tizers-item__img mediator"></div>
-				<div class="tizers-item__text"><span class="tizers-item__title">Работаем без посредников</span><span class="tizers-item__descr">без лишней накрутки</span></div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- ----------------------------end tizers--------------------------->
-<!-- ----------------------------pattern small--------------------------->
-<div class="pattern__wrap">
-	<div class="pattern pattern1 animate__animated animate__fadeInLeft wow"></div>
-	<div class="pattern pattern2 animate__animated animate__fadeInDown wow"></div>
-	<div class="pattern pattern3 animate__animated animate__fadeInUp wow"></div>
-	<div class="pattern pattern4 animate__animated animate__fadeInLeft wow"></div>
-	<div class="pattern pattern5 animate__animated animate__fadeInRight wow"></div>
-	<div class="pattern pattern6 animate__animated animate__fadeInDown wow"></div>
-</div>
-<!-- ----------------------------end pattern small--------------------------->
-<!-- ----------------------------reviews--------------------------->
-<section class="reviews">
-	<div class="container reviews__wrap">
-		<div class="reviews-main">
-			<h2 class="title"><span class="color-violet">РЕАЛЬНЫЕ</span><br><span class="color-blue">ОТЗЫВЫ</span></h2>
-			<div class="reviews-main-slider slider">
-				<div class="slider-arrows">
-					<div class="slider__arrow slider__arrow-prev"></div>
-					<div class="slider__arrow slider__arrow-next"></div>
+	<!-- ----------------------------end illustration-------------------------->
+	<!-- ----------------------------description--------------------------->
+	<section class="description">
+		<div class="description-container">
+			<div class="snowflake snowflake--left"><img class="snowflake__img snowflake__img--left" src="../../img/snowflake.png"></div>
+			<div class="container description__wrap">
+				<div class="description__left">
+					<div class="big-logo">
+						<svg width="230" height="230" viewBox="0 0 230 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M229.5 114.7C229.5 178.063 178.163 229.4 114.8 229.4C51.4371 229.4 0.100097 178.063 0.100097 114.7C-0.029215 51.337 51.3078 0 114.671 0C178.034 0 229.5 51.337 229.5 114.7Z" fill="#553091"></path>
+							<path d="M159.672 165.908C136.783 165.908 115.318 154.916 101.998 136.424L96.9553 129.442C94.1104 125.562 88.2913 125.562 85.4465 129.442L56.8684 169.658C55.9633 170.951 56.0926 172.761 57.2564 173.925C71.998 188.667 92.1707 197.848 114.671 197.848C138.594 197.848 159.93 187.503 175.06 171.339C177 169.27 175.318 165.908 172.603 165.908H159.672Z" fill="white"></path>
+							<path class="ss-01" opacity="0.3" d="M32.5576 125.821C32.0404 122.717 31.7817 119.485 31.7817 116.122C31.7817 115.864 31.911 115.476 32.0404 115.217L86.4808 36.7247C86.6102 36.5954 86.6101 36.4661 86.7395 36.4661C89.5843 35.4316 92.5585 34.5264 95.662 33.8798C96.1793 33.7505 96.6965 34.3971 96.3086 34.9143L33.2042 125.95C32.9455 126.209 32.5576 126.209 32.5576 125.821Z" fill="#8CD3E4"></path>
+							<path class="ss-02" d="M168.853 52.7594L127.343 113.019C127.214 113.278 127.214 113.536 127.343 113.795L127.731 114.312C128.895 115.864 130.318 117.028 131.869 117.933C132.128 118.062 132.516 117.933 132.645 117.674L174.154 57.4147C174.284 57.1561 174.284 56.7681 174.025 56.6388C172.603 55.2164 171.18 53.9233 169.758 52.6301C169.499 52.5008 168.982 52.5008 168.853 52.7594Z" fill="#8CD3E4"></path>
+							<path class="ss-03" opacity="0.7" d="M108.205 32.1987L35.5316 137.2C35.4022 137.459 35.4022 137.718 35.5316 137.976C36.6954 139.269 38.7644 139.528 39.9282 137.847L85.3168 73.1907C86.4806 71.5097 88.291 70.4752 90.1013 70.2166C90.2306 70.2166 90.4893 70.0872 90.4893 69.9579L116.352 32.5867C116.61 32.1987 116.352 31.5522 115.834 31.5522C113.378 31.5522 111.05 31.5522 108.593 31.8108C108.593 31.9401 108.334 32.0694 108.205 32.1987Z" fill="#8CD3E4"></path>
+							<path class="ss-04" opacity="0.7" d="M179.844 63.8803L142.732 117.933C142.602 118.191 142.861 118.45 143.12 118.321C145.189 117.416 146.999 115.993 148.421 114.053L155.146 104.226C156.956 101.639 159.93 100.605 162.646 101.252C162.775 101.252 162.904 101.252 162.904 101.122L184.37 69.8286C184.37 69.6993 184.37 69.57 184.37 69.57C183.077 67.6303 181.784 65.6907 180.362 63.8803C180.232 63.751 179.974 63.751 179.844 63.8803Z" fill="#8CD3E4"></path>
+							<path class="ss-05" opacity="0.7" d="M33.8505 97.8894L70.5752 45.0007C70.7045 44.742 70.4459 44.4834 70.1873 44.6127C51.5663 56.3802 37.9885 75.3891 33.3333 97.6308C33.3333 97.8894 33.7212 98.0187 33.8505 97.8894Z" fill="#8CD3E4"></path>
+							<path class="ss-06" d="M197.301 105.131C197.043 102.415 196.525 99.6998 195.879 96.8549C195.75 96.3377 194.974 96.2084 194.715 96.5963L178.551 120.26C178.422 120.519 178.422 120.778 178.551 121.036L182.043 126.079C182.301 126.467 182.818 126.467 183.077 126.079L197.172 105.648C197.301 105.39 197.301 105.26 197.301 105.131Z" fill="#8CD3E4"></path>
+							<path class="ss-07" opacity="0.7" d="M194.715 136.166C196.008 131.511 197.043 126.467 197.431 121.166C197.431 120.778 197.043 120.648 196.784 120.907L187.862 133.838C187.732 134.097 187.732 134.355 187.862 134.614L189.543 137.071C190.965 139.011 194.069 138.493 194.715 136.166Z" fill="#8CD3E4"></path>
+							<path class="ss-08" opacity="0.3" d="M192.258 84.9581C191.482 82.8891 190.577 80.8201 189.543 78.7511C189.284 78.3632 188.767 78.2339 188.379 78.6218L169.111 106.553C168.982 106.812 168.982 107.071 169.111 107.329L172.603 112.372C172.861 112.76 173.379 112.76 173.637 112.372L192.129 85.4754C192.388 85.346 192.388 85.0874 192.258 84.9581Z" fill="#8CD3E4"></path>
+							<path class="ss-09" opacity="0.3" d="M148.551 38.923C146.74 38.1471 144.93 37.3713 143.12 36.5954C142.861 36.4661 142.473 36.5954 142.344 36.854L107.947 86.8979C107.817 87.1565 107.817 87.4151 107.947 87.6737L111.567 92.5876C111.826 92.9755 112.343 92.9755 112.602 92.5876L148.939 39.9575C149.068 39.5696 148.939 39.1816 148.551 38.923Z" fill="#8CD3E4"></path>
+							<path class="ss-10" opacity="0.7" d="M162.129 46.6817C160.577 45.5179 158.896 44.4834 157.215 43.5782C156.956 43.4489 156.568 43.4489 156.309 43.7075L117.645 99.9584C117.516 100.217 117.516 100.476 117.645 100.734L121.266 105.648C121.524 106.036 122.042 106.036 122.3 105.648L162.258 47.5869C162.516 47.3283 162.387 46.9403 162.129 46.6817Z" fill="#8CD3E4"></path>
+							<path class="ss-11" d="M133.421 33.7505C131.352 33.2333 129.283 32.8453 127.214 32.5867C126.955 32.5867 126.697 32.716 126.567 32.8453L98.1187 73.8373C97.9894 74.0959 97.9894 74.3546 98.1187 74.6132L101.739 79.5271C101.998 79.915 102.515 79.915 102.774 79.5271L133.68 34.9143C134.068 34.3971 133.809 33.8798 133.421 33.7505Z" fill="#8CD3E4"></path>
+						</svg>
+					</div>
+					<p class="logo-name"><span class="color-violet">Северное</span><br><span class="color-blue logo-name--small">сияние</span></p>
+					<p class="description__text--big">Производим унты из&nbsp;камуса оленя и&nbsp;монгольскую обувь</p>
+					<p class="description__text">Российский бренд качественной и&nbsp;теплой зимней обуви из&nbsp;100% натуральных материалов как внутри,&nbsp;так и&nbsp;снаружи.<br><br>Работаем 16&nbsp;лет, с&nbsp;2004 года.</p>
+					<p class="description__text--big color-violet">Пошили уже: 24&nbsp;568&nbsp;унтов</p><a class="btn description__btn" href="javascript:void(0)">Подробнее о&nbsp;нас</a>
 				</div>
-				<div class="reviews-main-slider__wrap">
-					<div class="reviews-main-slider__item">
-						<div class="reviews-main-slider__img"><img src="../../img/review.jpg"></div>
+				<div class="description__pattern"></div>
+				<div class="descritpion__right">
+					<div class="video-block">
+						<div class="video-block-item"><a class="video-block-item__link" href="https://www.youtube.com/embed/yIicu4arU5s" data-fancybox="gallery"><img src="../../img/video1.jpg"><span class="video-block-text"><span><span class="video-block__name">Знакомство</span><span class="video-block__descr">с Северным сиянием</span></span><span class="video-block__descr">Видео — 45 сек</span></span></a></div>
+						<div class="video-block-item"><a class="video-block-item__link" href="https://www.youtube.com/embed/yIicu4arU5s" data-fancybox="gallery"><img src="../../img/video2.jpg"><span class="video-block-text"><span><span class="video-block__name">Знакомство</span><span class="video-block__descr">с Северным сиянием</span></span><span class="video-block__descr">Видео — 45 сек</span></span></a></div>
+						<div class="video-block-item"><a class="video-block-item__link" href="https://www.youtube.com/embed/yIicu4arU5s" data-fancybox="gallery"><img src="../../img/video3.jpg"><span class="video-block-text"><span><span class="video-block__name">Знакомство</span><span class="video-block__descr">с Северным сиянием</span></span><span class="video-block__descr">Видео — 45 сек</span></span></a></div>
 					</div>
-					<div class="reviews-main-slider__item">
-						<div class="reviews-main-slider__img"><img src="../../img/review.jpg"></div>
+				</div>
+			</div>
+			<div class="snowflake snowflake--right"><img class="snowflake__img snowflake__img--right" src="../../img/snowflake2.png"></div>
+		</div>
+	</section>
+	<!-- ----------------------------end description-------------------------->
+	<!-- ----------------------------actions--------------------------->
+	<section class="actions">
+		<div class="container">
+			<h2 class="title"><span class="color-violet">текущие</span><span class="color-blue">акции</span></h2>
+			<div class="actions-slider slider">
+				<div class="actions-slider__wrap">
+					<div class="actions-slider-item"><img class="actions-slider-item__img" src="../../img/actions.jpg">
+						<div class="actions-slider__text">
+							<p class="actions-slider__title">СКИДКА 10% И 15%</p>
+							<p class="actions-slider__descr"><span>Скидки 10% на все унты до 15.09.2020</span><span>Скидки 15% на монгольские сапоги до 30.09.2020</span></p><a class="btn actions-slider__btn" href="javascript:void(0)">Подробнее</a>
+						</div>
 					</div>
-					<div class="reviews-main-slider__item">
-						<div class="reviews-main-slider__img"><img src="../../img/review.jpg"></div>
+					<div class="actions-slider-item"><img class="actions-slider-item__img" src="../../img/actions.jpg">
+						<div class="actions-slider__text">
+							<p class="actions-slider__title">СКИДКА 10% И 15%</p>
+							<p class="actions-slider__descr"><span>Скидки 10% на все унты до 15.09.2020</span><span>Скидки 15% на монгольские сапоги до 30.09.2020</span></p><a class="btn actions-slider__btn" href="javascript:void(0)">Подробнее</a>
+						</div>
+					</div>
+					<div class="actions-slider-item"><img class="actions-slider-item__img" src="../../img/actions.jpg">
+						<div class="actions-slider__text">
+							<p class="actions-slider__title">СКИДКА 10% И 15%</p>
+							<p class="actions-slider__descr"><span>Скидки 10% на все унты до 15.09.2020</span><span>Скидки 15% на монгольские сапоги до 30.09.2020</span></p><a class="btn actions-slider__btn" href="javascript:void(0)">Подробнее</a>
+						</div>
+					</div>
+					<div class="actions-slider-item"><img class="actions-slider-item__img" src="../../img/actions.jpg">
+						<div class="actions-slider__text">
+							<p class="actions-slider__title">СКИДКА 10% И 15%</p>
+							<p class="actions-slider__descr"><span>Скидки 10% на все унты до 15.09.2020</span><span>Скидки 15% на монгольские сапоги до 30.09.2020</span></p><a class="btn actions-slider__btn" href="javascript:void(0)">Подробнее</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="photo-main">
-			<h2 class="title"><span class="color-violet">БОЛЕЕ 1000 ФОТО</span><br><span class="color-blue">ПРОДУКЦИИ</span></h2>
-			<div class="photo-main__wrap">
-				<div class="photo-main__row">
-					<div class="photo-main__item item1"><a class="photo-main__img" href="../../img/photo1.jpg"><img src="../../img/photo1.jpg"></a>
-						<div class="photo-main__bg active"></div>
-					</div>
-					<div class="photo-main__item item2"><a class="photo-main__img" href="../../img/photo2.jpg"><img src="../../img/photo2.jpg"></a>
-						<div class="photo-main__bg"></div>
-					</div>
-					<div class="photo-main__item item3"><a class="photo-main__img" href="../../img/photo3.jpg"><img src="../../img/photo3.jpg"></a>
-						<div class="photo-main__bg"></div>
-					</div>
+	</section>
+	<!-- ----------------------------end actions--------------------------->
+	<!-- ----------------------------categories--------------------------->
+	<section class="categories">
+		<div class="container">
+			<div class="categories__wrap">
+				<div class="categories__wrap-top"><a class="categories-item categories-item--top unt-man" href="javascript:void(0)"><span class="categories-item__wrap"><span class="categories-item__name"><span class="color-blue categories-item__name--small">Унты</span><br><span>МУЖСКИЕ</span></span><span class="categories-item__count"><span>12 товаров</span></span></span></a><a class="categories-item categories-item--top unt-woman" href="javascript:void(0)"><span class="categories-item__wrap"><span class="categories-item__name"><span class="color-blue categories-item__name--small">Унты</span><br><span>женские</span></span><span class="categories-item__count"><span>12 товаров</span></span></span></a><a class="categories-item categories-item--top unt-child" href="javascript:void(0)"><span class="categories-item__wrap"><span class="categories-item__name"><span class="color-blue categories-item__name--small">Унты</span><br><span>детские</span></span><span class="categories-item__count"><span>12 товаров</span></span></span></a></div>
+				<div class="categories__wrap-bottom"><a class="categories-item categories-item--bottom clothes" href="javascript:void(0)"><span class="categories-item__wrap"><span class="categories-item__name"><span>монгольская<span class="color-blue">одежда</span></span></span><span class="categories-item__count"><span>12 товаров</span></span></span></a><a class="categories-item categories-item--bottom shoes" href="javascript:void(0)"><span class="categories-item__wrap"><span class="categories-item__name"><span>монгольская<span class="color-blue">обувь</span></span></span><span class="categories-item__count"><span>12 товаров</span></span></span></a><a class="categories-item categories-item--bottom acces-shoes" href="javascript:void(0)"><span class="categories-item__wrap"><span class="categories-item__name"><span>аксессуары<span class="color-blue">Для обуви</span></span></span><span class="categories-item__count"><span>12 товаров</span></span></span></a><a class="categories-item categories-item--bottom acces-leather" href="javascript:void(0)"><span class="categories-item__wrap"><span class="categories-item__name"><span>аксессуары<span class="color-blue">ИЗ кожи</span></span></span><span class="categories-item__count"><span>12 товаров</span></span></span></a></div>
+			</div>
+		</div>
+	</section>
+	<!-- ----------------------------end categories--------------------------->
+	<!-- ----------------------------pattern middle--------------------------->
+	<div class="pattern__wrap">
+		<div class="pattern pattern1 animate__animated animate__fadeInLeft wow"></div>
+		<div class="pattern pattern2 animate__animated animate__fadeInDown wow"></div>
+		<div class="pattern pattern3 animate__animated animate__fadeInUp wow"></div>
+		<div class="pattern pattern4 animate__animated animate__fadeInLeft wow"></div>
+		<div class="pattern pattern5 animate__animated animate__fadeInRight wow"></div>
+		<div class="pattern pattern6 animate__animated animate__fadeInDown wow"></div>
+		<div class="pattern pattern1 animate__animated animate__fadeInUp wow"></div>
+		<div class="pattern pattern2 animate__animated animate__fadeInLeft wow"></div>
+		<div class="pattern pattern3 animate__animated animate__fadeInRight wow"></div>
+		<div class="pattern pattern4 animate__animated animate__fadeInDown wow"></div>
+		<div class="pattern pattern5 animate__animated animate__fadeInRight wow"></div>
+		<div class="pattern pattern6 animate__animated animate__fadeInLeft wow"></div>
+	</div>
+	<!-- ----------------------------end pattern middle--------------------------->
+	<!-- ----------------------------tizers--------------------------->
+	<section class="tizers">
+		<div class="container">
+			<h2 class="title"><span class="color-violet">Нас покупают,</span><span class="color-blue">потому что</span></h2>
+			<div class="tizers__wrap">
+				<div class="tizers-item">
+					<div class="tizers-item__img hand"></div>
+					<div class="tizers-item__text"><span class="tizers-item__title">Ручная работа</span><span class="tizers-item__descr">вся обувь изготавливается исключительно в ручном режиме</span></div>
 				</div>
-				<div class="photo-main__row">
-					<div class="photo-main__item item4"><a class="photo-main__img" href="../../img/photo4.jpg"><img src="../../img/photo4.jpg"></a>
-						<div class="photo-main__bg"></div>
-					</div>
-					<div class="photo-main__item">Смотреть</div>
-					<div class="photo-main__item item5"><a class="photo-main__img" href="../../img/photo5.jpg"><img src="../../img/photo5.jpg"></a>
-						<div class="photo-main__bg"></div>
-					</div>
+				<div class="tizers-item">
+					<div class="tizers-item__img deer"></div>
+					<div class="tizers-item__text"><span class="tizers-item__title">100% камус оленя снаружи</span><span class="tizers-item__descr">унты служат вам долгие годы</span></div>
 				</div>
-				<div class="photo-main__row">
-					<div class="photo-main__item item6"><a class="photo-main__img" href="../../img/photo6.jpg"><img src="../../img/photo6.jpg"></a>
-						<div class="photo-main__bg"></div>
-					</div>
-					<div class="photo-main__item item7"><a class="photo-main__img" href="../../img/photo7.jpg"><img src="../../img/photo7.jpg"></a>
-						<div class="photo-main__bg active"></div>
-					</div>
-					<div class="photo-main__item item8"><a class="photo-main__img" href="../../img/photo8.jpg"><img src="../../img/photo8.jpg"></a>
-						<div class="photo-main__bg"></div>
-					</div>
+				<div class="tizers-item">
+					<div class="tizers-item__img sheep"></div>
+					<div class="tizers-item__text"><span class="tizers-item__title">100% овчина внутри</span><span class="tizers-item__descr">не истирается, теплая, легкие</span></div>
+				</div>
+				<div class="tizers-item">
+					<div class="tizers-item__img garantee"></div>
+					<div class="tizers-item__text"><span class="tizers-item__title">Гарантия 1 год</span><span class="tizers-item__descr">на все наши изделия</span></div>
+				</div>
+				<div class="tizers-item">
+					<div class="tizers-item__img pay"></div>
+					<div class="tizers-item__text"><span class="tizers-item__title">Доступная рассрочка</span><span class="tizers-item__descr">без переплат и скрытых условий</span></div>
+				</div>
+				<div class="tizers-item">
+					<div class="tizers-item__img mediator"></div>
+					<div class="tizers-item__text"><span class="tizers-item__title">Работаем без посредников</span><span class="tizers-item__descr">без лишней накрутки</span></div>
 				</div>
 			</div>
+		</div>
+	</section>
+	<!-- ----------------------------end tizers--------------------------->
+	<!-- ----------------------------pattern small--------------------------->
+	<div class="pattern-hide">
+		<div class="pattern__wrap">
+			<div class="pattern pattern1 animate__animated animate__fadeInLeft wow"></div>
+			<div class="pattern pattern2 animate__animated animate__fadeInDown wow"></div>
+			<div class="pattern pattern3 animate__animated animate__fadeInUp wow"></div>
+			<div class="pattern pattern4 animate__animated animate__fadeInLeft wow"></div>
+			<div class="pattern pattern5 animate__animated animate__fadeInRight wow"></div>
+			<div class="pattern pattern6 animate__animated animate__fadeInDown wow"></div>
 		</div>
 	</div>
-</section>
-<!-- ----------------------------end reviews--------------------------->
-<!-- ----------------------------instagram--------------------------->
-<section class="instagram">
-	<div class="container">
-		<div class="instagram__top">
-			<div class="instagram__title">Мы в Instagram:<span class="color-violet">s_siyanie</span></div><a class="instagram__link btn" href="javascript:void(0)" target="_blank">Открыть</a>
+	<!-- ----------------------------end pattern small--------------------------->
+	<!-- ----------------------------reviews--------------------------->
+	<section class="reviews">
+		<div class="container reviews__wrap">
+			<div class="reviews-main">
+				<h2 class="title"><span class="color-violet">РЕАЛЬНЫЕ</span><br><span class="color-blue">ОТЗЫВЫ</span></h2>
+				<div class="reviews-main-slider slider">
+					<div class="reviews-main-slider__wrap">
+						<div class="reviews-main-slider__item">
+							<div class="reviews-main-slider__img"><img src="../../img/review.jpg"></div>
+						</div>
+						<div class="reviews-main-slider__item">
+							<div class="reviews-main-slider__img"><img src="../../img/review.jpg"></div>
+						</div>
+						<div class="reviews-main-slider__item">
+							<div class="reviews-main-slider__img"><img src="../../img/review.jpg"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="photo-main">
+				<h2 class="title"><span class="color-violet">БОЛЕЕ 1000 ФОТО</span><br><span class="color-blue">ПРОДУКЦИИ</span></h2>
+				<div class="photo-main__container">
+					<div class="photo-main__wrap">
+						<div class="photo-main__row">
+							<div class="photo-main__item item1"><a class="photo-main__img" href="../../img/photo1.jpg"><img class="show" src="../../img/photo1.jpg"></a>
+								<div class="photo-main__bg active"></div>
+							</div>
+							<div class="photo-main__item item2"><a class="photo-main__img" href="../../img/photo2.jpg"><img class="show" src="../../img/photo2.jpg"></a>
+								<div class="photo-main__bg"></div>
+							</div>
+							<div class="photo-main__item item3"><a class="photo-main__img" href="../../img/photo3.jpg"><img class="show" src="../../img/photo3.jpg"></a>
+								<div class="photo-main__bg"></div>
+							</div>
+						</div>
+						<div class="photo-main__row">
+							<div class="photo-main__item item4"><a class="photo-main__img" href="../../img/photo4.jpg"><img class="show" src="../../img/photo4.jpg"></a>
+								<div class="photo-main__bg"></div>
+							</div>
+							<div class="photo-main__item">Смотреть</div>
+							<div class="photo-main__item item5"><a class="photo-main__img" href="../../img/photo5.jpg"><img class="show" src="../../img/photo5.jpg"></a>
+								<div class="photo-main__bg"></div>
+							</div>
+						</div>
+						<div class="photo-main__row">
+							<div class="photo-main__item item6"><a class="photo-main__img" href="../../img/photo6.jpg"><img class="show" src="../../img/photo6.jpg"></a>
+								<div class="photo-main__bg"></div>
+							</div>
+							<div class="photo-main__item item7"><a class="photo-main__img" href="../../img/photo7.jpg"><img class="show" src="../../img/photo7.jpg"></a>
+								<div class="photo-main__bg active"></div>
+							</div>
+							<div class="photo-main__item item8"><a class="photo-main__img" href="../../img/photo8.jpg"><img class="show" src="../../img/photo8.jpg"></a>
+								<div class="photo-main__bg"></div>
+							</div>
+						</div>
+						<div class="photo-main__row hide">
+							<div class="photo-main__item item6"><a class="photo-main__img" href="../../img/photo9.jpg"><img class="hide" src="../../img/photo9.jpg"></a>
+								<div class="photo-main__bg"></div>
+							</div>
+							<div class="photo-main__item item7"><a class="photo-main__img" href="../../img/photo10.jpg"><img class="hide" src="../../img/photo10.jpg"></a>
+								<div class="photo-main__bg"></div>
+							</div>
+							<div class="photo-main__item item8"><a class="photo-main__img" href="../../img/photo11.jpg"><img class="hide" src="../../img/photo11.jpg"></a>
+								<div class="photo-main__bg"></div>
+							</div>
+						</div>
+						<div class="photo-main__row hide">
+							<div class="photo-main__item item6"><a class="photo-main__img" href="../../img/photo12.jpg"><img class="hide" src="../../img/photo12.jpg"></a>
+								<div class="photo-main__bg"></div>
+							</div>
+							<div class="photo-main__item item7"><a class="photo-main__img" href="../../img/photo13.jpg"><img class="hide" src="../../img/photo13.jpg"></a>
+								<div class="photo-main__bg"></div>
+							</div>
+							<div class="photo-main__item item8"><a class="photo-main__img" href="../../img/photo14.jpg"><img class="hide" src="../../img/photo14.jpg"></a>
+								<div class="photo-main__bg"></div>
+							</div>
+						</div>
+						<div class="photo-main__row hide">
+							<div class="photo-main__item item6"><a class="photo-main__img" href="../../img/photo15.jpg"><img class="hide" src="../../img/photo15.jpg"></a>
+								<div class="photo-main__bg"></div>
+							</div>
+							<div class="photo-main__item item7"><a class="photo-main__img" href="../../img/photo16.jpg"><img class="hide" src="../../img/photo16.jpg"></a>
+								<div class="photo-main__bg"></div>
+							</div>
+							<div class="photo-main__item item8"><a class="photo-main__img" href="../../img/photo17.jpg"><img class="hide" src="../../img/photo17.jpg"></a>
+								<div class="photo-main__bg"></div>
+							</div>
+						</div>
+						<div class="photo-main__row hide">
+							<div class="photo-main__item item6"><a class="photo-main__img" href="../../img/photo18.jpg"><img class="hide" src="../../img/photo18.jpg"></a>
+								<div class="photo-main__bg"></div>
+							</div>
+							<div class="photo-main__item item7"><a class="photo-main__img" href="../../img/photo19.jpg"><img class="hide" src="../../img/photo19.jpg"></a>
+								<div class="photo-main__bg"></div>
+							</div>
+							<div class="photo-main__item item8"><a class="photo-main__img" href="../../img/photo20.jpg"><img class="hide" src="../../img/photo20.jpg"></a>
+								<div class="photo-main__bg"></div>
+							</div>
+						</div>
+						<div class="photo-main__row hide">
+							<div class="photo-main__item item6"><a class="photo-main__img" href="../../img/photo21.jpg"><img class="hide" src="../../img/photo21.jpg"></a>
+								<div class="photo-main__bg"></div>
+							</div>
+							<div class="photo-main__item item7"><a class="photo-main__img" href="../../img/photo22.jpg"><img class="hide" src="../../img/photo22.jpg"></a>
+								<div class="photo-main__bg"></div>
+							</div>
+							<div class="photo-main__item item8"><a class="photo-main__img" href="../../img/photo23.jpg"><img class="hide" src="../../img/photo23.jpg"></a>
+								<div class="photo-main__bg"></div>
+							</div>
+						</div>
+						<div class="photo-main__row hide">
+							<div class="photo-main__item item6"><a class="photo-main__img" href="../../img/photo24.jpg"><img class="hide" src="../../img/photo24.jpg"></a>
+								<div class="photo-main__bg"></div>
+							</div>
+							<div class="photo-main__item item7"><a class="photo-main__img" href="../../img/photo25.jpg"><img class="hide" src="../../img/photo25.jpg"></a>
+								<div class="photo-main__bg"></div>
+							</div>
+							<div class="photo-main__item item8"><a class="photo-main__img" href="../../img/photo26.jpg"><img class="hide" src="../../img/photo26.jpg"></a>
+								<div class="photo-main__bg"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="instagram__bottom">
-			<div class="instagram__item"></div>
-			<div class="instagram__item"></div>
-			<div class="instagram__item"></div>
-			<div class="instagram__item"></div>
+	</section>
+	<!-- ----------------------------end reviews--------------------------->
+	<!-- ----------------------------instagram--------------------------->
+	<section class="instagram">
+		<div class="container">
+			<div class="instagram__top">
+				<div class="instagram__title">Мы в Instagram:<span class="color-violet">s_siyanie</span></div><a class="instagram__link btn" href="javascript:void(0)" target="_blank"><span>Открыть</span></a>
+			</div>
+			<div class="instagram__bottom">
+				<div class="instagram__item"></div>
+				<div class="instagram__item"></div>
+				<div class="instagram__item"></div>
+				<div class="instagram__item"></div>
+			</div>
 		</div>
+	</section>
+	<!-- ----------------------------end instagram--------------------------->
+	<!-- ----------------------------pattern small--------------------------->
+	<div class="pattern__wrap">
+		<div class="pattern pattern1 animate__animated animate__fadeInLeft wow"></div>
+		<div class="pattern pattern2 animate__animated animate__fadeInDown wow"></div>
+		<div class="pattern pattern3 animate__animated animate__fadeInUp wow"></div>
+		<div class="pattern pattern4 animate__animated animate__fadeInLeft wow"></div>
+		<div class="pattern pattern5 animate__animated animate__fadeInRight wow"></div>
+		<div class="pattern pattern6 animate__animated animate__fadeInDown wow"></div>
 	</div>
-</section>
-<!-- ----------------------------end instagram--------------------------->
-<!-- ----------------------------pattern small--------------------------->
-<div class="pattern__wrap">
-	<div class="pattern pattern1 animate__animated animate__fadeInLeft wow"></div>
-	<div class="pattern pattern2 animate__animated animate__fadeInDown wow"></div>
-	<div class="pattern pattern3 animate__animated animate__fadeInUp wow"></div>
-	<div class="pattern pattern4 animate__animated animate__fadeInLeft wow"></div>
-	<div class="pattern pattern5 animate__animated animate__fadeInRight wow"></div>
-	<div class="pattern pattern6 animate__animated animate__fadeInDown wow"></div>
-</div>
-<!-- ----------------------------end pattern small--------------------------->
-<!-- ----------------------------how to buy--------------------------->
-<section class="how-to-buy">
-	<div class="container">
-		<h2 class="title"><span class="color-violet">КАК КУПИТЬ</span><span class="color-blue">УНТЫ</span></h2>
-		<div class="how-to-buy__wrap">
-			<div class="how-to-buy__item step1">
-				<div class="how-to-buy__img"></div><span class="how-to-buy__text">Выбираем модель унтов</span>
-			</div>
-			<div class="how-to-buy__item step2">
-				<div class="how-to-buy__img"></div><span class="how-to-buy__text">Измеряете ногу<a class="link how-to-buy__link" href="javascript:void(0)">Инструкция</a></span>
-			</div>
-			<div class="how-to-buy__item step3">
-				<div class="how-to-buy__img"></div><span class="how-to-buy__text">Отправляете заказ через каталог или&nbsp;корзину</span>
-			</div>
-			<div class="how-to-buy__item step4">
-				<div class="how-to-buy__img"></div><span class="how-to-buy__text">Консультант<br>связывается с&nbsp;Вами</span>
-			</div>
-			<div class="how-to-buy__item step7">
-				<div class="how-to-buy__img"></div><span class="how-to-buy__text">Вы получаете свой заказ</span>
-			</div>
-			<div class="how-to-buy__item step6">
-				<div class="how-to-buy__img"></div><span class="how-to-buy__text">Изготавливаем и&nbsp;отправляем ваш заказ</span>
-			</div>
-			<div class="how-to-buy__item step5">
-				<div class="how-to-buy__img"></div><span class="how-to-buy__text">Оплачиваете заказ</span>
+	<!-- ----------------------------end pattern small--------------------------->
+	<!-- ----------------------------how to buy--------------------------->
+	<section class="how-to-buy">
+		<div class="container how-to-buy__container">
+			<h2 class="title"><span class="color-violet">КАК КУПИТЬ</span><span class="color-blue">УНТЫ</span></h2>
+			<div class="how-to-buy__wrap">
+				<div class="how-to-buy__item step1">
+					<div class="how-to-buy__img"></div><span class="how-to-buy__text">Выбираем модель унтов</span>
+				</div>
+				<div class="how-to-buy__item step2">
+					<div class="how-to-buy__img"></div><span class="how-to-buy__text">Измеряете ногу<a class="link how-to-buy__link" href="javascript:void(0)">Инструкция</a></span>
+				</div>
+				<div class="how-to-buy__item step3">
+					<div class="how-to-buy__img"></div><span class="how-to-buy__text">Отправляете заказ через каталог или&nbsp;корзину</span>
+				</div>
+				<div class="how-to-buy__item step4">
+					<div class="how-to-buy__img"></div><span class="how-to-buy__text">Консультант<br>связывается с&nbsp;Вами</span>
+				</div>
+				<div class="how-to-buy__item step7">
+					<div class="how-to-buy__img"></div><span class="how-to-buy__text">Вы получаете свой заказ</span>
+				</div>
+				<div class="how-to-buy__item step6">
+					<div class="how-to-buy__img"></div><span class="how-to-buy__text">Изготавливаем и&nbsp;отправляем ваш заказ</span>
+				</div>
+				<div class="how-to-buy__item step5">
+					<div class="how-to-buy__img"></div><span class="how-to-buy__text">Оплачиваете заказ</span>
+				</div>
 			</div>
 		</div>
+	</section>
+	<!-- ----------------------------end how to buy--------------------------->
+	<!-- ----------------------------map--------------------------->
+	<section class="map">
+		<div class="container">
+			<h2 class="title"><span class="color-violet">Наши шоу-румы</span><span class="color-blue">В ИРКУТСКЕ</span></h2>
+			<div class="map__wrap" id="map"></div>
+			<div class="shops">
+				<div class="shops-item active">
+					<div class="shops-item__img"><span class="shops-item__number">1</span></div>
+					<div class="shops-item__text"><span class="shops-item__address">Иркутск, Ленина 25</span><span>Телефон: 8(3952)962962</span><span>09:00 — 20:00<br>Пн-Вс. Без выходных</span></div>
+				</div>
+				<div class="shops-item">
+					<div class="shops-item__img"><span class="shops-item__number">2</span></div>
+					<div class="shops-item__text"><span class="shops-item__address">Иркутск, Терешковой 24 Б</span><span>Телефон: 8(3952)962962</span><span>09:00 — 20:00<br>Пн-Вс. Без выходных</span></div>
+				</div>
+				<div class="shops-item">
+					<div class="shops-item__img"><span class="shops-item__number">3</span></div>
+					<div class="shops-item__text"><span class="shops-item__address">Иркутск, Литвинова 17 пав. 14</span><span>Телефон: 8(3952)962962</span><span>09:00 — 20:00<br>Пн-Вс. Без выходных</span></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ----------------------------end map--------------------------->
+	<!-- ----------------------------pattern wide--------------------------->
+	<div class="pattern__wrap pattern-wide">
+		<div class="pattern pattern1 animate__animated animate__fadeInLeft wow"></div>
+		<div class="pattern pattern2 animate__animated animate__fadeInDown wow"></div>
+		<div class="pattern pattern3 animate__animated animate__fadeInUp wow"></div>
+		<div class="pattern pattern4 animate__animated animate__fadeInLeft wow"></div>
+		<div class="pattern pattern5 animate__animated animate__fadeInRight wow"></div>
+		<div class="pattern pattern6 animate__animated animate__fadeInDown wow"></div>
+		<div class="pattern pattern1 animate__animated animate__fadeInUp wow"></div>
+		<div class="pattern pattern2 animate__animated animate__fadeInLeft wow"></div>
+		<div class="pattern pattern3 animate__animated animate__fadeInRight wow"></div>
+		<div class="pattern pattern4 animate__animated animate__fadeInDown wow"></div>
+		<div class="pattern pattern5 animate__animated animate__fadeInRight wow"></div>
+		<div class="pattern pattern6 animate__animated animate__fadeInLeft wow"></div>
+		<div class="pattern pattern1 animate__animated animate__fadeInUp wow"></div>
+		<div class="pattern pattern2 animate__animated animate__fadeInLeft wow"></div>
+		<div class="pattern pattern3 animate__animated animate__fadeInRight wow"></div>
+		<div class="pattern pattern4 animate__animated animate__fadeInDown wow"></div>
+		<div class="pattern pattern5 animate__animated animate__fadeInRight wow"></div>
+		<div class="pattern pattern6 animate__animated animate__fadeInLeft wow"></div>
+		<div class="pattern pattern1 animate__animated animate__fadeInUp wow"></div>
+		<div class="pattern pattern2 animate__animated animate__fadeInLeft wow"></div>
+		<div class="pattern pattern3 animate__animated animate__fadeInRight wow"></div>
+		<div class="pattern pattern4 animate__animated animate__fadeInDown wow"></div>
+		<div class="pattern pattern5 animate__animated animate__fadeInRight wow"></div>
+		<div class="pattern pattern6 animate__animated animate__fadeInLeft wow"></div>
 	</div>
-</section>
-<!-- ----------------------------end how to buy--------------------------->
-<!-- ----------------------------pattern small--------------------------->
-<div class="pattern__wrap pattern-wide">
-	<div class="pattern pattern1 animate__animated animate__fadeInLeft wow"></div>
-	<div class="pattern pattern2 animate__animated animate__fadeInDown wow"></div>
-	<div class="pattern pattern3 animate__animated animate__fadeInUp wow"></div>
-	<div class="pattern pattern4 animate__animated animate__fadeInLeft wow"></div>
-	<div class="pattern pattern5 animate__animated animate__fadeInRight wow"></div>
-	<div class="pattern pattern6 animate__animated animate__fadeInDown wow"></div>
-	<div class="pattern pattern1 animate__animated animate__fadeInUp wow"></div>
-	<div class="pattern pattern2 animate__animated animate__fadeInLeft wow"></div>
-	<div class="pattern pattern3 animate__animated animate__fadeInRight wow"></div>
-	<div class="pattern pattern4 animate__animated animate__fadeInDown wow"></div>
-	<div class="pattern pattern5 animate__animated animate__fadeInRight wow"></div>
-	<div class="pattern pattern6 animate__animated animate__fadeInLeft wow"></div>
-	<div class="pattern pattern1 animate__animated animate__fadeInUp wow"></div>
-	<div class="pattern pattern2 animate__animated animate__fadeInLeft wow"></div>
-	<div class="pattern pattern3 animate__animated animate__fadeInRight wow"></div>
-	<div class="pattern pattern4 animate__animated animate__fadeInDown wow"></div>
-	<div class="pattern pattern5 animate__animated animate__fadeInRight wow"></div>
-	<div class="pattern pattern6 animate__animated animate__fadeInLeft wow"></div>
-	<div class="pattern pattern1 animate__animated animate__fadeInUp wow"></div>
-	<div class="pattern pattern2 animate__animated animate__fadeInLeft wow"></div>
-	<div class="pattern pattern3 animate__animated animate__fadeInRight wow"></div>
-	<div class="pattern pattern4 animate__animated animate__fadeInDown wow"></div>
-	<div class="pattern pattern5 animate__animated animate__fadeInRight wow"></div>
-	<div class="pattern pattern6 animate__animated animate__fadeInLeft wow"></div>
-</div>
-<!-- ----------------------------end pattern small--------------------------->
+	<!-- ----------------------------end pattern wide--------------------------->
+</main>
 <!-- ----------------------------footer--------------------------->
 <footer class="footer">
 	<div class="footer-top">
 		<div class="container footer-top__wrap">
 			<div class="footer-top-col footer-top-col__left">
-				<div class="logo"><a class="logo__link" href="/"><img src="../../img/logo-short.png"></a></div>
+				<div class="logo"><a class="logo__link" href="/">
+						<html>
+							<body>
+								<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90" fill="none">
+									<path d="M89.9995 44.9997C89.9995 69.9996 69.7364 89.9995 44.9997 89.9995C20.263 89.9995 0 69.9996 0 44.9997C0 20.263 20.263 0 44.9997 0C69.9996 0 89.9995 20.263 89.9995 44.9997Z" fill="#553091"></path>
+									<path d="M62.6306 64.9999C53.6833 64.9999 45.2623 60.7894 39.9991 53.421L37.8939 50.7894C36.8413 49.2105 34.4728 49.2105 33.4202 50.7894L22.1045 66.5788C21.8413 67.1051 21.8413 67.8946 22.3677 68.1578C28.1571 73.9472 36.0518 77.3682 44.9991 77.3682C54.4727 77.3682 62.8937 73.4209 68.6832 66.842C69.4726 66.0525 68.6832 64.7367 67.6306 64.7367H62.6306V64.9999Z" fill="white"></path>
+									<path class="ss-03" xmlns="http://www.w3.org/2000/svg" opacity="0.7" d="M12.895 49.4738C12.6318 48.1581 12.6318 46.8423 12.6318 45.7896V45.5265L33.9475 14.7372C35.0001 14.2109 36.3159 13.9477 37.3685 13.6846C37.6317 13.6846 37.6317 13.9477 37.6317 13.9477L12.895 49.4738Z" fill="#8CD3E4"></path>
+									<path class="ss-04" xmlns="http://www.w3.org/2000/svg" opacity="0.7" d="M66.3157 20.7899L50 44.474V44.7371L50.2632 45.0003C50.7895 45.5266 51.3158 46.0529 51.8421 46.3161H52.1052L68.4209 22.632V22.3688C67.8946 21.8425 67.3683 21.3162 66.842 20.7899C66.5789 20.5267 66.3157 20.5267 66.3157 20.7899Z" fill="#8CD3E4"></path>
+									<path class="ss-07" xmlns="http://www.w3.org/2000/svg" opacity="0.3" d="M42.6313 12.6317L13.9473 53.9472V54.2104C14.4736 54.7367 15.263 54.7367 15.7894 54.2104L33.684 28.9474C34.2103 28.1579 34.7366 27.8948 35.5261 27.8948C35.5261 27.8948 35.5261 27.8948 35.7892 27.8948L46.0523 13.158C46.0523 12.8948 46.0523 12.6317 45.7892 12.6317C44.4734 12.3685 43.6839 12.3685 42.6313 12.6317Z" fill="#8CD3E4"></path>
+									<path class="ss-01" xmlns="http://www.w3.org/2000/svg" opacity="0.3" d="M70.5263 24.9998L56.0527 46.3154C56.0527 46.3154 56.0527 46.5786 56.3159 46.5786C57.1054 46.3154 57.8948 45.7891 58.4211 44.9996L61.0527 41.0523C61.8422 39.9997 62.8948 39.7365 63.9474 39.9997L72.3684 27.8945C71.8421 26.5787 71.3158 25.7892 70.5263 24.9998C70.7895 24.9998 70.5263 24.9998 70.5263 24.9998Z" fill="#8CD3E4"></path>
+									<path class="ss-02" xmlns="http://www.w3.org/2000/svg" d="M13.421 38.4212L27.8946 17.6318C27.8946 17.6318 27.8946 17.3687 27.6314 17.3687C20.2631 22.1055 14.9999 29.4738 13.421 38.4212C13.1578 38.4212 13.1578 38.4212 13.421 38.4212Z" fill="#8CD3E4"></path>
+									<path class="ss-06" xmlns="http://www.w3.org/2000/svg" d="M77.3684 41.315C77.3684 40.2623 77.1052 39.2097 76.8421 38.1571C76.8421 37.8939 76.5789 37.8939 76.3158 38.1571L70 47.3676V47.6307L71.3158 49.736C71.3158 49.9991 71.5789 49.9991 71.8421 49.736L77.3684 41.315Z" fill="#8CD3E4"></path>
+									<path class="ss-08" xmlns="http://www.w3.org/2000/svg" opacity="0.3" d="M76.3152 53.4204C76.8415 51.5783 77.1046 49.4731 77.3678 47.631C77.3678 47.3678 77.1046 47.3678 77.1046 47.631L73.6836 52.6309V52.8941L74.2099 53.9467C74.9994 54.473 76.052 54.473 76.3152 53.4204Z" fill="#8CD3E4"></path>
+									<path class="ss-05" xmlns="http://www.w3.org/2000/svg" opacity="0.7" d="M75.5259 33.421C75.2627 32.6315 74.7364 31.8421 74.4733 31.0526C74.4733 30.7894 74.2101 30.7894 73.947 31.0526L66.3154 42.1052V42.3683L67.6312 44.4736C67.6312 44.7367 67.8944 44.7367 68.1575 44.4736L75.5259 33.421Z" fill="#8CD3E4"></path>
+									<path class="ss-09" xmlns="http://www.w3.org/2000/svg" opacity="0.3" d="M58.4207 15.2631C57.6312 14.9999 57.1049 14.7368 56.3155 14.4736H56.0523L42.3682 34.2104V34.4735L43.6839 36.3156C43.6839 36.5788 43.9471 36.5788 44.2103 36.3156L58.4207 15.7894C58.4207 15.5263 58.4207 15.2631 58.4207 15.2631Z" fill="#8CD3E4"></path>
+									<path class="ss-11" xmlns="http://www.w3.org/2000/svg" d="M63.6838 18.421C63.1574 17.8947 62.368 17.6315 61.8417 17.1052H61.5785L46.3154 39.2104V39.4735L47.6312 41.3156C47.6312 41.5788 47.8944 41.5788 48.1575 41.3156L63.9469 18.421C63.6837 18.6842 63.6838 18.421 63.6838 18.421Z" fill="#8CD3E4"></path>
+									<path class="ss-10" xmlns="http://www.w3.org/2000/svg" d="M52.3682 13.1574C51.5787 13.1574 50.7892 12.8943 49.9998 12.8943H49.7366L38.4209 28.9468V29.21L39.7367 31.0521C39.7367 31.3152 39.9998 31.3152 40.263 31.0521L52.6313 13.6838C52.6313 13.4206 52.6313 13.4206 52.3682 13.1574Z" fill="#8CD3E4"></path>
+								</svg><img src="../../img/logo-text2.svg">
+							</body>
+						</html></a></div>
 				<div class="footer-top-phones">
 					<p class="footer-top-phones__title">Наши телефоны</p>
 					<div class="footer-phone"><a class="footer-phone__link" href="tel:+73952743407">8 (3952) 74 34 07</a><a class="footer-phone__link" href="tel:+73952962962">8 (3952) 96 29 62</a></div>
@@ -511,11 +796,11 @@
 		</div>
 	</div>
 </footer>
+<!-- ----------------------------end footer-------------------------->
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
 <script src="js/simpleParallax.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/wow.js"></script>
-<script src="js/script.js" type="module"></script>
-<!-- ----------------------------end footer-------------------------->
-<div class="overlay"></div>
+<script src="js/script.js"></script>

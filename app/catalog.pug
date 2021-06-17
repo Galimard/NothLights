@@ -1,0 +1,31 @@
+// ----------------------------header-------------------------
+include components/header/header
+// ----------------------------end header------------------------
+
+main.main
+    .container
+
+        // ----------------------------breadcrumbs-------------------------
+        include components/breadcrumbs/breadcrumbs
+        // ----------------------------end breadcrumbs------------------------
+        .main__wrap
+            .main__left
+                // ----------------------------catalog-menu-------------------------
+                include components/catalog/catalog_menu/catalog_menu
+                // ----------------------------end catalog-menu------------------------
+
+                // ----------------------------filter-------------------------
+                include components/catalog/filter/filter
+                // ----------------------------end filter------------------------
+            .main__right
+                // ----------------------------filter-------------------------
+                include components/catalog/catalog_slider/catalog_slider
+                // ----------------------------end filter------------------------
+
+                // ----------------------------catalog-list-------------------------
+                include components/catalog/catalog_list/catalog_list
+                // ----------------------------end filter------------------------
+
+// ----------------------------footer-------------------------
+include components/footer/footer
+// ----------------------------end footer------------------------

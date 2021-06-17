@@ -1,9 +1,5 @@
-.how-to-buy__text {
-  font-family: 'PTSans', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20.8px; }
-
+@charset "UTF-8";
+/*-------------------------------------------------переменные-------------------------------------------------*/
 .how-to-buy {
   padding-top: 60px; }
 
@@ -37,7 +33,49 @@
   height: 124px;
   border-radius: 50%;
   position: relative;
-  margin: 0 auto 14px; }
+  margin: 0 auto 14px;
+  position: relative; }
+
+.how-to-buy__img::before {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 34px;
+  background: #EFEDF9;
+  border: 4px solid #FFFFFF;
+  border-radius: 50%;
+  position: absolute;
+  top: -19px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20.8px;
+  line-height: 34px; }
+
+.step1 .how-to-buy__img::before {
+  content: "1"; }
+
+.step2 .how-to-buy__img::before {
+  content: "2"; }
+
+.step3 .how-to-buy__img::before {
+  content: "3"; }
+
+.step4 .how-to-buy__img::before {
+  content: "4"; }
+
+.step5 .how-to-buy__img::before {
+  content: "5"; }
+
+.step6 .how-to-buy__img::before {
+  content: "6"; }
+
+.step7 .how-to-buy__img::before {
+  content: "7"; }
 
 .step1 .how-to-buy__img {
   background: #553091 url("../../img/icon-steps-1.svg") center center no-repeat; }
@@ -94,6 +132,10 @@
   background: url("../../img/arrow-l.svg") left center no-repeat; }
 
 .how-to-buy__text {
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20.8px;
   padding: 0 13px;
   display: inline-block; }
 
@@ -101,3 +143,40 @@
   display: block;
   width: 83px;
   margin: 8px auto 0; }
+
+@media all and (max-width: 1340px) {
+  .how-to-buy__container {
+    padding: 0; } }
+
+@media all and (max-width: 1240px) {
+  .how-to-buy__item {
+    min-width: 200px;
+    width: 200px;
+    margin-right: 0;
+    padding: 0 5px;
+    margin-bottom: 60px; }
+  .how-to-buy__img::after {
+    display: none; }
+  .how-to-buy__wrap {
+    position: relative;
+    max-width: 413px;
+    margin: 70px auto 0;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .step6 {
+    -webkit-box-ordinal-group: 7;
+    -webkit-order: 6;
+        -ms-flex-order: 6;
+            order: 6; }
+  .step7 {
+    -webkit-box-ordinal-group: 8;
+    -webkit-order: 7;
+        -ms-flex-order: 7;
+            order: 7; }
+  .step2,
+  .step4,
+  .step6 {
+    position: relative;
+    top: 135px; } }

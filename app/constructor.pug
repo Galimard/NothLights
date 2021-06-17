@@ -1,0 +1,32 @@
+// ----------------------------header-------------------------
+include components/header/header
+// ----------------------------end header------------------------
+
+main.main.constructor
+    .container
+
+        // ----------------------------breadcrumbs-------------------------
+        include components/breadcrumbs/breadcrumbs
+        // ----------------------------end breadcrumbs------------------------
+        .main__wrap.constructor__wrap
+            h2.title-page.constructor__title Конструктор унтов
+            include components/constructor/constructor-form/constructor-form
+            include components/constructor/unty/unty
+            include components/constructor/constructor-mobile/constructor-mobile
+
+// ----------------------------pattern wide-------------------------
+.pattern-hide
+    include components/pattern_wide/pattern_wide
+// ----------------------------end pattern wide-------------------------
+
+// ----------------------------footer-------------------------
+.constructor-footer
+    include components/footer/footer
+// ----------------------------end footer------------------------
+script(src='js/jquery-3.3.1.min.js')
+script(src='js/jquery.fancybox.min.js')
+script(src='js/jquery.nicescroll.min.js')
+script(src='js/simpleParallax.min.js')
+script(src='js/slick.min.js')
+script(src='js/wow.js')
+script(src='js/script.js')

@@ -2,52 +2,67 @@
 include components/header/header
 // ----------------------------end header------------------------
 
-// ----------------------------description-------------------------
-include components/description/description
-// ----------------------------end description------------------------
+main.main
+    // ----------------------------illustration-------------------------
+    include components/illustration/illustration
+    // ----------------------------end illustration------------------------
 
-// ----------------------------actions-------------------------
-include components/actions/actions
-// ----------------------------end actions-------------------------
+    // ----------------------------description-------------------------
+    include components/description/description
+    // ----------------------------end description------------------------
 
-// ----------------------------categories-------------------------
-include components/categories/categories
-// ----------------------------end categories-------------------------
+    // ----------------------------actions-------------------------
+    include components/actions/actions
+    // ----------------------------end actions-------------------------
 
-// ----------------------------pattern middle-------------------------
-include components/pattern_middle/pattern_middle
-// ----------------------------end pattern middle-------------------------
+    // ----------------------------categories-------------------------
+    include components/categories/categories
+    // ----------------------------end categories-------------------------
 
-// ----------------------------tizers-------------------------
-include components/tizers/tizers
-// ----------------------------end tizers-------------------------
+    // ----------------------------pattern middle-------------------------
+    include components/pattern_middle/pattern_middle
+    // ----------------------------end pattern middle-------------------------
 
-// ----------------------------pattern small-------------------------
-include components/pattern_small/pattern_small
-// ----------------------------end pattern small-------------------------
+    // ----------------------------tizers-------------------------
+    include components/tizers/tizers
+    // ----------------------------end tizers-------------------------
 
-// ----------------------------reviews-------------------------
-include components/reviews/reviews
-// ----------------------------end reviews-------------------------
+    // ----------------------------pattern small-------------------------
+    .pattern-hide
+        include components/pattern_small/pattern_small
+    // ----------------------------end pattern small-------------------------
 
-// ----------------------------instagram-------------------------
-include components/instagram/instagram
-// ----------------------------end instagram-------------------------
+    // ----------------------------reviews-------------------------
+    include components/reviews/reviews
+    // ----------------------------end reviews-------------------------
 
-// ----------------------------pattern small-------------------------
-include components/pattern_small/pattern_small
-// ----------------------------end pattern small-------------------------
+    // ----------------------------instagram-------------------------
+    include components/instagram/instagram
+    // ----------------------------end instagram-------------------------
 
-// ----------------------------how to buy-------------------------
-include components/how_to_buy/how_to_buy
-// ----------------------------end how to buy-------------------------
+    // ----------------------------pattern small-------------------------
+    include components/pattern_small/pattern_small
+    // ----------------------------end pattern small-------------------------
 
-// ----------------------------pattern small-------------------------
-include components/pattern_wide/pattern_wide
-// ----------------------------end pattern small-------------------------
+    // ----------------------------how to buy-------------------------
+    include components/how_to_buy/how_to_buy
+    // ----------------------------end how to buy-------------------------
+
+    // ----------------------------map-------------------------
+    include components/map/map
+    // ----------------------------end map-------------------------
+
+    // ----------------------------pattern wide-------------------------
+    include components/pattern_wide/pattern_wide
+    // ----------------------------end pattern wide-------------------------
 
 // ----------------------------footer-------------------------
 include components/footer/footer
 // ----------------------------end footer------------------------
-
-.overlay
+script(src='js/jquery-3.3.1.min.js')
+script(src='js/jquery.fancybox.min.js')
+script(src='js/jquery.nicescroll.min.js')
+script(src='js/simpleParallax.min.js')
+script(src='js/slick.min.js')
+script(src='js/wow.js')
+script(src='js/script.js')

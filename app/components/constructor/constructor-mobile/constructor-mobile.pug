@@ -1,0 +1,245 @@
+.mobile-constructor-menu
+    p.mobile-constructor-menu__title Откройте пункт и выберите свойства
+    .mobile-constructor-menu__wrap
+        a.mobile-constructor-menu__item.size.current.js-mobile-popup-btn(href="#step1")
+        a.mobile-constructor-menu__item.color.js-mobile-popup-btn(href="#step2")
+        a.mobile-constructor-menu__item.material.js-mobile-popup-btn(href="#step3")
+        a.mobile-constructor-menu__item.inside.js-mobile-popup-btn(href="#step4")
+
+form.mobile-constructor.js-mobile-constructor(action="#" method="post")
+    #step1.mobile-constructor-block.mobile-popup.js-mobile-popup.current.sex.js-constructor-block
+        .mobile-popup__wrap
+            .mobile-popup__header.js-popup-header
+                .mobile-popup__title.js-popup-title Выберите свойство
+                .mobile-popup__arrow.js-popup-close
+            .mobile-popup__main.mobile-constructor-block.js-popup-main
+                .js-popup-wrap
+                    .mobile-constructor-block__step-one.js-step-one
+                        p.mobile-constructor-block__name Тип унтов
+                        .mobile-constructor-block__wrap
+                            .mobile-constructor__item
+                                input(id="sex1" type="radio" name="sex").constructor__input.js-checked-input
+                                label(for="sex1").mobile-constructor__label.mobile-constructor__label--sex.js-label
+                                    span.mobile-constructor__checkbox
+                                    span.mobile-constructor__item-title.js-mobile-label-name Мужские
+                            .mobile-constructor__item
+                                input(id="sex2" type="radio" name="sex").constructor__input.js-checked-input
+                                label(for="sex2").mobile-constructor__label.mobile-constructor__label--sex.js-label
+                                    span.mobile-constructor__checkbox
+                                    span.mobile-constructor__item-title.js-mobile-label-name Женские
+                    .mobile-constructor-block__step-two.js-step-two
+                        p.mobile-constructor-block__name Размер унтов
+                        .mobile-constructor-block__wrap.mobile-constructor-block__wrap--size
+                            .constructor__item
+                                input(id="s1" type="radio" name="size").constructor__input.js-checked-input
+                                label(for="s1").mobile-constructor__label--size.js-label 34
+                            .constructor__item
+                                input(id="s2" type="radio" name="size").constructor__input.js-checked-input
+                                label(for="s2").mobile-constructor__label--size.js-label 35
+                            .constructor__item
+                                input(id="s3" type="radio" name="size").constructor__input.js-checked-input
+                                label(for="s3").mobile-constructor__label--size.js-label 36
+                            .constructor__item
+                                input(id="s4" type="radio" name="size").constructor__input.js-checked-input
+                                label(for="s4").mobile-constructor__label--size.js-label 37
+                            .constructor__item
+                                input(id="s5" type="radio" name="size").constructor__input.js-checked-input
+                                label(for="s5").mobile-constructor__label--size.js-label 38
+                            .constructor__item
+                                input(id="s6" type="radio" name="size").constructor__input.js-checked-input
+                                label(for="s6").mobile-constructor__label--size.js-label 39
+                            .constructor__item
+                                input(id="s7" type="radio" name="size").constructor__input.js-checked-input
+                                label(for="s7").mobile-constructor__label--size.js-label 40
+                            .constructor__item
+                                input(id="s8" type="radio" name="size").constructor__input.js-checked-input
+                                label(for="s8").mobile-constructor__label--size.js-label 41
+                            .constructor__item
+                                input(id="s9" type="radio" name="size").constructor__input.js-checked-input
+                                label(for="s9").mobile-constructor__label--size.js-label 42
+                            .constructor__item
+                                input(id="s10" type="radio" name="size").constructor__input.js-checked-input
+                                label(for="s10").mobile-constructor__label--size.js-label 43
+                            .constructor__item
+                                input(id="s11" type="radio" name="size").constructor__input.js-checked-input
+                                label(for="s11").mobile-constructor__label--size.js-label 44
+                            .constructor__item
+                                input(id="s12" type="radio" name="size").constructor__input.js-checked-input
+                                label(for="s12").mobile-constructor__label--size.js-label 45
+                            .constructor__item
+                                input(id="s13" type="radio" name="size").constructor__input.js-checked-input
+                                label(for="s13").mobile-constructor__label--size.js-label 46
+                            .constructor__item
+                                input(id="s14" type="radio" name="size").constructor__input.js-checked-input
+                                label(for="s14").mobile-constructor__label--size.js-label 47
+                            .constructor__item
+                                input(id="s15" type="radio" name="size").constructor__input.js-checked-input
+                                label(for="s15").mobile-constructor__label--size.js-label 48
+
+    |
+    |
+    #step2.mobile-constructor-block.mobile-popup.js-mobile-popup.color.js-constructor-block
+        .mobile-popup__wrap
+            .mobile-popup__header.js-popup-header
+                .mobile-popup__title Выберите свойство
+                .mobile-popup__arrow.js-popup-close
+            .mobile-popup__main.mobile-constructor-block.js-popup-main
+                .js-popup-wrap
+                    p.mobile-constructor-block__name Оттенок камуса
+                    .mobile-constructor-block__wrap.mobile-constructor-block__wrap--color
+                        .constructor__item
+                            input(id="c1" type="radio" name="color").constructor__input.js-checked-input
+                            label(for="c1").constructor__label.constructor__label--square.mobile-constructor__label--square.color-1.js-label
+                            span.mobile-constructor__item-title--color Темно-корич невый
+                        .constructor__item
+                            input(id="c2" type="radio" name="color").constructor__input.js-checked-input
+                            label(for="c2").constructor__label.constructor__label--square.mobile-constructor__label--square.color-2.js-label
+                            span.mobile-constructor__item-title--color Темный
+
+                        .constructor__item
+                            input(id="c3" type="radio" name="color").constructor__input.js-checked-input
+                            label(for="c3").constructor__label.constructor__label--square.mobile-constructor__label--square.color-3.js-label
+                            span.mobile-constructor__item-title--color Серый
+                        .constructor__item
+                            input(id="c4" type="radio" name="color").constructor__input.js-checked-input
+                            label(for="c4").constructor__label.constructor__label--square.mobile-constructor__label--square.color-4.js-label
+                            span.mobile-constructor__item-title--color Бежевый
+
+                        .constructor__item
+                            input(id="c5" type="radio" name="color").constructor__input.js-checked-input
+                            label(for="c5").constructor__label.constructor__label--square.mobile-constructor__label--square.color-5.js-label
+                            span.mobile-constructor__item-title--color Светлый
+                        .constructor__item
+                            input(id="c6" type="radio" name="color").constructor__input.js-checked-input
+                            label(for="c6").constructor__label.constructor__label--square.mobile-constructor__label--square.color-6.js-label
+                            span.mobile-constructor__item-title--color Белый
+                    p.mobile-constructor__attention Некоторые оттенки камуса совместимы только с&nbsp;некоторыми корсажами
+    |
+    |
+    #step3.mobile-constructor-block.mobile-popup.js-mobile-popup.material.js-constructor-block
+        .mobile-popup__wrap
+            .mobile-popup__header.js-popup-header
+                .mobile-popup__title Выберите свойство
+                .mobile-popup__arrow.js-popup-close
+            .mobile-popup__main.mobile-constructor-block.js-popup-main
+                .js-popup-wrap
+                    p.mobile-constructor-block__name.mobile-constructor-block__name--material Корсаж
+                    .mobile-constructor-block__wrap
+                        span.mobile-constructor__item-title--material Эко-кожа
+                        .constructor__item
+                            input(id="m1" type="radio" name="material" value="1000").constructor__input.js-input.js-checked-input
+                            label(for="m1").constructor__label.constructor__label--square.material-1.js-label
+                        .constructor__item
+                            input(id="m2" type="radio" name="material" value="1000").constructor__input.js-input.js-checked-input
+                            label(for="m2").constructor__label.constructor__label--square.material-2.js-label
+                        .constructor__item
+                            input(id="m3" type="radio" name="material" value="1000").constructor__input.js-input.js-checked-input
+                            label(for="m3").constructor__label.constructor__label--square.material-3.js-label
+                        .constructor__item
+                            input(id="m4" type="radio" name="material" value="1000").constructor__input.js-input.js-checked-input
+                            label(for="m4").constructor__label.constructor__label--square.material-4.js-label
+
+                    .mobile-constructor-block__wrap
+                        span.mobile-constructor__item-title--material Вышивка на&nbsp;эко-коже
+                        .constructor__item
+                            input(id="m21" type="radio" name="material" value="2000").constructor__input.js-input.js-checked-input
+                            label(for="m21").constructor__label.constructor__label--square.material-21.js-label
+                        .constructor__item
+                            input(id="m22" type="radio" name="material" value="2000").constructor__input.js-input.js-checked-input
+                            label(for="m22").constructor__label.constructor__label--square.material-22.js-label
+                        .constructor__item
+                            input(id="m23" type="radio" name="material" value="2000").constructor__input.js-input.js-checked-input
+                            label(for="m23").constructor__label.constructor__label--square.material-23.js-label
+                        .constructor__item
+                            input(id="m24" type="radio" name="material" value="2000").constructor__input.js-input.js-checked-input
+                            label(for="m24").constructor__label.constructor__label--square.material-24.js-label
+
+                    .mobile-constructor-block__wrap
+                        span.mobile-constructor__item-title--material Бисер
+                        .constructor__item
+                            input(id="m5" type="radio" name="material" value="3000").constructor__input.js-input.js-checked-input
+                            label(for="m5").constructor__label.constructor__label--square.material-5.js-label
+                        .constructor__item
+                            input(id="m6" type="radio" name="material" value="3000").constructor__input.js-input.js-checked-input
+                            label(for="m6").constructor__label.constructor__label--square.material-6.js-label
+                        .constructor__item
+                            input(id="m7" type="radio" name="material" value="3000").constructor__input.js-input.js-checked-input
+                            label(for="m7").constructor__label.constructor__label--square.material-7.js-label
+                        .constructor__item
+                            input(id="m8" type="radio" name="material" value="3000").constructor__input.js-input.js-checked-input
+                            label(for="m8").constructor__label.constructor__label--square.material-8.js-label
+
+                    .mobile-constructor-block__wrap
+                        span.mobile-constructor__item-title--material Вышивка с&nbsp;камнями
+                        .constructor__item
+                            input(id="m9" type="radio" name="material" value="4000").constructor__input.js-input.js-checked-input
+                            label(for="m9").constructor__label.constructor__label--square.material-9.js-label
+                        .constructor__item
+                            input(id="m10" type="radio" name="material" value="4000").constructor__input.js-input.js-checked-input
+                            label(for="m10").constructor__label.constructor__label--square.material-10.js-label
+                        .constructor__item
+                            input(id="m11" type="radio" name="material" value="4000").constructor__input.js-input.js-checked-input
+                            label(for="m11").constructor__label.constructor__label--square.material-11.js-label
+                        .constructor__item
+                            input(id="m12" type="radio" name="material" value="4000").constructor__input.js-input.js-checked-input
+                            label(for="m12").constructor__label.constructor__label--square.material-12.js-label
+
+                    .mobile-constructor-block__wrap
+                        span.mobile-constructor__item-title--material Камни
+                        .constructor__item
+                            input(id="m13" type="radio" name="material" value="5000").constructor__input.js-input.js-checked-input
+                            label(for="m13").constructor__label.constructor__label--square.material-13.js-label
+                        .constructor__item
+                            input(id="m14" type="radio" name="material" value="5000").constructor__input.js-input.js-checked-input
+                            label(for="m14").constructor__label.constructor__label--square.material-14.js-label
+                        .constructor__item
+                            input(id="m15" type="radio" name="material" value="5000").constructor__input.js-input.js-checked-input
+                            label(for="m15").constructor__label.constructor__label--square.material-15.js-label
+                        .constructor__item
+                            input(id="m16" type="radio" name="material" value="5000").constructor__input.js-input.js-checked-input
+                            label(for="m16").constructor__label.constructor__label--square.material-16.js-label
+
+                    .mobile-constructor-block__wrap
+                            span.mobile-constructor__item-title--material Камус
+                            .constructor__item
+                                input(id="m17" type="radio" name="material" value="6000").constructor__input.js-input.js-checked-input
+                                label(for="m17").constructor__label.constructor__label--square.material-17.js-label
+                            .constructor__item
+                                input(id="m18" type="radio" name="material" value="6000").constructor__input.js-input.js-checked-input
+                                label(for="m18").constructor__label.constructor__label--square.material-18.js-label
+                            .constructor__item
+                                input(id="m19" type="radio" name="material" value="6000").constructor__input.js-input.js-checked-input
+                                label(for="m19").constructor__label.constructor__label--square.material-19.js-label
+                            .constructor__item
+                                input(id="m20" type="radio" name="material" value="6000").constructor__input.js-input.js-checked-input
+                                label(for="m20").constructor__label.constructor__label--square.material-20.js-label
+
+
+                    p.mobile-constructor__attention Некоторые корсажи совместимы только с&nbsp;некоторыми оттенками камуса
+    |
+    |
+    #step4.mobile-constructor-block.mobile-popup.js-mobile-popup.inside.js-constructor-block
+        .mobile-popup__wrap
+            .mobile-popup__header.js-popup-header
+                .mobile-popup__title Выберите свойство
+                .mobile-popup__arrow.js-popup-close
+            .mobile-popup__main.mobile-constructor-block.js-popup-main
+                .js-popup-wrap
+                    p.mobile-constructor-block__name Внутренний материал
+                    .mobile-constructor-block__wrap
+                        .constructor__item
+                            input(id="i1" type="radio" name="inside" value="2000").constructor__input.constructor__input--inside.js-input.js-checked-input
+                            label(for="i1").constructor__label.constructor__label--inside.constructor__label--inside-nat.js-label
+                                span Натуральная овчина
+                                span.mobile-constructor__text В стопе натуральнная овчина, в голени натуральная шерсть на тканевой основе
+                        .constructor__item
+                            input(id="i2" type="radio" name="inside" value="1000").constructor__input.constructor__input--inside.js-input.js-checked-input
+                            label(for="i2").constructor__label.constructor__label--inside.constructor__label--inside-comb.js-label
+                                span Комбинированный
+                                span.mobile-constructor__text В стопе натуральнная овчина, в голени натуральная шерсть на тканевой основе
+    |
+    |
+    .mobile-constructor-price.js-mobile-price
+        p.mobile-constructor-price__title Примерная цена
+        p.mobile-constructor-price__value.js-total-price 0 ₽
+        button(type="submit").btn.constructor__btn.mobile-constructor__btn В корзину

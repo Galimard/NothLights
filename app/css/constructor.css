@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/*-------------------------------------------------переменные-------------------------------------------------*/
+.constructor {
+  max-width: 1920px;
+  overflow: hidden;
+  margin: 0 auto; }
+
+.constructor__wrap {
+  position: relative; }
+
+@media all and (max-width: 900px) {
+  .constructor .container {
+    padding: 0; }
+  .constructor__title {
+    text-align: center; }
+  .constructor-footer {
+    display: none; } }

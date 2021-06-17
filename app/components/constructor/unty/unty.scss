@@ -1,0 +1,119 @@
+@import "../../../variables";
+
+.unty {
+  width: 1620px;
+  height: 1045px;
+  background: url("../../../img/constructor/snow.png") center bottom no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: -265px;
+  left: 0;
+}
+
+.unty-img {
+  width: 660px;
+  height: 876px;
+  position: absolute;
+  bottom: 370px;
+  right: 300px;
+}
+
+.unty-img img {
+  max-width: 100%;
+}
+
+.sepia img, .grey img, .blur img, .invert img {
+  display: none;
+}
+
+.sepia {
+  filter: sepia(60%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.grey {
+  filter: grayscale(50%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.blur {
+  filter: blur(5px);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.invert {
+  filter: invert(75%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.brightness {
+  filter: brightness(0.4);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media all and (max-width: 1450px) {
+  .unty {
+    width: 920px;
+    height: 545px;
+    left: unset;
+    bottom: 0;
+    right: 0;
+  }
+  .unty-img {
+    width: 420px;
+    height: 545px;
+    right: 0;
+    bottom: 200px;
+  }
+}
+
+@media all and (max-width: 900px)  {
+  .unty,
+  .unty-img {
+    position: static;
+  }
+  .unty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: calc(100vh - 249px);
+    background: url('../../../img/constructor/snow.png') -225px -210px no-repeat;
+    background-size: 300%;
+    position: relative;
+    z-index: -1;
+  }
+  .unty::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(180deg, rgba(40, 42, 97, 0) 0%, rgba(40, 42, 97, 0.19) 100%);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .unty-img {
+    width: 80%;
+    height: 80%;
+  }
+  .unty-img > div {
+    height: 100%;
+    text-align: center;
+  }
+  .unty-img img {
+    max-width: unset;
+    max-height: 100%;
+  }
+}
